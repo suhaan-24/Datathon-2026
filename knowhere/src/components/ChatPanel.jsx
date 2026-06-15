@@ -235,7 +235,7 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
       setMessages(prev => [...prev, {
         id: Date.now() + 1,
         role: 'bot',
-        text: 'CONNECTION ERROR — verify KNOWHERE backend is running on port 3000.',
+        text: `CONNECTION ERROR — ${err?.name || 'Error'}: ${err?.message || err}`,
         ts: new Date(),
         isError: true,
       }])
