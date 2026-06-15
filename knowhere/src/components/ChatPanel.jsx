@@ -230,7 +230,8 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
         ts: new Date(),
         demo: !!data.demo,
       }])
-    } catch {
+    } catch (err) {
+      console.error('Chat request failed:', err)
       setMessages(prev => [...prev, {
         id: Date.now() + 1,
         role: 'bot',
