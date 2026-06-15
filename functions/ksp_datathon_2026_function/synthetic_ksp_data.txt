@@ -1,0 +1,942 @@
+KARNATAKA STATE POLICE — SYNTHETIC CRIME INTELLIGENCE DATASET
+Prepared for: KSP Datathon 2026 / KNOWHERE AI Platform
+Classification: RESTRICTED — TRAINING DATA ONLY
+Total FIR Records: 50
+Coverage: 10 Districts | Jan 2025 – Jun 2026
+========================================================================
+
+
+FIR Number: KSP/BLR-U/2025/0047
+Date: 14 January 2025
+Police Station: Cubbon Park Police Station
+District: Bengaluru Urban
+Crime Type: Robbery
+Accused Name(s): Arjun Reddy, Sameer Patel
+Victim Name: Venkatesh Murthy
+Location of Incident: MG Road underpass, near Brigade Road junction, Bengaluru
+Modus Operandi: Two accused on a motorcycle intercepted the victim during early morning hours. One distracted the victim while the other snatched his laptop bag and mobile phone. Fled northward on a red Honda Activa with obscured number plate.
+Status: Closed — Chargesheet filed 09 February 2025
+Assigned Officer: Sub-Inspector Kavitha Nagaraj, Cubbon Park PS
+Brief Description: Victim Venkatesh Murthy (42), a software consultant, was returning to his parked car after a late client meeting. Both accused intercepted him on foot near the underpass ramp. They used a pocketknife to threaten him and fled with a laptop bag (worth Rs 85,000), one Apple iPhone 14, and a leather wallet containing Rs 4,200 cash. A CCTV camera at the Brigade Road junction captured the partial registration of the motorcycle. Based on tip received from a CI network, Arjun Reddy was apprehended at Yeshwanthpur Bus Stand the following afternoon. Sameer Patel was arrested 18 days later at a relative's house in Tumakuru. Stolen items partially recovered. Case chargesheeted.
+
+
+FIR Number: KSP/BLR-U/2025/0083
+Date: 22 January 2025
+Police Station: Shivajinagar Police Station
+District: Bengaluru Urban
+Crime Type: Gang Activity
+Accused Name(s): Khalid Ibrahim, Mohammed Aziz, Tanveer Sheikh
+Victim Name: Rajesh Kumar Bhat (property owner)
+Location of Incident: Shivajinagar commercial complex, adjacent to KSRTC depot
+Modus Operandi: Organised gang entered a locked warehouse after cutting the padlock. Extortion letter signed "Black Cobra" found inside demanding Rs 10 lakhs. Gang members stationed lookouts at both entrances while the group ransacked the premises.
+Status: Open — Under investigation
+Assigned Officer: Inspector Dhananjaya Rao, Shivajinagar PS
+Brief Description: Property owner Rajesh Kumar Bhat reported finding his warehouse broken into on the morning of 22 January 2025. The accused had cut the rear lock and entered between 01:00 and 03:00 hrs. Goods worth Rs 2.3 lakhs were removed. An extortion note left at the scene bore the signature "Black Cobra" — a known organised criminal syndicate with operational links across Bengaluru Urban and Mysuru districts. Intelligence indicates Khalid Ibrahim is a mid-level coordinator for the Black Cobra network. Tanveer Sheikh has prior convictions for extortion in Maharashtra. Investigation ongoing; lookout notices issued for all three accused.
+
+
+FIR Number: KSP/MYS/2025/0119
+Date: 03 February 2025
+Police Station: Jayalakshmipuram Police Station
+District: Mysuru
+Crime Type: Assault
+Accused Name(s): Riyaz Ahmed Khan
+Victim Name: Gopal Swamy
+Location of Incident: Vishwamanava Double Road, near Manasagangothri campus, Mysuru
+Modus Operandi: Accused confronted victim over a financial dispute. Used a blunt wooden rod to assault victim. Fled on foot toward the university campus area.
+Status: Closed — Convicted, 6 months rigorous imprisonment awarded
+Assigned Officer: Head Constable Shanthi Prasad, Jayalakshmipuram PS
+Brief Description: Victim Gopal Swamy (38), a petty trader, sustained injuries to his left arm and shoulder when accused Riyaz Ahmed Khan (34) struck him repeatedly with a wooden rod outside his roadside stall. The altercation arose from an unpaid debt of Rs 8,000 owed by the accused to the victim. A bystander intervened and alerted police. Riyaz Ahmed Khan was apprehended within the hour at a tea stall 400 metres from the incident. Medical examination confirmed non-life-threatening blunt force trauma. Witness statements corroborated the victim's account. Magistrate court convicted the accused and sentenced him to 6 months rigorous imprisonment.
+
+
+FIR Number: KSP/MLR/2025/0201
+Date: 11 February 2025
+Police Station: Mangaluru North Police Station
+District: Mangaluru
+Crime Type: Vehicle Theft
+Accused Name(s): Unknown (under investigation)
+Victim Name: Anita D'Souza
+Location of Incident: Hampankatta commercial area parking lot, Mangaluru
+Modus Operandi: Vehicle keys were likely cloned or a duplicate key used; no signs of forced entry. CCTV shows a lone male approaching the vehicle at 23:15 hrs, entering it within 90 seconds, and driving away.
+Status: Closed — Untraced, case filed
+Assigned Officer: Sub-Inspector Prakash Kamath, Mangaluru North PS
+Brief Description: Victim Anita D'Souza (29) reported her Maruti Swift (KA-19-MK-2209) stolen from the Hampankatta parking lot where she had parked it at approximately 20:30 hrs. On returning at 23:30 hrs the vehicle was missing. CCTV footage from an adjacent pharmacy showed an unidentified male (approximate age 25 to 30, wearing a dark hoodie) entering the vehicle and driving it toward Bejai. Regional Transport Office records checked; no registered duplicate key on file. Despite extensive searches in Mangaluru and neighbouring Dakshina Kannada, the vehicle was not recovered. Case transferred to untraced register.
+
+
+FIR Number: KSP/HBD/2025/0058
+Date: 19 February 2025
+Police Station: Hubballi Central Police Station
+District: Hubballi-Dharwad
+Crime Type: Robbery
+Accused Name(s): Ravikumar Nayak, Siddappa Lamani
+Victim Name: Basavraj Patil
+Location of Incident: NH-48 near Hosur bypass junction, Hubballi outskirts
+Modus Operandi: Accused posed as distressed motorists flagging down passing vehicles at night. When the victim stopped to assist, they overpowered him and robbed him at knifepoint.
+Status: Open — Accused at large; lookout notice issued
+Assigned Officer: Inspector Girish Mallapur, Hubballi Central PS
+Brief Description: Victim Basavraj Patil (51), a textile merchant, was driving back from a late trade fair when he spotted two men waving for help near the NH-48 bypass at approximately 22:45 hrs. On stopping, both accused surrounded the vehicle. Ravikumar Nayak produced a country-made knife while Siddappa Lamani dragged the victim from the driver's seat. Cash of Rs 62,000 and a Samsung smartphone were taken. The accused fled in the victim's own vehicle (KA-25-E-4490), which was later found abandoned 12 km away near Dharwad. Toll-gate CCTV records are being analysed. Ravikumar Nayak has prior robbery cases in Kalaburagi (2023). Lookout notice issued.
+
+
+FIR Number: KSP/BLG/2025/0312
+Date: 28 February 2025
+Police Station: Belagavi City East Police Station
+District: Belagavi
+Crime Type: Burglary
+Accused Name(s): Santosh Kamble, Anil Khot
+Victim Name: Meena Patil
+Location of Incident: Residential area, Shahapur Colony, Belagavi
+Modus Operandi: Accused scaled the rear compound wall during daytime hours when the family was away. Broke the kitchen window latch and entered the house. Located the master bedroom and looted jewellery and cash from a steel almirah.
+Status: Closed — Chargesheet filed
+Assigned Officer: Sub-Inspector Priya Desai, Belagavi City East PS
+Brief Description: Victim Meena Patil (55) returned home from a family function at 17:30 hrs to discover the rear kitchen window forced open and the interior ransacked. Gold jewellery (estimated Rs 1.8 lakhs), silver items (Rs 25,000), and Rs 15,000 cash were missing from the almirah. Fingerprint Bureau lifted two partial prints from the window frame that matched the records of Santosh Kamble, who had a prior burglary case in Kolhapur (2022). Kamble was arrested within 72 hours; Anil Khot surrendered the following week. Most jewellery was recovered from a pawnbroker in Gokak who had received the items on 01 March. Chargesheet filed.
+
+
+FIR Number: KSP/TMK/2025/0174
+Date: 07 March 2025
+Police Station: Tumakuru Urban Police Station
+District: Tumakuru
+Crime Type: Vehicle Theft
+Accused Name(s): Suresh Gowda, Manjunath S
+Victim Name: Ravi Shankar Reddy
+Location of Incident: Siddaganga Mutt Road, near Government Hospital, Tumakuru
+Modus Operandi: Accused targeted motorcycles parked outside government premises during peak visiting hours. Used a master key tool to bypass the ignition lock. Operated as a pair — one acted as lookout, the other handled the bike.
+Status: Open — Suresh Gowda absconding
+Assigned Officer: Head Constable Lokesh Kumar, Tumakuru Urban PS
+Brief Description: Victim Ravi Shankar Reddy (45) parked his Royal Enfield Meteor 350 (KA-06-HT-7823) outside the government hospital at 11:00 hrs while visiting a patient. When he returned at 13:20 hrs, the motorcycle was missing. Hospital CCTV footage captured Suresh Gowda and Manjunath S casing the parking area before Suresh Gowda used a slim-jim tool to start the ignition. Manjunath S was apprehended 3 days later at a Bengaluru scrap dealer attempting to sell parts. Suresh Gowda, who has two prior vehicle theft cases in Bengaluru Rural (2024), remains at large. Non-bailable warrant issued.
+
+
+FIR Number: KSP/BAL/2025/0291
+Date: 15 March 2025
+Police Station: Ballari City Police Station
+District: Ballari
+Crime Type: Drug Trafficking
+Accused Name(s): Naveen Kumar, Sudhir Raj
+Victim Name: N/A (victimless offence)
+Location of Incident: National Highway 63, Ballari-Hosapete stretch
+Modus Operandi: Narcotics concealed inside the false floor of a goods truck. Accused were transporting ganja sourced from Andhra Pradesh border areas to distribution networks in Bengaluru.
+Status: Closed — Convicted
+Assigned Officer: Inspector Suresh Babu, Ballari City PS (Narcotics Cell)
+Brief Description: Acting on intelligence from the Narcotics Control Bureau, a joint team of Ballari City Police and NCB intercepted a Tata 407 goods vehicle (AP-09-Z-3344) near the Ballari toll plaza at 03:30 hrs. Inspection revealed a concealed compartment beneath the wooden flooring containing 42 kilograms of cannabis (ganja) with an estimated street value of Rs 8.4 lakhs. Both accused — Naveen Kumar (driver) and Sudhir Raj (cleaner) — were arrested on the spot. Lab analysis confirmed the substance. Case fast-tracked; both accused convicted within 4 months of arrest. Goods vehicle and narcotics seized.
+
+
+FIR Number: KSP/KBG/2025/0096
+Date: 21 March 2025
+Police Station: Kalaburagi Urban Police Station
+District: Kalaburagi
+Crime Type: Cybercrime
+Accused Name(s): Mehtab Singh, Farukh Ansari
+Victim Name: Laxmidevi Kulkarni
+Location of Incident: Online — Victim's residence, Sangam Nagar, Kalaburagi
+Modus Operandi: Accused called the victim posing as KYC agents from a nationalised bank. Guided victim to install a screen-sharing application under the pretext of updating her bank account. Once installed, remotely accessed her banking app and transferred funds.
+Status: Open — Accused traced to Rajasthan; state police assistance requested
+Assigned Officer: Sub-Inspector Deepa Hegde, Kalaburagi Urban PS (Cyber Cell)
+Brief Description: Victim Laxmidevi Kulkarni (67), a retired government employee, received a call from an individual claiming to be from her bank's KYC department. She was told her account would be frozen unless she updated her Aadhaar-linked KYC immediately. Following the caller's instructions, she downloaded AnyDesk on her Android phone. Within 15 minutes, Rs 1,42,000 was transferred from her savings account to three mule accounts in Rajasthan. Cyber Cell traced the IP address to a location in Jaipur. Mehtab Singh's name appeared in a connected cybercrime case in Jodhpur. Formal request submitted to Rajasthan Police for custodial assistance. Investigation active.
+
+
+FIR Number: KSP/SHV/2025/0145
+Date: 29 March 2025
+Police Station: Shivamogga City Police Station
+District: Shivamogga
+Crime Type: Murder
+Accused Name(s): Hanumantha Gowda
+Victim Name: Ramesh Babu
+Location of Incident: Vinoba Nagar residential area, Shivamogga
+Modus Operandi: Accused attacked the victim with a machete during a late-night altercation stemming from a long-standing land dispute. Fled to a relative's farm in Sagara taluk.
+Status: Closed — Chargesheet filed; trial ongoing
+Assigned Officer: Deputy SP Anand Kumar, Shivamogga Division
+Brief Description: Victim Ramesh Babu (48) was attacked in front of his residence at approximately 23:10 hrs by accused Hanumantha Gowda (52), his neighbour. The dispute over a shared boundary wall had been ongoing for over 3 years, with both parties having filed civil suits. On the night of the incident, a heated argument escalated and the accused retrieved a machete from his house and struck the victim on the neck and left shoulder. Victim died en route to McGann Government Hospital. A witness (victim's wife) identified the accused clearly under street lighting. Hanumantha Gowda was arrested 36 hours later from his relative's farm in Sagara. Forensic examination of the weapon confirmed blood type matching the victim. Chargesheet filed; case committed to Sessions Court.
+
+
+FIR Number: KSP/BLR-U/2025/0247
+Date: 05 April 2025
+Police Station: Rajajinagar Police Station
+District: Bengaluru Urban
+Crime Type: Drug Trafficking
+Accused Name(s): Pradeep Kumar Shetty, Imran Basha, Lokesh R
+Victim Name: N/A
+Location of Incident: Rajajinagar Industrial Area, near Ring Road, Bengaluru
+Modus Operandi: Accused used a rented warehouse as a temporary storage and repacking facility for synthetic drugs (methamphetamine tablets). Distribution routes ran through auto-rickshaw drivers used as unwitting couriers.
+Status: Open — Pradeep Kumar Shetty arrested; associates at large
+Assigned Officer: Inspector Nagesh Prasad, Rajajinagar PS (Narcotics Wing)
+Brief Description: Following a 45-day covert surveillance operation coordinated with the Narcotics Control Bureau, a joint team raided a warehouse unit at Rajajinagar Industrial Area at 02:15 hrs. Approximately 3,800 methamphetamine tablets (street value Rs 19 lakhs) along with sealing equipment, packaging materials, and Rs 2.1 lakhs cash were seized. Pradeep Kumar Shetty (39), identified as the distribution coordinator, was arrested at the scene. Imran Basha and Lokesh R, who handled supply from Goa, escaped through a rear exit. Lookout notices issued. Bank accounts of the rented warehouse company are being investigated for money laundering links.
+
+
+FIR Number: KSP/BLR-R/2025/0063
+Date: 14 April 2025
+Police Station: Ramanagara Police Station
+District: Bengaluru Rural
+Crime Type: Fraud
+Accused Name(s): Ashok Thimmaiah
+Victim Name: Cooperative Bank, Kanakapura branch (institutional victim)
+Location of Incident: Kanakapura Road, Bengaluru Rural
+Modus Operandi: Accused submitted fabricated land documents and forged NOCs to obtain agricultural loans from the cooperative bank. Loans drawn against four separate non-existent survey numbers across two taluks.
+Status: Closed — Accused convicted; civil recovery proceedings ongoing
+Assigned Officer: Inspector Suma Reddy, Ramanagara PS (Economic Offences)
+Brief Description: Cooperative bank officials discovered discrepancies in loan files during an internal audit. Four separate loan accounts totalling Rs 34.8 lakhs were found to have been sanctioned against forged survey documents. Survey records with the Tahsildar's office confirmed the referenced numbers did not exist. Accused Ashok Thimmaiah (44), a former revenue department contractor, had used contacts to obtain blank official letterheads to fabricate land NOCs. He was arrested and remanded to judicial custody. A court-appointed forensic document examiner confirmed the forgery. Convicted after a 14-month trial. Civil recovery proceedings initiated by the bank.
+
+
+FIR Number: KSP/MYS/2025/0338
+Date: 22 April 2025
+Police Station: Vijayanagar Police Station, Mysuru
+District: Mysuru
+Crime Type: Kidnapping
+Accused Name(s): Salim Khan, Maqbool Ahmed
+Victim Name: Pooja Nair (Minor, 14 years)
+Location of Incident: Near Kalidasa Road, Nazarbad, Mysuru
+Modus Operandi: Victim lured under the pretext of a gift from a family friend. Forcibly taken in an autorickshaw toward Nanjangud. Ransom demand of Rs 5 lakhs made via phone within 3 hours.
+Status: Open — Victim rescued; accused Salim Khan arrested; Maqbool Ahmed absconding
+Assigned Officer: Inspector Padmavathi Rao, Vijayanagar PS (Women and Children Cell)
+Brief Description: Victim Pooja Nair, a 14-year-old student, was approached near her school gate by Salim Khan (27) posing as a family acquaintance. She was told that her mother had sent him to pick her up urgently. A bystander who knew the family became suspicious and alerted the school, which informed the parents. A call demanding Rs 5 lakhs was received at 15:40 hrs. Multi-team response mobilised across the Mysuru-Nanjangud corridor. Victim was located at a rented room in Nanjangud town at 21:10 hrs, unharmed. Salim Khan was arrested at the scene. Maqbool Ahmed, who had arranged the room, fled before police arrival. Victim counselled and restored to family. Maqbool Ahmed's mobile number traced to Coimbatore; Tamil Nadu Police alerted.
+
+
+FIR Number: KSP/MLR/2025/0409
+Date: 01 May 2025
+Police Station: Mangaluru South Police Station
+District: Mangaluru
+Crime Type: Assault
+Accused Name(s): Yunus Mohammed, Salman Rehman
+Victim Name: David Rodrigues
+Location of Incident: Falnir Road, near City Central Library, Mangaluru
+Modus Operandi: Two accused intercepted the victim on a narrow lane and assaulted him with iron rods. Motive was rivalry over street vendor territory. Attack was premeditated; victim had received verbal threats two days prior.
+Status: Closed — Convicted, 1-year rigorous imprisonment each
+Assigned Officer: Sub-Inspector Clement Pais, Mangaluru South PS
+Brief Description: Victim David Rodrigues (32), a street food vendor, was returning from his stall at 22:00 hrs when accused intercepted him near the library lane. Both men struck him on his back, arms, and legs with iron rods. Victim sustained multiple fractures and was hospitalised for 11 days. He had reported verbal threats to the station two days earlier. Both accused were identified through witness accounts and mobile tower records. Accused Yunus Mohammed and Salman Rehman were arrested within 48 hours. Forensic analysis of the recovered iron rods confirmed the victim's blood trace. Convicted by the JMFC court.
+
+
+FIR Number: KSP/HBD/2025/0197
+Date: 09 May 2025
+Police Station: Dharwad City Police Station
+District: Hubballi-Dharwad
+Crime Type: Gang Activity
+Accused Name(s): Khalid Ibrahim, Shakeel Mirza, Raju Lamani, Irfan Sheikh
+Victim Name: Multiple shopkeepers, Dharwad Market Area
+Location of Incident: Old Market Street and Cotton Market, Dharwad
+Modus Operandi: Black Cobra gang operatives collected extortion money from 11 traders under threat of business disruption and physical harm. Payments collected weekly. Traders intimidated into silence by explicit threats against their families.
+Status: Open — Khalid Ibrahim NBW issued; Raju Lamani in custody
+Assigned Officer: Deputy SP Ramesh Deshpande, Hubballi-Dharwad Division
+Brief Description: Following complaints from 11 traders in the Dharwad Old Market area, a covert operation was launched. Over three weeks, surveillance confirmed that members of the Black Cobra syndicate were systematically collecting protection fees ranging from Rs 2,000 to Rs 15,000 per week per trader. Raju Lamani (26) was arrested while accepting payment from a decoy trader in a controlled operation. He confirmed Khalid Ibrahim as the gang's Dharwad regional coordinator. Khalid Ibrahim has an active case in Bengaluru Urban (FIR KSP/BLR-U/2025/0083). Non-bailable warrant issued. Shakeel Mirza and Irfan Sheikh are at large. Gang's accounts are being traced.
+
+
+FIR Number: KSP/BLG/2025/0488
+Date: 17 May 2025
+Police Station: Belagavi North Police Station
+District: Belagavi
+Crime Type: Vehicle Theft
+Accused Name(s): Rajendra Pol, Sunil Chavan
+Victim Name: Prakash Joshi
+Location of Incident: Hindwadi residential area, Belagavi
+Modus Operandi: Accused operated in a team targeting heavy vehicles left unattended overnight in residential areas. Defeated the ignition using a stolen universal key set.
+Status: Closed — Both accused arrested and chargesheeted
+Assigned Officer: Head Constable Vijay Patil, Belagavi North PS
+Brief Description: Victim Prakash Joshi (48) reported his Mahindra Bolero (KA-22-E-1048) missing from outside his residence on the morning of 17 May 2025. The vehicle was parked at 22:15 hrs the previous night. ANPR records at the Gokak check-post captured the vehicle at 02:44 hrs. Both Rajendra Pol and Sunil Chavan were found with the vehicle at a farm in Athani taluk where they had begun stripping it for parts. A universal key set and screwdrivers recovered from their possession matched the ignition tampering marks. Both were remanded; chargesheet filed.
+
+
+FIR Number: KSP/KBG/2025/0203
+Date: 25 May 2025
+Police Station: Kalaburagi Rural Police Station
+District: Kalaburagi
+Crime Type: Robbery
+Accused Name(s): Riyaz Ahmed Khan, Nazir Pasha
+Victim Name: Shantha Bai
+Location of Incident: Gulbarga-Bidar Highway, 9 km from Kalaburagi
+Modus Operandi: Victims targeted on inter-district highways during pre-dawn hours. Accused blocked road using a broken-down vehicle ruse. Used violence to remove jewellery and cash from the victim.
+Status: Open — Riyaz Ahmed Khan identified; warrant issued
+Assigned Officer: Inspector Vijayakumar Patil, Kalaburagi Rural PS
+Brief Description: Victim Shantha Bai (60) was travelling with her husband in an autorickshaw at 04:20 hrs toward Bidar to attend a wedding. Two individuals blocked the road with a parked motorcycle appearing to have broken down. When the autorickshaw stopped, Riyaz Ahmed Khan and Nazir Pasha attacked the couple. Shantha Bai's gold necklace (approx. 28 grams), gold bangles (18 grams), and Rs 21,000 cash were forcibly removed. Her husband sustained lacerations on his hands while resisting. Riyaz Ahmed Khan was identified from a witness description matching the prior FIR at Jayalakshmipuram PS, Mysuru (KSP/MYS/2025/0119). Non-bailable warrant issued; interstate lookout notice filed.
+
+
+FIR Number: KSP/TMK/2025/0388
+Date: 02 June 2025
+Police Station: Tiptur Police Station
+District: Tumakuru
+Crime Type: Burglary
+Accused Name(s): Nagaraj Balu, Chandrappa K
+Victim Name: Srinivasa Hardware Store (owner: Venkataramu)
+Location of Incident: Market Road, Tiptur Town, Tumakuru
+Modus Operandi: Accused cut the iron shutter of the hardware store using an angle grinder between 01:00 and 04:00 hrs. Looted power tools, hand tools, and the cash drawer. Two motorcycles used for transport of stolen goods.
+Status: Closed — Both accused convicted
+Assigned Officer: Sub-Inspector Ravi Kumar, Tiptur PS
+Brief Description: Store owner Venkataramu discovered the shutter cut open when he arrived to open the shop at 07:00 hrs. The angle grinder used was later found abandoned in the premises; it had been stolen from a construction site the previous week. Inventory loss estimated at Rs 3.2 lakhs. CCTV from an ATM 200 metres away captured two individuals loading items onto motorcycles at 03:15 hrs. Partial plate matched Nagaraj Balu's motorcycle. Chandrappa K was caught at a Bengaluru tool bazaar attempting to sell the stolen power tools two days later. Both accused convicted by the local Magistrate's court.
+
+
+FIR Number: KSP/BAL/2025/0357
+Date: 10 June 2025
+Police Station: Ballari Rural Police Station
+District: Ballari
+Crime Type: Assault
+Accused Name(s): Ravikumar Nayak, Venkatesha Reddy
+Victim Name: Narasimha Reddy
+Location of Incident: Agricultural field, Kampli taluk, Ballari district
+Modus Operandi: Accused attacked the victim over disputed crop land during harvest season. Used an iron pipe and wooden staves. Left victim unconscious in the field.
+Status: Open — Ravikumar Nayak absconding; Venkatesha Reddy arrested
+Assigned Officer: Inspector Suresh Reddy, Ballari Rural PS
+Brief Description: Victim Narasimha Reddy (54) was found unconscious by a farmhand on the morning of 10 June 2025 in his paddy field with severe head injuries. The victim's wife identified Ravikumar Nayak and Venkatesha Reddy as the likely perpetrators based on prior altercations over 3 acres of disputed land. Venkatesha Reddy was arrested the same evening; he confirmed Ravikumar Nayak's involvement. Nayak has active robbery cases in Hubballi-Dharwad (FIR KSP/HBD/2025/0058) and Kalaburagi. Victim was hospitalised in critical condition and later recovered. Non-bailable warrant issued for Ravikumar Nayak.
+
+
+FIR Number: KSP/SHV/2025/0302
+Date: 18 June 2025
+Police Station: Bhadravathi Police Station
+District: Shivamogga
+Crime Type: Cybercrime
+Accused Name(s): Unknown (traced to foreign IP; investigation ongoing)
+Victim Name: Subbaiah Textiles Pvt Ltd
+Location of Incident: Online — Company servers, Bhadravathi
+Modus Operandi: Phishing email sent to the company's finance manager posing as a vendor invoice. On opening the attachment, a ransomware payload was triggered that encrypted the company's entire ERP database.
+Status: Closed — Insurance claim settled; perpetrators untraced
+Assigned Officer: Inspector Sunil S, Bhadravathi PS (Cyber Cell)
+Brief Description: Subbaiah Textiles Pvt Ltd reported that on 18 June 2025 at 09:47 hrs, a phishing email disguised as an invoice from a legitimate vendor triggered a ransomware attack. The entire ERP system — including purchase orders, payroll, and GST records — was encrypted. A demand of 2.3 Bitcoin (approx. Rs 1.1 crore) was made via an anonymous email. The company chose not to pay and restored data from a 3-day-old backup, incurring losses of approximately Rs 18 lakhs in business disruption. Cyber Cell traced the initial IP address to a Tor exit node in Eastern Europe. With the assistance of CERT-In, indicators of compromise were shared for public advisories. Perpetrators remain unidentified.
+
+
+FIR Number: KSP/BLR-U/2025/0561
+Date: 26 June 2025
+Police Station: Indiranagar Police Station
+District: Bengaluru Urban
+Crime Type: Murder
+Accused Name(s): Deepak Raj, Mohan Das
+Victim Name: Sridhar Naidu
+Location of Incident: 100 Feet Road flyover underside, Indiranagar, Bengaluru
+Modus Operandi: Victim lured to a meeting on the pretext of settling a business dispute. Attacked from behind with a sharp object. Body concealed behind pillars under the flyover and discovered by early-morning joggers.
+Status: Closed — Both accused convicted; life imprisonment awarded
+Assigned Officer: Deputy SP Geeta Menon, Bengaluru Urban East Division
+Brief Description: Victim Sridhar Naidu (41), a real estate broker, was reported missing on 26 June 2025 by his wife. His body was discovered the following morning under the Indiranagar flyover with multiple stab wounds. Call data records revealed he had met accused Deepak Raj at 22:30 hrs. A security camera at a nearby apartment captured the victim's car followed closely by a motorcycle. Forensic analysis of bloodstains matched both accused through touch DNA on the weapon (a Rampuri knife recovered from a drain near the scene). The motive was a real estate commission dispute of Rs 7 lakhs. Both accused were convicted within 18 months under the fast-track court and awarded life imprisonment.
+
+
+FIR Number: KSP/BLR-R/2025/0187
+Date: 04 July 2025
+Police Station: Kengeri Police Station
+District: Bengaluru Rural
+Crime Type: Vehicle Theft
+Accused Name(s): Suresh Gowda, Ramesh T
+Victim Name: Narayan Rao
+Location of Incident: Kengeri Satellite Town, near bus terminus
+Modus Operandi: Accused pre-identified high-value motorcycles during daytime reconnaissance. Returned at night with professional lock-bypass equipment. Vehicle transported to a garage in Ramanagara where the VIN was altered.
+Status: Open — Ramesh T in custody; Suresh Gowda absconding (same accused as KSP/TMK/2025/0174)
+Assigned Officer: Sub-Inspector Chandra Reddy, Kengeri PS
+Brief Description: Victim Narayan Rao (38) reported his KTM Duke 390 (KA-51-N-9921) missing from the Kengeri bus terminus parking at 06:30 hrs on 04 July 2025. He had parked the vehicle the previous evening. Examination of CCTV revealed Suresh Gowda conducting reconnaissance in the afternoon and returning with Ramesh T at 02:15 hrs. Ramesh T was arrested at the VIN-alteration garage in Ramanagara. He disclosed that the motorcycle was intended for resale in Andhra Pradesh. Intelligence confirms Suresh Gowda (repeat offender; also named in KSP/TMK/2025/0174) as the organiser of this vehicle theft ring. Red Corner notice being processed.
+
+
+FIR Number: KSP/BLR-U/2025/0629
+Date: 12 July 2025
+Police Station: Yeshwanthpur Police Station (Lead Station)
+District: Bengaluru Urban (cross-district operations spanning Tumakuru)
+Crime Type: Drug Trafficking
+Accused Name(s): Ashfaq Hussain, Ravi Sharma, Vinod Kumar, Anand Tiwari
+Victim Name: N/A
+Location of Incident: Yeshwanthpur depot area (Bengaluru Urban) and NH-48 highway corridor (Tumakuru segment)
+Modus Operandi: Multi-leg consignment chain. Drugs procured near the Goa border, staged in a Tumakuru warehouse, broken into smaller quantities, and redistributed through a Bengaluru Urban courier network.
+Status: Open — Ashfaq Hussain and Ravi Sharma in custody; Vinod Kumar and Anand Tiwari at large
+Assigned Officer: Inspector Kiran Raj, Yeshwanthpur PS (Narcotics Task Force); coordinating with Tumakuru SP Office
+Brief Description: This cross-district case originated from surveillance on a Goa-linked drug supply chain. Intelligence from the Narcotics Task Force indicated that a major consignment of 65 kg of ganja and 1,200 methamphetamine tablets was routed through a staging warehouse near Kyatsandra, Tumakuru district. The Bengaluru Urban node — operating from a rented flat in Yeshwanthpur — handled city-level distribution via food delivery riders. Simultaneous raids were conducted in both districts at 03:30 hrs. Ashfaq Hussain and Ravi Sharma were arrested at the Yeshwanthpur flat. The Tumakuru warehouse was found evacuated but contraband packaging and weighing equipment were seized. Both district SP offices are jointly investigating. A supplementary FIR was filed at Kyatsandra PS, Tumakuru.
+
+
+FIR Number: KSP/MYS/2025/0511
+Date: 20 July 2025
+Police Station: Chamundi Hills Police Station
+District: Mysuru
+Crime Type: Fraud
+Accused Name(s): Dr Kiran Bopanna (alias)
+Victim Name: Twenty-three elderly investors
+Location of Incident: Various residences, Jayalakshmipuram and Vijayanagar, Mysuru
+Modus Operandi: Accused posed as an investment advisor offering fictitious government-guaranteed bonds. Collected monthly payments from victims over 12 to 24 months, issuing fabricated bond certificates.
+Status: Closed — Accused arrested and convicted; investors partially compensated
+Assigned Officer: Inspector Bharat Shetty, Chamundi Hills PS (Economic Offences)
+Brief Description: Complaints from 23 elderly investors (predominantly retired government servants) led to an Economic Offences Unit investigation. The accused used the alias Dr Kiran Bopanna and had collected between Rs 18,000 and Rs 1.5 lakhs per investor over 1 to 2 years, promising a guaranteed 14% annual return on fictitious KSP Safe Pension Bonds. Total fraud amount: Rs 31.4 lakhs. The bond certificates were found to be colour-photocopied fakes bearing a Government of Karnataka logo. Accused was traced to a rented flat in Saraswathipuram via mobile billing address. Convicted; court ordered partial restitution from seized assets.
+
+
+FIR Number: KSP/MLR/2025/0574
+Date: 28 July 2025
+Police Station: Mangaluru Port Police Station
+District: Mangaluru
+Crime Type: Robbery
+Accused Name(s): Anwar Hussein, Sudhir Gowda, Fayaz Khan
+Victim Name: Coastal Transshipment Agency (institutional victim)
+Location of Incident: Mangaluru New Port Container Yard
+Modus Operandi: Armed robbery of a cash transit van delivering port contractor wages. Accused posed as port authority inspectors in forged uniforms and stopped the van, then overpowered the guards.
+Status: Open — Anwar Hussein in custody; Sudhir Gowda and Fayaz Khan at large
+Assigned Officer: Inspector Anand Pai, Mangaluru Port PS
+Brief Description: A cash transit van carrying Rs 18.7 lakhs in contractor payroll was stopped at the port yard entrance gate at 13:00 hrs by three individuals in forged port authority uniforms. They flashed fabricated identity cards and demanded the driver pull over for a routine check. Two private security guards were overpowered; one was injured. The cash consignment was transferred to a waiting SUV that drove toward Surathkal. Anwar Hussein was arrested near Surathkal the same evening attempting to split the cash. He disclosed the identities of Sudhir Gowda and Fayaz Khan, who remain at large. Lookout posted at all Karnataka border check-posts.
+
+
+FIR Number: KSP/HBD/2025/0413
+Date: 05 August 2025
+Police Station: Hubli South Police Station
+District: Hubballi-Dharwad
+Crime Type: Kidnapping
+Accused Name(s): Gangadhar Shettar, Chandrakant Badiger
+Victim Name: Ramesh Patil (adult, 34 years; business rival)
+Location of Incident: Vidyanagar locality, Hubballi
+Modus Operandi: Victim ambushed near his residence, sedated, and transported to an abandoned building on the city outskirts. Ransom of Rs 25 lakhs demanded from the victim's family.
+Status: Closed — Victim rescued within 18 hours; both accused convicted
+Assigned Officer: Deputy SP Krishnamurthy, Hubballi-Dharwad Division
+Brief Description: Victim Ramesh Patil, a construction contractor, was abducted at 20:30 hrs near his residence in Vidyanagar. CCTV captured a white Innova without number plates. His wife received a call at 22:45 hrs demanding Rs 25 lakhs within 48 hours. A mobile tower analysis placed the ransom call within a 2 km radius of the Tarihala Industrial Area. Anti-kidnapping teams located the victim in an abandoned godown at 14:30 hrs the following day, unharmed, sedated and handcuffed. Gangadhar Shettar (the godown owner) and Chandrakant Badiger were arrested within 4 hours. Motive was a disputed construction contract worth Rs 2 crores. Both convicted.
+
+
+FIR Number: KSP/BLG/2025/0618
+Date: 13 August 2025
+Police Station: Belagavi Rural Police Station
+District: Belagavi
+Crime Type: Cybercrime
+Accused Name(s): Salim Shaikh (Belagavi); online associates in Jharkhand
+Victim Name: Vijayalakshmi Desai
+Location of Incident: Online — Victim's home, Desur Village, Belagavi district
+Modus Operandi: Victim received a WhatsApp video call from an unknown number. Caller displayed obscene content and immediately claimed it was a screenshot from the victim's account. Demanded money to prevent sharing with her contacts.
+Status: Open — Salim Shaikh arrested; online associates unidentified
+Assigned Officer: Sub-Inspector Nisha Patil, Belagavi Rural PS (Cyber Cell)
+Brief Description: Victim Vijayalakshmi Desai (42), a homemaker, was subjected to a sextortion scheme via WhatsApp. After the initial blackmail call, her mobile number was shared with a network that escalated demands to Rs 1.5 lakhs over five days, claiming the fabricated screenshot had already been sent to family groups. She transferred Rs 35,000 before approaching police. Cyber Cell traced the primary phone number to Salim Shaikh in Belagavi who acted as a local money mule. The online extortion network in Jharkhand has been flagged to Jharkhand Police with digital evidence packets.
+
+
+FIR Number: KSP/KBG/2025/0341
+Date: 22 August 2025
+Police Station: Gulbarga East Police Station
+District: Kalaburagi
+Crime Type: Fraud
+Accused Name(s): Mehtab Singh, Ravi Garg
+Victim Name: Multiple agricultural supply shop owners
+Location of Incident: Kalaburagi Agricultural Market Yard
+Modus Operandi: Accused posed as representatives of a Maharashtra-based fertilizer company. Collected advance payments from shop owners for a bulk supply that never arrived. Fake invoices, stamps, and company letterheads were used.
+Status: Open — Mehtab Singh identified; Ravi Garg absconding
+Assigned Officer: Inspector Mallikarjun, Gulbarga East PS
+Brief Description: Fourteen agricultural supply shop owners at the Kalaburagi market yard each paid Rs 50,000 to Rs 1.5 lakhs as advance for a consignment of imported fertilizer from an entity calling itself Garg and Singh AgroFert Pvt Ltd. The company's address on the letterhead traced to a vacant plot in Pune. All contact numbers were switched off after the delivery date passed. Total amount defrauded: Rs 11.3 lakhs. Mehtab Singh (previously named in cybercrime case KSP/KBG/2025/0096) is identified as one of the principals; the same phone was used in both the agri-fraud and the earlier cybercrime. Ravi Garg is believed to be in Maharashtra.
+
+
+FIR Number: KSP/TMK/2025/0461
+Date: 30 August 2025
+Police Station: Madhugiri Police Station
+District: Tumakuru
+Crime Type: Gang Activity
+Accused Name(s): Riyaz Ahmed Khan, Mohammed Rafi, Salim Bhai
+Victim Name: Multiple quarry operators, Madhugiri taluk
+Location of Incident: Granite quarry belt, Madhugiri, Tumakuru
+Modus Operandi: Armed group forced quarry operators to pay a weekly levy, threatening to damage equipment and physically harm employees. Gang linked to a Bengaluru-based organised crime network.
+Status: Open — Riyaz Ahmed Khan NBW issued; other accused at large
+Assigned Officer: Inspector Ramakrishna Hegde, Madhugiri PS
+Brief Description: Seven granite quarry operators in the Madhugiri taluk filed a joint complaint regarding systematic extortion by an armed gang. Levy amounts ranged from Rs 5,000 to Rs 20,000 per week per quarry. One quarry owner who refused payment had his excavator hydraulic pipes sabotaged. Intelligence corroborated that Riyaz Ahmed Khan (repeat offender; prior cases in Mysuru and Kalaburagi) coordinated the extortion ring with local muscle provided by Mohammed Rafi and Salim Bhai. A sting operation was attempted but the gang received advance warning. NBW issued for Riyaz Ahmed Khan. Madhugiri taluk placed under enhanced surveillance.
+
+
+FIR Number: KSP/BAL/2025/0468
+Date: 07 September 2025
+Police Station: Hospet Police Station
+District: Ballari
+Crime Type: Burglary
+Accused Name(s): Ranga Nayaka, Shekar Lamani
+Victim Name: Karnataka Bank ATM (Hospet branch)
+Location of Incident: Hospet Main Road, near Tungabhadra Dam tourist point
+Modus Operandi: ATM machine targeted during night hours. Accused used a gas cutter to breach the machine's outer panel. Partial success; inner cash cassette not fully accessible. Rs 1.2 lakhs extracted before the alarm triggered.
+Status: Closed — Both accused arrested and chargesheeted
+Assigned Officer: Sub-Inspector Deepak Nayak, Hospet PS
+Brief Description: The bank's monitoring team raised an alarm at 02:18 hrs when sensors detected tampering at the Hospet branch ATM. Police responded within 11 minutes. Both accused were arrested in the vicinity attempting to conceal a gas cutter set and the extracted cash. Rs 1.2 lakhs from the top cassette was recovered from the accused. Bank suffered Rs 4.5 lakhs in machine damage. Security footage from the ATM's internal camera provided clear facial images. Both accused have prior criminal records for petty theft. Chargesheet filed.
+
+
+FIR Number: KSP/SHV/2025/0489
+Date: 15 September 2025
+Police Station: Shivamogga City Police Station
+District: Shivamogga
+Crime Type: Drug Trafficking
+Accused Name(s): Pradeep Kumar Shetty, Gopal Naik, Bhimappa
+Victim Name: N/A
+Location of Incident: Old Bus Stand area, Shivamogga
+Modus Operandi: Accused used a network of tea stalls and cigarette shops as retail points for brown sugar (heroin). Pradeep Kumar Shetty supplied kilogram-level consignments; Gopal Naik and Bhimappa handled street-level distribution.
+Status: Open — Pradeep Kumar Shetty absconding; Gopal Naik and Bhimappa in custody
+Assigned Officer: Inspector Chandrashekar B, Shivamogga City PS (DISSA Cell)
+Brief Description: Drug Intelligence and Social Sensitisation Agency (DISSA) received tip-offs regarding a surge in heroin (brown sugar) availability in the Shivamogga old market area. Plainclothes officers conducted a 3-week monitoring operation. A controlled purchase led to the arrest of Gopal Naik at a tea stall with 8 grams of brown sugar and Rs 12,000 cash. Interrogation revealed Pradeep Kumar Shetty (repeat offender; also named in KSP/BLR-U/2025/0247) as the wholesale supplier. Bhimappa was arrested subsequently. Pradeep Kumar Shetty is absconding; intelligence indicates he may have fled to Goa. Lookout notice issued.
+
+
+FIR Number: KSP/BLR-U/2025/0793
+Date: 23 September 2025
+Police Station: HSR Layout Police Station
+District: Bengaluru Urban
+Crime Type: Robbery
+Accused Name(s): Ganesh Kumar, Arjun Bhoomi
+Victim Name: Sunita Krishnamurthy
+Location of Incident: HSR Layout Sector 2, near the metro feeder bus stop
+Modus Operandi: Victim ambushed while walking from the metro feeder bus. Accused on a bicycle snatched her handbag containing a laptop and cash. Victim dragged 4 metres and sustained road-rash injuries.
+Status: Closed — Both accused arrested; chargesheet filed
+Assigned Officer: Sub-Inspector Revathi S, HSR Layout PS
+Brief Description: Victim Sunita Krishnamurthy (33), an IT professional, was walking from the metro feeder bus stop at 21:45 hrs when a bicycle with two riders approached from behind. One rider grabbed her laptop bag while the other pedalled aggressively, dragging her. She sustained abrasions on her palms and knees. Mobile phone and Rs 8,000 cash were inside the bag. CCTV at a nearby bakery captured clear images of both accused. Ganesh Kumar was identified within 24 hours through a facial recognition assisted query. Both arrested; a total of 7 similar snatch cases in the HSR-BTM corridor were linked to the pair. Chargesheet filed for all 8 cases collectively.
+
+
+FIR Number: KSP/BLR-R/2025/0291
+Date: 01 October 2025
+Police Station: Magadi Police Station
+District: Bengaluru Rural
+Crime Type: Murder
+Accused Name(s): Srinivas Gowda (absconding)
+Victim Name: Narayana Gowda
+Location of Incident: Hesaraghatta village, outskirts of Magadi taluk
+Modus Operandi: Accused allegedly poisoned the victim's well water during an ongoing land partition dispute within the same family. Victim died after 2 days of hospitalisation.
+Status: Open — Forensic confirmation received; accused absconding
+Assigned Officer: Inspector Nageshwar Rao, Magadi PS
+Brief Description: Narayana Gowda (67) was hospitalised on 01 October 2025 with severe abdominal pain and organ stress. He died on 03 October. The family suspected foul play citing an acrimonious land dispute with his nephew Srinivas Gowda over 6 acres of agricultural land. Forensic Science Laboratory analysis of water samples from the well and stomach contents confirmed organophosphate poisoning. Srinivas Gowda left his residence on 02 October and has not returned. Mobile phone last active near Tumakuru on 04 October. Red notice being prepared. Magadi and Tumakuru police are coordinating.
+
+
+FIR Number: KSP/MYS/2025/0681
+Date: 09 October 2025
+Police Station: Hunsur Police Station
+District: Mysuru
+Crime Type: Vehicle Theft
+Accused Name(s): Lokesh Babu, Channabasappa
+Victim Name: Karnataka State Road Transport Corporation (KSRTC)
+Location of Incident: Hunsur KSRTC depot, Mysuru district
+Modus Operandi: Accused entered the depot premises at night using forged contractor gate passes. Drove out a KSRTC bus by hot-wiring the ignition. Bus used to transport stolen granite from an illegal quarry before being abandoned 80 km away.
+Status: Closed — Both accused arrested; KSRTC bus recovered
+Assigned Officer: Sub-Inspector Manjunath G, Hunsur PS
+Brief Description: KSRTC depot staff discovered a bus missing from the fleet at the morning roll-call on 09 October. Gate logbooks showed a fabricated contractor pass entry the previous night. The vehicle was tracked via its GPS telematics unit to an abandoned site near Kollegal. Police found granite dust and chipping residue inside the bus, suggesting it had been used to transport illegally quarried stone. Both Lokesh Babu and Channabasappa were identified from CCTV footage at the depot gate and arrested within 72 hours. A granite quarry owner in Kollegal is being investigated as a possible conspirator.
+
+
+FIR Number: KSP/MLR/2026/0041
+Date: 17 October 2025
+Police Station: Ullal Police Station
+District: Mangaluru
+Crime Type: Gang Activity
+Accused Name(s): Khalid Ibrahim, Babu Naik, Yusuf Mirza
+Victim Name: Fishermen Cooperative Society, Ullal
+Location of Incident: Ullal Fishing Harbour and surrounding coastal belt
+Modus Operandi: Black Cobra gang expanded operations to the coastal belt. Extorted fishermen's cooperative demanding a levy per boat per fishing trip. Threatened violence and damage to boats. Coordinated with the gang's mainland operations through Khalid Ibrahim.
+Status: Open — Babu Naik in custody; Khalid Ibrahim and Yusuf Mirza absconding
+Assigned Officer: Inspector Dinesh Shetty, Ullal PS
+Brief Description: Fishermen at Ullal Harbour reported that for over 6 weeks, members of an organised group had been collecting a sea levy of Rs 500 to Rs 2,000 per fishing trip per boat. Twenty-three boat owners had collectively paid Rs 1.9 lakhs under duress, fearing physical harm and sabotage of their boats. Two boats belonging to uncooperative owners were found with cut fuel lines. Babu Naik was arrested after a midnight surveillance operation at the harbour. He confirmed coordination with Khalid Ibrahim (active Black Cobra syndicate member; also named in KSP/BLR-U/2025/0083 and KSP/HBD/2025/0197). Intelligence confirms the Black Cobra network has expanded into maritime extortion along the Karnataka coast.
+
+
+FIR Number: KSP/HBD/2026/0017
+Date: 25 October 2025
+Police Station: Hubballi East Police Station
+District: Hubballi-Dharwad
+Crime Type: Assault
+Accused Name(s): Chandrakant Hooli, Ravi Nayak
+Victim Name: Mohammed Salim (auto-rickshaw driver)
+Location of Incident: Navanagar locality, Hubballi
+Modus Operandi: Victim was returning his auto-rickshaw to the garage at night. Accused, who had hired the auto and refused to pay, assaulted the victim with a belt and kicked him repeatedly when he demanded the fare.
+Status: Closed — Accused convicted; fined and sentenced to 3 months simple imprisonment
+Assigned Officer: Head Constable Basavaraj, Hubballi East PS
+Brief Description: Victim Mohammed Salim (38) picked up two passengers from the railway station who claimed to be going to Navanagar. After reaching the destination, both refused to pay the fare of Rs 80 and instead assaulted the driver when he protested. A passerby recorded the incident on a mobile phone; the video was submitted as primary evidence. Both accused were identified and arrested within 24 hours. The JMFC court took note of the clear video evidence and convicted Chandrakant Hooli and Ravi Nayak, imposing a fine of Rs 5,000 each and 3 months simple imprisonment. Victim received compensation under the Victim Compensation Scheme.
+
+
+FIR Number: KSP/BLG/2026/0093
+Date: 02 November 2025
+Police Station: Belagavi City West Police Station
+District: Belagavi
+Crime Type: Burglary
+Accused Name(s): Santosh Kamble, Rafiq Mulla
+Victim Name: Punjab National Bank (Kanabargi Branch)
+Location of Incident: Kanabargi Industrial Area, Belagavi
+Modus Operandi: Branch targeted on a Sunday when premises were empty. Accused used a diamond drill and angle grinder to breach the steel vault door. Only a portion of the cash locker was accessed before an alarm triggered.
+Status: Open — Santosh Kamble identified from fingerprints; Rafiq Mulla unidentified
+Assigned Officer: Inspector Priya Yargeri, Belagavi City West PS
+Brief Description: Bank staff discovered the vault breach on Monday morning. Forensic examination of the breach site confirmed diamond drill marks consistent with professional bank burglary techniques. A partial fingerprint from the vault door handle matched Santosh Kamble's records (prior burglary conviction under KSP/BLG/2025/0312). Security footage outside showed two individuals in coveralls arriving on foot at 01:30 hrs. Rs 3.8 lakhs from the accessible portion of the locker was taken. Santosh Kamble is believed to have left Belagavi; non-bailable warrant issued. RBI has been notified as per mandatory protocol.
+
+
+FIR Number: KSP/KBG/2026/0089
+Date: 10 November 2025
+Police Station: Sedam Police Station
+District: Kalaburagi
+Crime Type: Vehicle Theft
+Accused Name(s): Suresh Gowda, Jakeer Hussain
+Victim Name: Seetaram Reddy
+Location of Incident: National Highway 150, Sedam, Kalaburagi
+Modus Operandi: Victim's car was stolen from a dhaba parking at night. A GPS tracker on the car (unknown to the thieves) allowed real-time tracking. Vehicle was being driven toward the Andhra Pradesh border.
+Status: Open — Suresh Gowda apprehended near AP border; vehicle recovered; Jakeer Hussain at large
+Assigned Officer: Sub-Inspector Ramaiah, Sedam PS
+Brief Description: Victim Seetaram Reddy (46) parked his Hyundai Creta (KA-32-G-1177) at a highway dhaba at 21:00 hrs. By 23:30 hrs the vehicle was gone. The vehicle's aftermarket GPS tracker was activated; police tracked it in real time travelling southeast on NH-44. Patching calls to Kalaburagi and Kadapa (Andhra Pradesh) police enabled a coordinated interception near Nandyal. Suresh Gowda was arrested in the vehicle with a set of master keys. Jakeer Hussain, who had provided local intelligence on the target vehicle, remains at large in Kalaburagi. This is Suresh Gowda's third vehicle theft case (earlier: KSP/TMK/2025/0174 and KSP/BLR-R/2025/0187).
+
+
+FIR Number: KSP/TMK/2026/0129
+Date: 18 November 2025
+Police Station: Tumakuru Urban Police Station
+District: Tumakuru
+Crime Type: Fraud
+Accused Name(s): Ramesh Nayak, Latha Kumari
+Victim Name: Job-seeking youth (38 complainants)
+Location of Incident: Fake placement office, MG Road, Tumakuru
+Modus Operandi: Accused ran a bogus placement agency collecting registration fees and document charges from rural youth seeking IT and banking jobs. After collecting fees, they closed the office and disappeared.
+Status: Closed — Both accused arrested; convicted
+Assigned Officer: Inspector Suma Patil, Tumakuru Urban PS
+Brief Description: Thirty-eight young job-seekers (predominantly from rural taluks of Tumakuru district) filed complaints against Sai Enterprises Placement Services, a bogus agency operating from a rented ground-floor office on MG Road. Total collection: Rs 4.2 lakhs. The agency advertised positions at large IT firms and banks via WhatsApp. Accused Ramesh Nayak and Latha Kumari collected fees, conducted fake interviews via a call centre setup, and issued fraudulent offer letters before vacating the premises. Traced to a relative's house in Gubbi taluk within 10 days. The Deputy Labour Commissioner flagged the fake offer letters. Both convicted.
+
+
+FIR Number: KSP/BAL/2026/0153
+Date: 26 November 2025
+Police Station: Ballari City Police Station
+District: Ballari
+Crime Type: Drug Trafficking
+Accused Name(s): Ramu Naik, Satish Bhoovi, Mohammed Riyaz
+Victim Name: N/A
+Location of Incident: Railway goods yard, Ballari Junction
+Modus Operandi: Ganja concealed inside large sacks of raw tamarind routed from Ballari to Hyderabad via goods train. Railway parcel receipts presented to avoid suspicion. Network used legitimate tamarind traders as unwitting cover.
+Status: Open — Ramu Naik and Satish Bhoovi in custody; Mohammed Riyaz at large
+Assigned Officer: Inspector Ganesh Babu, Ballari City PS (Narcotics, Railway liaison)
+Brief Description: Railway Protection Force staff at Ballari Junction, acting on prior intelligence, inspected a consignment of 14 tamarind sacks destined for Hyderabad. Three of the sacks contained 38 kilograms of compressed ganja hidden beneath a layer of tamarind. RPF handed the case to local police. Trail of parcel documents led to Ramu Naik and Satish Bhoovi, both employed as loading labourers who coordinated the placement of the contraband sacks. Interrogation revealed Mohammed Riyaz as the consignment organiser, who has links to an Andhra Pradesh-based supply network. Mohammed Riyaz is at large and suspected to be in Hyderabad.
+
+
+FIR Number: KSP/SHV/2026/0102
+Date: 04 December 2025
+Police Station: Mangaluru North Police Station (Lead Station)
+District: Mangaluru (abduction site); Shivamogga (detention site) — Cross-District Case
+Crime Type: Kidnapping
+Accused Name(s): Sadiq Bhai, Mohan Kulkarni, Vishwanath Pati
+Victim Name: Kishore Kumar Hegde (business executive, 45 years)
+Location of Incident: Kidnapped from Kadri Park area, Mangaluru; held in Sagar taluk, Shivamogga district
+Modus Operandi: Victim abducted from his car at gunpoint. Transported across district boundary to an isolated forest bungalow near Sagar. Ransom of Rs 50 lakhs demanded over an encrypted messaging application.
+Status: Open — Victim rescued; Mohan Kulkarni in custody; Sadiq Bhai and Vishwanath Pati absconding
+Assigned Officer: Deputy SP Anita Rao, Mangaluru Range; coordinating with Deputy SP Shivamogga
+Brief Description: Kishore Kumar Hegde (45), managing director of a Mangaluru-based export firm, was abducted at gunpoint from his parked vehicle outside Kadri Park at 18:15 hrs. A ransom demand of Rs 50 lakhs was transmitted via Signal messaging 4 hours later. Mangaluru Police activated an anti-kidnapping protocol. A victim's emergency location pin (shared via a hidden secondary phone) guided a multi-force team to an estate bungalow in the Sagar forested belt, Shivamogga district, 60 hours after the abduction. Victim recovered unharmed. Mohan Kulkarni (caretaker of the bungalow) was arrested at the scene. Sadiq Bhai and Vishwanath Pati fled through a forest track. Both Mangaluru and Shivamogga police along with KSRP are conducting a joint manhunt.
+
+
+FIR Number: KSP/BLR-U/2026/0014
+Date: 12 December 2025
+Police Station: Whitefield Police Station
+District: Bengaluru Urban
+Crime Type: Cybercrime
+Accused Name(s): International accused (Interpol notice filed)
+Victim Name: FinServ Technologies Pvt Ltd
+Location of Incident: Online — Company headquarters, Whitefield, Bengaluru
+Modus Operandi: Supply-chain attack through a compromised third-party IT vendor. Malicious code injected into the vendor's software update, allowing attackers to access FinServ's customer data. 82,000 customer records exfiltrated.
+Status: Closed — Data breach contained; Interpol notice issued; no domestic arrest
+Assigned Officer: Inspector Suhas Mehta, Whitefield PS (Cyber Crime Special Cell)
+Brief Description: FinServ Technologies Pvt Ltd reported a data breach to the Cyber Crime Cell on 12 December 2025 after detecting unauthorised data exfiltration to overseas IP addresses. Investigation revealed the attackers had exploited a software update pushed by a Bengaluru-based IT vendor. The malicious payload was traced through CERT-In analysis to an internationally operating cybercrime group. 82,000 customer records including KYC details, mobile numbers, and email IDs were confirmed exfiltrated. RBI and SEBI were informed. Customer breach notification process initiated. Interpol Red Notice filed. Case remains open at the international level.
+
+
+FIR Number: KSP/BLR-R/2026/0048
+Date: 20 December 2025
+Police Station: Channapatna Police Station
+District: Bengaluru Rural
+Crime Type: Robbery
+Accused Name(s): Nagaraju D, Krishnappa T, Ramu Bhoovi
+Victim Name: Lakshmi Gold Finance (branch, Channapatna; manager: Sanjay Rao)
+Location of Incident: Channapatna Town, BM Road
+Modus Operandi: Day-time armed robbery of a gold loan branch. Three accused entered in disguise, overpowered the branch manager and one security guard, and fled with pledged gold ornaments and cash from the strong room before the CCTV operator could raise an alert.
+Status: Open — Nagaraju D and Ramu Bhoovi arrested; Krishnappa T at large
+Assigned Officer: Inspector Hanumareddy, Channapatna PS
+Brief Description: Three armed men entered the Lakshmi Gold Finance branch at 13:00 hrs during peak lunch hour when staff strength was reduced. Two carried country-made pistols; the third carried a bag. Branch manager Sanjay Rao was tied to a chair; the security guard was struck on the head. The strong room was opened under duress. 1.8 kg of gold ornaments (estimated Rs 1.08 crores) and Rs 1.7 lakhs cash were removed. Accused fled in an autorickshaw. Nagaraju D was arrested the following afternoon at the Bengaluru KSRTC bus stand with Rs 40,000 cash. Ramu Bhoovi was arrested in Mysuru a week later. Krishnappa T has a prior robbery case in Chamarajanagar; Red Corner notice being processed.
+
+
+FIR Number: KSP/MYS/2026/0052
+Date: 28 December 2025
+Police Station: Nanjangud Police Station
+District: Mysuru
+Crime Type: Drug Trafficking
+Accused Name(s): Pradeep Kumar Shetty, Hussain Bhai, Anand Gowda
+Victim Name: N/A
+Location of Incident: Industrial area near KIADB zone, Nanjangud
+Modus Operandi: Accused used a pharmaceutical packaging unit as a front for manufacturing counterfeit drug consignments infused with synthetic stimulants. Supply network extended to college campuses in Mysuru and Bengaluru.
+Status: Open — Hussain Bhai and Anand Gowda in custody; Pradeep Kumar Shetty wanted (NBW issued)
+Assigned Officer: Inspector Sowmya D, Nanjangud PS (Narcotics Cell)
+Brief Description: Following intelligence about unusual chemical procurement at a minor pharmaceutical packaging unit in the Nanjangud KIADB zone, a joint team of Mysuru Police and NCB raided the facility at 05:30 hrs. The unit was found producing counterfeit nutrient sachets laced with MDMA-like synthetic stimulants, packaged to resemble legitimate supplements. Distribution records on recovered mobile phones pointed to 14 college campuses in Mysuru and Bengaluru. Pradeep Kumar Shetty (repeat drug trafficking offender; also named in KSP/BLR-U/2025/0247 and KSP/SHV/2025/0489) is the principal accused and is evading arrest. Hussain Bhai and Anand Gowda have been remanded. NBW for Shetty escalated to Red Corner notice.
+
+
+FIR Number: KSP/MLR/2026/0117
+Date: 05 January 2026
+Police Station: Mangaluru South Police Station
+District: Mangaluru
+Crime Type: Burglary
+Accused Name(s): Shabbir Khan, Rafiq Mohammed
+Victim Name: City Central Museum (government property)
+Location of Incident: Lalbagh Bunder Road, Mangaluru City
+Modus Operandi: Accused entered through a roof skylight during early morning hours. Targeted the museum's artefact storage room — bypassing the display hall — suggesting prior inside knowledge. Removed 4 antique bronze artefacts.
+Status: Closed — Both accused arrested; artefacts recovered
+Assigned Officer: Inspector Lawrence Fernandes, Mangaluru South PS
+Brief Description: Museum staff discovered the burglary at 07:00 hrs. Four artefacts — two 16th-century bronze temple lamps and two Vijayanagara-era bronze icons — were missing from the storage room. The Archaeology Survey liaison confirmed the objects' heritage value exceeding Rs 40 lakhs. Entry was via a poorly secured skylight in the service corridor. Museum support staff were questioned regarding prior inside knowledge. Within 5 days, intelligence led to Shabbir Khan and Rafiq Mohammed, who had contacted an antique dealer in Goa. All four artefacts were recovered intact before export. Both accused were arrested at the Goa border. Chargesheet filed.
+
+
+FIR Number: KSP/HBD/2026/0231
+Date: 13 January 2026
+Police Station: Dharwad Rural Police Station
+District: Hubballi-Dharwad
+Crime Type: Fraud
+Accused Name(s): Prabhu Halakatti, Raveendra Chikkodi
+Victim Name: 47 farmers, Dharwad taluk
+Location of Incident: Multiple villages, Dharwad taluk
+Modus Operandi: Accused posed as agents of a government crop insurance scheme. Collected premium payments from farmers for coverage that was never registered with any insurer. Issued hand-typed certificates resembling government documents.
+Status: Open — Prabhu Halakatti arrested; Raveendra Chikkodi absconding
+Assigned Officer: Inspector Basavaraj Kulli, Dharwad Rural PS
+Brief Description: A Tahsildar's office complaint revealed that 47 farmers across 12 villages in Dharwad taluk had paid Rs 3,000 to Rs 8,000 each toward a Pradhan Mantri Crop Insurance scheme collected by two individuals who visited villages on motorcycles. Total collection: Rs 2.6 lakhs. When farmers sought claims after a hailstorm, they discovered their names were not registered with PM-KISAN or any insurance portal. Accused had used forged insurance department letterheads. Prabhu Halakatti was arrested after being recognised by a farmer at a village fair. Raveendra Chikkodi is at large. District SP has alerted all taluk offices to verify credentials of insurance agents proactively.
+
+
+FIR Number: KSP/BLG/2026/0194
+Date: 21 January 2026
+Police Station: Belgaum Cantonment Police Station
+District: Belagavi
+Crime Type: Murder
+Accused Name(s): Manjunath Sali (suspect; not yet chargesheeted)
+Victim Name: Praveen Kumar Patil
+Location of Incident: Tilakwadi residential area, Belagavi Cantonment
+Modus Operandi: Victim found dead with strangulation marks in a locked room. Accused is the victim's business partner. Forensic evidence under analysis.
+Status: Closed — Case referred to CID for further investigation
+Assigned Officer: Deputy SP Vijayendra Rao, Belagavi CID Branch
+Brief Description: Praveen Kumar Patil (44), a cloth merchant, was found dead in the storeroom of his shop at 09:30 hrs by a shop assistant. Post-mortem confirmed death by strangulation. The room was found locked from outside with no signs of forced entry, suggesting the victim knew his attacker. Business records indicated an ongoing dispute between Praveen Patil and his partner Manjunath Sali over profit distribution. Sali was initially questioned but released without arrest due to insufficient initial evidence. Forensic teams have lifted biological samples. The case has been referred to CID given the circumstantial complexity. A forensic specialist is assisting with digital evidence recovery from Patil's mobile phone.
+
+
+FIR Number: KSP/KBG/2026/0176
+Date: 29 January 2026
+Police Station: Aland Police Station
+District: Kalaburagi
+Crime Type: Kidnapping
+Accused Name(s): Basalingappa Patil, Nagappa Sangam
+Victim Name: Mallikarjun Natikar (farmer, 62 years)
+Location of Incident: Agricultural area, Aland taluk, Kalaburagi
+Modus Operandi: Victim abducted while travelling alone to his field. Motive was a boundary dispute over irrigation channel access. Held for 2 days in a remote granary. No ransom demanded — intended as intimidation.
+Status: Closed — Victim released before police intervention; both accused arrested
+Assigned Officer: Sub-Inspector Nandakumar, Aland PS
+Brief Description: Farmer Mallikarjun Natikar was reported missing by his family on the afternoon of 29 January 2026. A neighbour reported seeing him approached by a group of men near the irrigation channel. Intelligence from the village sarpanch identified a long-standing boundary conflict with adjacent landowner Basalingappa Patil. Police mobilised; Nagappa Sangam confessed to the abduction while seeking to negotiate through an intermediary. The victim was released near a highway at night on 31 January after the accused gauged the police pressure. Both accused were arrested within 4 hours of the victim's release. The boundary dispute has been referred to the Revenue Appellate Tribunal.
+
+
+FIR Number: KSP/TMK/2026/0217
+Date: 06 February 2026
+Police Station: Gubbi Police Station
+District: Tumakuru
+Crime Type: Assault
+Accused Name(s): Sathyanarayana K, Venkatesh M
+Victim Name: Ranga Swamy (village panchayat head)
+Location of Incident: Panchayat office premises, Gubbi taluk, Tumakuru
+Modus Operandi: Accused attacked the panchayat head inside the panchayat office after a public meeting. Used plastic chairs and fists. Motive was non-payment of a tender commission demanded by the accused.
+Status: Open — Sathyanarayana K in custody; Venkatesh M surrendered
+Assigned Officer: Inspector Ravi Kumar, Gubbi PS
+Brief Description: Panchayat head Ranga Swamy (58) was conducting a routine meeting at the Panchayat office when accused Sathyanarayana K and Venkatesh M entered and demanded Rs 1 lakh in commission for a road-construction tender they claimed to have influenced. When the panchayat head refused, both men attacked him with plastic chairs, injuring his arm and head. Two panchayat members present were witnesses. Sathyanarayana K was arrested at his home the same night. Venkatesh M, a former ward member, surrendered with legal counsel 3 days later. Medical examination confirmed blunt-force injuries.
+
+
+FIR Number: KSP/BAL/2026/0237
+Date: 14 February 2026
+Police Station: Kurugodu Police Station
+District: Ballari
+Crime Type: Drug Trafficking
+Accused Name(s): Rajesh Bhoomi, Chandru Naik, Lakshman G
+Victim Name: N/A
+Location of Incident: Border crossing near Kudligi taluk (Karnataka-Andhra Pradesh boundary)
+Modus Operandi: Ganja transported across state borders using modified vehicles with concealed compartments built into fuel tanks. Each run carried 20 to 30 kg. Network had been operating undetected for 8 months.
+Status: Open — Rajesh Bhoomi arrested at scene; Chandru Naik and Lakshman G at large
+Assigned Officer: Inspector Mohan Reddy, Kurugodu PS (Narcotics, Border Enforcement)
+Brief Description: Intelligence shared by Andhra Pradesh STF confirmed a recurring narcotics route through the Kudligi border area. A joint surveillance team set up a covert checkpoint and intercepted a modified Innova. False panels inside the fuel tank housing were found to contain 27 kg of high-grade ganja. Driver Rajesh Bhoomi was arrested; he revealed that Chandru Naik and Lakshman G organised the consignments and managed the Andhra Pradesh supply end. Seized narcotics estimated at Rs 5.4 lakhs street value. Karnataka and Andhra Pradesh police are coordinating to dismantle the broader network.
+
+
+FIR Number: KSP/SHV/2026/0189
+Date: 22 February 2026
+Police Station: Shivamogga City Police Station
+District: Shivamogga
+Crime Type: Cybercrime
+Accused Name(s): Kiran Joshi (traced to Mumbai)
+Victim Name: Teak Wood Traders Association (institutional victim)
+Location of Incident: Online — Association office, Shivamogga
+Modus Operandi: Accused hacked into the Association's email server and altered banking details in pending payment emails. Diverted two large timber payment transfers to fraudulent accounts.
+Status: Open — Amount partially frozen; accused traced to Mumbai; Maharashtra Police contacted
+Assigned Officer: Sub-Inspector Anitha R, Shivamogga City PS (Cyber Cell)
+Brief Description: The Teak Wood Traders Association reported that two inter-account payment transfers of Rs 8.2 lakhs and Rs 14.7 lakhs failed to reach their intended recipients. Investigation revealed the Association's email server had been compromised; the accused intercepted payment notification emails and replaced beneficiary IFSC and account numbers with fraudulent mule accounts. A total of Rs 22.9 lakhs was diverted. Cyber Cell traced the server compromise to an IP in Mumbai. Rs 14.1 lakhs frozen in the mule accounts through banking intervention within 48 hours. Formal request filed with Maharashtra Cyber Cell.
+
+
+FIR Number: KSP/BLR-U/2026/0319
+Date: 02 March 2026
+Police Station: Koramangala Police Station
+District: Bengaluru Urban
+Crime Type: Robbery
+Accused Name(s): Amir Khan, Santhosh G
+Victim Name: IndiMart E-Commerce delivery executive (Raju M)
+Location of Incident: Koramangala 6th Block, near Social restaurant
+Modus Operandi: Accused tracked high-value delivery shipments through a compromised delivery management app. Intercepted the delivery executive before last-mile delivery, assaulted him, and stole an electronics consignment.
+Status: Open — Amir Khan arrested; Santhosh G at large
+Assigned Officer: Inspector Divya Menon, Koramangala PS
+Brief Description: Delivery executive Raju M (28) was assaulted and robbed at 19:30 hrs while making final deliveries in Koramangala 6th Block. His shipment contained 12 premium smartphones and 3 tablets worth Rs 3.4 lakhs. Raju M was struck from behind with a blunt object and the consignment bag pulled away. He sustained a head contusion requiring 4 stitches. Investigation revealed the attack was not opportunistic; the accused had advance knowledge of the shipment contents, timing, and route through a compromised delivery management application. Amir Khan, a former employee of the logistics company's tech vendor, was arrested and confirmed providing tracking access to Santhosh G. Santhosh G is at large.
+
+
+FIR Number: KSP/BLR-R/2026/0139
+Date: 10 March 2026
+Police Station: Doddaballapura Police Station
+District: Bengaluru Rural
+Crime Type: Vehicle Theft
+Accused Name(s): Murtaza Beg, Salim D, Shabu Khan, two unidentified
+Victim Name: Multiple vehicle owners (8 complainants)
+Location of Incident: Doddaballapura KIADB Industrial Area
+Modus Operandi: Syndicate targeted vehicles parked overnight at industrial estates. Used signal jammers to prevent remote locking. Vehicles transported to a dismantling yard in the Andhra Pradesh border area.
+Status: Open — Murtaza Beg and Salim D in custody; dismantling yard sealed
+Assigned Officer: Inspector Shyam Sunder, Doddaballapura PS
+Brief Description: Eight vehicle thefts from the KIADB industrial estate over 6 weeks prompted a coordinated investigation. Remote locking failures across multiple models and brands indicated signal jamming was being used. A covert CCTV unit installed at the industrial estate captured the operation: a team of 3 to 5 individuals used a portable jammer while a second team loaded vehicles onto a car carrier. Murtaza Beg (the jammer operator) and Salim D were arrested during a live operation. Intelligence from Salim D led police to a dismantling yard in Chittoor district (AP). AP Police sealed the yard; 5 of the 8 stolen vehicles were recovered partially dismantled. Syndicate believed to operate across 3 states.
+
+
+FIR Number: KSP/MYS/2026/0193
+Date: 18 March 2026
+Police Station: Mysuru North Police Station
+District: Mysuru
+Crime Type: Fraud
+Accused Name(s): Ramesh Shetty, Deepika Naik
+Victim Name: Kaveri Housing Cooperative Society members (31 complainants)
+Location of Incident: Kaveri Dream Homes office, New Sayyaji Rao Road, Mysuru
+Modus Operandi: Accused collected site booking deposits from 31 families for a non-existent housing layout outside Mysuru. Produced forged BDA and DC conversion documents. Office vacated after collecting over Rs 92 lakhs.
+Status: Open — Deepika Naik arrested; Ramesh Shetty absconding
+Assigned Officer: Inspector Poornima K, Mysuru North PS (Economic Offences Cell)
+Brief Description: Thirty-one families who had paid booking deposits of Rs 2 to Rs 5 lakhs each for residential plots in Kaveri Dream Homes Layout on Nanjangud Road discovered the office locked and phones switched off. Total amount collected: Rs 92.4 lakhs. BDA officials confirmed no conversion application or layout plan was on file matching the presented documents. Deepika Naik, the office manager and primary client contact, was arrested at the Bengaluru airport attempting to board a flight. She confirmed Ramesh Shetty as the originator of the scheme. Shetty's photo has been circulated to all border check-posts and airports; Interpol notice being processed.
+
+
+FIR Number: KSP/MLR/2026/0253
+Date: 26 March 2026
+Police Station: Mangaluru Central Police Station
+District: Mangaluru
+Crime Type: Assault (Communal Tension — Special Report)
+Accused Name(s): Five accused arrested; two at large (names withheld pending Magistrate approval for publication)
+Victim Name: Three victims (names withheld)
+Location of Incident: Old Port Road, Mangaluru
+Modus Operandi: Group attack triggered by a social media post. Mob gathered within 30 minutes and attacked a small group of individuals at a street-side tea stall. Iron rods, stones, and wooden staves were used.
+Status: Open — Five accused arrested; two at large; Section 144 imposed for 72 hours
+Assigned Officer: Deputy SP Vishwanath Kamath, Mangaluru Range (Special Branch oversight)
+Brief Description: A social media post circulated at 19:45 hrs inflamed community sentiments. Within 30 minutes a group had gathered near Old Port Road; the gathering turned violent, targeting three individuals at a nearby tea stall. Victims sustained injuries including a fractured arm and multiple lacerations. Rapid Response Team was deployed and the situation was contained within 45 minutes. Section 144 CrPC imposed in the area for 72 hours. Five individuals arrested under IPC sections for rioting and voluntarily causing hurt with dangerous weapons. The social media post was traced to a dormant account; digital forensics are ongoing. Special Branch is monitoring for escalation.
+
+
+FIR Number: KSP/HBD/2026/0344
+Date: 03 April 2026
+Police Station: Hubli Central Police Station
+District: Hubballi-Dharwad
+Crime Type: Kidnapping
+Accused Name(s): Iqbal Desai, Nasir Khan
+Victim Name: Kavitha Nayak (minor girl, 9 years)
+Location of Incident: Vidyanagar residential area, Hubballi
+Modus Operandi: Child lured with chocolates while playing outside the apartment. Taken in an autorickshaw. Ransom demand of Rs 10 lakhs received within 90 minutes. Child identified via school bag tag left at a subsequent location.
+Status: Closed — Child rescued 11 hours later; both accused convicted
+Assigned Officer: Inspector Malathi S, Hubli Central PS (Anti-Kidnapping Wing)
+Brief Description: Nine-year-old Kavitha Nayak was lured from outside her apartment complex at 16:40 hrs. Her mother alerted police within 15 minutes of the child not returning. Ransom demand of Rs 10 lakhs was made via WhatsApp. Mobile intelligence and tower analysis placed the accused within the Tarihal industrial cluster. An autorickshaw (KA-25-B-3312) seen near the apartment was traced to Iqbal Desai. Child was recovered from a locked room in a workmen's shed at 03:30 hrs, unharmed. Both accused were arrested at the scene. Fast-track court convicted both in under 5 months; maximum sentence awarded under POCSO and kidnapping provisions.
+
+
+FIR Number: KSP/BLG/2026/0428
+Date: 11 April 2026
+Police Station: Belagavi East Police Station
+District: Belagavi
+Crime Type: Burglary
+Accused Name(s): Aijaz Bagwan, Ganesh Kadam
+Victim Name: Government Treasury Office (Sub-Division, Belagavi)
+Location of Incident: Treasury Office premises, Tilakwadi, Belagavi
+Modus Operandi: Accused exploited a weekend gap in security. Forced open a secondary rear door using a crowbar. Targeted a temporary cash cabinet holding tender security deposits before formal banking.
+Status: Open — Aijaz Bagwan arrested; Ganesh Kadam at large
+Assigned Officer: Inspector Sanjay Patil, Belagavi East PS
+Brief Description: Treasury staff discovered on Monday morning that a secondary cash holding cabinet had been forced open over the weekend. Rs 8.4 lakhs in tender security deposits (held pending Monday banking) was missing. The rear door showed fresh crowbar marks. CCTV from a neighbouring office building captured two individuals entering the treasury compound at 02:00 hrs on Sunday. Fingerprints from the forced door matched Aijaz Bagwan's prior records. He was arrested at a relative's house in Raibag. Ganesh Kadam, his accomplice, is at large. A formal report was sent to the State Finance Department recommending enhanced physical security for all sub-treasury offices.
+
+
+FIR Number: KSP/KBG/2026/0311
+Date: 19 April 2026
+Police Station: Kalaburagi Urban Police Station
+District: Kalaburagi
+Crime Type: Cybercrime
+Accused Name(s): Online accused (identity unconfirmed); local mule Farhan Sheikh
+Victim Name: Regional Cooperative Bank, Kalaburagi
+Location of Incident: Online — Bank servers, Kalaburagi
+Modus Operandi: Core banking server exploited through a zero-day vulnerability in third-party API middleware. Automated script transferred small amounts from multiple accounts (below the alert threshold) to mule accounts over 4 days.
+Status: Open — Rs 14.2 lakhs total withdrawn fraudulently; Farhan Sheikh (mule) arrested; primary accused at large
+Assigned Officer: Inspector Mohan Patil, Kalaburagi Urban PS (Cyber Crime Cell)
+Brief Description: The Regional Cooperative Bank's internal reconciliation flagged unusual sub-threshold debits across 73 accounts on 19 April 2026. Amounts varied between Rs 1,800 and Rs 9,900 — all below the Rs 10,000 SMS alert trigger. CERT-In and RBI Cyber Cell were immediately notified. Investigation revealed exploitation of an undisclosed vulnerability in the bank's API middleware connecting its loan module. Rs 14.2 lakhs was transferred to mule accounts in 4 other states. Farhan Sheikh, who operated one of the mule accounts in Kalaburagi, was arrested after making multiple ATM withdrawals. He claimed to have received the account access via an online forum for Rs 5,000. Digital trail active with CERT-In.
+
+
+FIR Number: KSP/TMK/2026/0367
+Date: 27 April 2026
+Police Station: Koratagere Police Station
+District: Tumakuru
+Crime Type: Assault
+Accused Name(s): Manjappa K, Shiva Gowda
+Victim Name: B Ramakrishnaiah (Dalit community elder)
+Location of Incident: Koratagere village, near SC colony
+Modus Operandi: Victim was assaulted at the well pump site when he attempted to access the community water supply. Accused blocked access and used verbal slurs and physical violence. Attack was caste-motivated.
+Status: Closed — Both accused arrested; case registered under SC/ST Prevention of Atrocities Act
+Assigned Officer: Inspector Pramila Gowda, Koratagere PS (SC/ST Special Cell)
+Brief Description: Victim B Ramakrishnaiah (70) attempted to collect water from the community pump near the Dalit colony. Accused Manjappa K and Shiva Gowda blocked him, subjected him to casteist verbal abuse, and then physically assaulted him with sticks when he insisted on his right to use the community pump. Witnesses from the colony corroborated the account. A video recorded by a community youth was submitted as evidence. Case registered under IPC assault sections and the SC/ST Prevention of Atrocities Act 1989. Both accused were denied bail. A taluk-level awareness camp has been scheduled by the District Social Welfare Officer.
+
+
+FIR Number: KSP/BAL/2026/0381
+Date: 05 May 2026
+Police Station: Ballari City Police Station
+District: Ballari
+Crime Type: Cybercrime
+Accused Name(s): Ravi Chandra, Akash Reddy
+Victim Name: Individual investors (23 complainants)
+Location of Incident: Online — Social media targeting victims in Ballari district
+Modus Operandi: Fake cryptocurrency exchange created on a lookalike domain. Victims invited to invest via social media ads promising 300% returns. Invested amounts locked; accounts deactivated after total collections exceeded Rs 65 lakhs.
+Status: Closed — Both accused arrested; amounts partially frozen
+Assigned Officer: Inspector Sowmya T, Ballari City PS (Cyber Cell)
+Brief Description: Twenty-three individuals in Ballari district lost amounts ranging from Rs 50,000 to Rs 7 lakhs on a fake cryptocurrency platform called CryptoKarnataka Exchange, whose domain closely mimicked a legitimate exchange. The platform showed growing returns for 45 days before freezing accounts and deactivating all communication channels. Digital forensics traced the domain registration and payment gateway to Ravi Chandra and Akash Reddy. A total of Rs 65.3 lakhs was collected; Rs 18.4 lakhs frozen in linked bank accounts. Both were arrested. The case is being used by CERT-In as a public awareness example of cryptocurrency investment fraud.
+
+
+FIR Number: KSP/SHV/2026/0278
+Date: 13 May 2026
+Police Station: Bhadravathi Police Station
+District: Shivamogga
+Crime Type: Robbery
+Accused Name(s): Murthy Naik, Shashidhar V
+Victim Name: Bhadravathi Steel Merchants Association (institutional victim)
+Location of Incident: Bhadravathi Iron and Steel Industrial Zone
+Modus Operandi: Armed robbery targeting the Association's weekly cash collection vehicle. Accused intercepted the vehicle using a blockade of two motorcycles. Opened fire with a country-made pistol to intimidate guards, then seized the cash.
+Status: Open — Shashidhar V arrested; Murthy Naik at large
+Assigned Officer: Inspector Dinesh Shetty, Bhadravathi PS
+Brief Description: The Bhadravathi Steel Merchants Association weekly cash collection vehicle carrying Rs 22.3 lakhs in trade dues was intercepted at 09:15 hrs on the outskirts of the industrial zone. Two motorcycles flanked the vehicle at a narrow stretch of road. Murthy Naik discharged a country-made pistol toward the road; no injury resulted, but both guards retreated. Cash bags were removed. Association security camera at the zone entrance captured one of the motorcycles partially. Shashidhar V was identified from a distinctive arm tattoo and arrested 4 days later at a lodge in Shivamogga city. He disclosed Murthy Naik as the organiser. Murthy Naik is at large and considered armed and dangerous.
+
+
+FIR Number: KSP/BLR-U/2026/0481
+Date: 21 May 2026
+Police Station: Hebbal Police Station
+District: Bengaluru Urban
+Crime Type: Fraud
+Accused Name(s): Sureshkumar P, Vandana Reddy
+Victim Name: Northern Bengaluru Medical College (institutional victim) and 11 student families
+Location of Incident: Administrative block, Hebbal, Bengaluru
+Modus Operandi: Accused fabricated NEET rank certificates and Medical Council approval letters. Sold fake admission seats to 11 families, collecting seat payment and capitation fees using the medical college's name.
+Status: Open — Vandana Reddy arrested; Sureshkumar P absconding
+Assigned Officer: Inspector Anbu Selvam, Hebbal PS (Economic Offences Cell)
+Brief Description: Northern Bengaluru Medical College received direct complaints from 11 families who had paid capitation fees of Rs 10 to Rs 18 lakhs each expecting their wards to be admitted in the MBBS batch of 2026. The college had no record of these families or their payments. Investigation revealed Sureshkumar P and Vandana Reddy had posed as education consultants with alleged inside connections. They produced forged NEET rank certificates and fabricated college admission letters bearing counterfeit institutional seals. Total fraudulent collection: Rs 1.83 crores. Vandana Reddy was arrested from her residence; she handled client communication and collections. Sureshkumar P has fled; last known location Pune. CBSE, NMC, and state education authorities have been informed.
+
+
+FIR Number: KSP/BLR-R/2026/0248
+Date: 29 May 2026
+Police Station: Nelamangala Police Station
+District: Bengaluru Rural
+Crime Type: Gang Activity
+Accused Name(s): Tousif Khan, Mahadev Reddy, Sohail Mirza, Vikas Hegde
+Victim Name: Trucking operators (17 complainants), Nelamangala logistics hub
+Location of Incident: NH-48 logistics belt, Nelamangala
+Modus Operandi: Gang positioned themselves at key entry points to the Nelamangala goods transfer hub and demanded transit fees from truck operators for protection. Trucks refusing to pay were blocked or had cargo tampered with.
+Status: Open — Tousif Khan and Mahadev Reddy in custody; Sohail Mirza and Vikas Hegde absconding
+Assigned Officer: Inspector Manohar S, Nelamangala PS
+Brief Description: Seventeen trucking operators filed a joint complaint that a gang had been systematically collecting a hub levy of Rs 500 to Rs 2,000 per truck for approximately 10 weeks at the Nelamangala logistics hub — a critical NH-48 transshipment node. Trucks found uncooperative had their cargo seals tampered, TIR tape cut, or windshields cracked. Loss estimates from tampered cargo exceed Rs 4 lakhs. A coordinated response involving plainclothes officers and Highway Patrol yielded the arrest of Tousif Khan and Mahadev Reddy. Interrogation confirmed Sohail Mirza as the gang's operational head with links to the broader Bengaluru organised crime ecosystem. Sohail Mirza and Vikas Hegde are absconding.
+
+
+FIR Number: KSP/MYS/2026/0347
+Date: 06 June 2026
+Police Station: Mysuru South Police Station
+District: Mysuru
+Crime Type: Assault
+Accused Name(s): Rajashekar T, Mahadevaswamy
+Victim Name: Vinod Narayan (press reporter, Kannada daily)
+Location of Incident: Kuvempunagar Press Colony, Mysuru
+Modus Operandi: Victim had published a report on local contractor irregularities. Two accused visited his residence under the pretext of providing information for a follow-up story. Assaulted him at the doorstep using fists and a leather belt.
+Status: Open — Rajashekar T arrested; Mahadevaswamy surrendered
+Assigned Officer: Inspector Ravindra M, Mysuru South PS
+Brief Description: Victim Vinod Narayan (44), a reporter for a Mysuru-based Kannada daily, had published an investigative piece the previous week about alleged irregularities in a local contractor's municipal road repair tender. Two individuals visited his residence at 19:30 hrs claiming to have information for a follow-up story. Upon being let through the gate, they assaulted the victim on his doorstep. His wife's screams alerted neighbours. Victim sustained bruising on his face and arms. Rajashekar T was identified through prior threats reported by a source in the contractor dispute. Case registered under IPC assault sections and the Karnataka Journalists Protection Act. Press Council of Karnataka has filed an amicus brief.
+
+
+FIR Number: KSP/MLR/2026/0389
+Date: 11 June 2026
+Police Station: Mangaluru North Police Station
+District: Mangaluru
+Crime Type: Robbery
+Accused Name(s): Irshad Ali, Sonu Kumar
+Victim Name: State Bank of India cash van (escort team and driver)
+Location of Incident: Kankanady Road, near SBI Regional Office, Mangaluru
+Modus Operandi: Cash replenishment vehicle for ATM network intercepted in transit. Accused used a stolen police-type light bar mounted on a car to appear as an emergency vehicle and stop the cash van at a traffic signal. Guards overpowered; Rs 31 lakhs seized before reinforcements arrived.
+Status: Open — Irshad Ali apprehended; Sonu Kumar at large; multi-agency investigation
+Assigned Officer: Deputy SP Sunil Shetty, Mangaluru Range; coordinating with SBI Security and CISF
+Brief Description: An SBI cash replenishment vehicle was stopped at the Kankanady junction at 11:40 hrs by a car bearing an unauthorised police-style flashing light bar. When the driver complied, four individuals (two identified, two unidentified) overpowered the three-person escort team. Two guards were tied up and the cash van's rear compartment was forced open. Rs 31 lakhs in sealed ATM cassettes was removed. A passing traffic constable alerted the control room when the van remained stationary. Police response arrived within 7 minutes; robbers had fled but a bystander's dashcam captured the getaway vehicle. Irshad Ali was caught 2 hours later attempting to board a bus to Goa. Sonu Kumar's identity was established through mobile records; lookout posted at all Karnataka border points and Goa.
+
+
+========================================================================
+END OF DATASET — 50 FIR RECORDS
+Karnataka State Police | KNOWHERE Intelligence Platform
+Synthetic Dataset v1.0 | KSP Datathon 2026
+Note: All persons, FIR numbers, and incidents in this document are entirely fictional and generated for demonstration purposes only.
+========================================================================
+
+REPEAT OFFENDER CROSS-REFERENCE INDEX:
+- Riyaz Ahmed Khan: KSP/MYS/2025/0119 (Assault, Mysuru), KSP/KBG/2025/0203 (Robbery, Kalaburagi), KSP/TMK/2025/0461 (Gang Activity, Tumakuru)
+- Suresh Gowda: KSP/TMK/2025/0174 (Vehicle Theft, Tumakuru), KSP/BLR-R/2025/0187 (Vehicle Theft, Bengaluru Rural), KSP/KBG/2026/0089 (Vehicle Theft, Kalaburagi)
+- Pradeep Kumar Shetty: KSP/BLR-U/2025/0247 (Drug Trafficking, Bengaluru Urban), KSP/SHV/2025/0489 (Drug Trafficking, Shivamogga), KSP/MYS/2026/0052 (Drug Trafficking, Mysuru)
+- Khalid Ibrahim [BLACK COBRA]: KSP/BLR-U/2025/0083 (Gang Activity, Bengaluru Urban), KSP/HBD/2025/0197 (Gang Activity, Hubballi-Dharwad), KSP/MLR/2026/0041 (Gang Activity, Mangaluru)
+- Mehtab Singh: KSP/KBG/2025/0096 (Cybercrime, Kalaburagi), KSP/KBG/2025/0341 (Fraud, Kalaburagi)
+- Santosh Kamble: KSP/BLG/2025/0312 (Burglary, Belagavi), KSP/BLG/2026/0093 (Bank Burglary, Belagavi)
+- Ravikumar Nayak: KSP/HBD/2025/0058 (Robbery, Hubballi-Dharwad), KSP/BAL/2025/0357 (Assault, Ballari)
+
+BLACK COBRA GANG CASES (all three listed under Khalid Ibrahim above):
+- KSP/BLR-U/2025/0083 — Warehouse extortion, Bengaluru Urban
+- KSP/HBD/2025/0197 — Market extortion, Hubballi-Dharwad
+- KSP/MLR/2026/0041 — Coastal fishing extortion, Mangaluru (gang's maritime expansion)
+
+CROSS-DISTRICT CASES:
+- KSP/BLR-U/2025/0629 — Bengaluru Urban + Tumakuru (Drug trafficking supply chain)
+- KSP/SHV/2026/0102 — Mangaluru (abduction) + Shivamogga (detention) (Kidnapping for ransom)

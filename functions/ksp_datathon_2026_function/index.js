@@ -16,7 +16,7 @@ if (!JWT_SECRET) throw new Error('JWT_SECRET missing from .env');
 // Load and index synthetic dataset at startup for local-dev Groq fallback
 let KSP_FIRS = []; // array of { header, text } blocks
 try {
-  const datasetPath = path.resolve(__dirname, '../../synthetic_ksp_data.txt');
+  const datasetPath = path.resolve(__dirname, 'synthetic_ksp_data.txt');
   const raw = fs.readFileSync(datasetPath, 'utf8');
   // Split on FIR boundary lines
   KSP_FIRS = raw.split(/\n(?=FIR Number:)/).map(block => block.trim()).filter(Boolean);
