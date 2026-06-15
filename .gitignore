@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment secrets — NEVER commit
+.env
+.env.local
+.env.*.local
+
+# Build output
+knowhere/dist/
+knowhere-client/build/
+
+# Vite / tooling caches
+knowhere/.vite/
+*.local
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/tmp/
+
+# Editor
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Catalyst CLI internals
+.catalyst/

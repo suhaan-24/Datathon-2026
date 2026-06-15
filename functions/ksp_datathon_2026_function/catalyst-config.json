@@ -1,0 +1,11 @@
+{
+	"deployment": {
+		"name": "ksp_datathon_2026_function",
+		"stack": "node18",
+		"type": "advancedio",
+		"env_variables": {}
+	},
+	"execution": {
+		"main": "index.js"
+	}
+}

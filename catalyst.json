@@ -1,0 +1,25 @@
+{
+  "functions": {
+    "targets": [
+      "ksp_datathon_2026_function"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "knowhere-client",
+    "plugin": "zcatalyst-cli-plugin-react"
+  },
+  "appsail": [
+    {
+      "source": ".",
+      "name": "knowhere-appsail"
+    }
+  ],
+  "slate": [
+    {
+      "name": "knowhere",
+      "source": "/Users/suhaan/Desktop/KSP-Datathon-2026/knowhere"
+    }
+  ]
+}

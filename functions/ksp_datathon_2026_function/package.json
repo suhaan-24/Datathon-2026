@@ -1,0 +1,16 @@
+{
+	"name": "ksp_datathon_2026_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "suhaanrk73@gmail.com",
+	"dependencies": {
+		"axios": "^1.17.0",
+		"cors": "^2.8.6",
+		"dotenv": "^17.4.2",
+		"express": "^5.2.1",
+		"groq-sdk": "^1.2.1",
+		"jsonwebtoken": "^9.0.3",
+		"multer": "^2.1.1",
+		"zcatalyst-sdk-node": "latest"
+	}
+}
