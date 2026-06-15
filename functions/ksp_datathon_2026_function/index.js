@@ -10,6 +10,12 @@ const fs = require('fs');
 const path = require('path');
 require('dotenv').config();
 
+// Catalyst's Node 18 runtime predates the global `File` class (added in Node 20),
+// which groq-sdk's Groq.toFile() requires for audio uploads.
+if (typeof globalThis.File === 'undefined') {
+  globalThis.File = require('node:buffer').File;
+}
+
 const JWT_SECRET = process.env.JWT_SECRET;
 if (!JWT_SECRET) throw new Error('JWT_SECRET missing from .env');
 
