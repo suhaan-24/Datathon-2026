@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import { apiUrl } from '../api'
+import { withToken } from '../api'
 
 const EVENT_META = {
   fir:      { icon: '📋', label: 'FIR Filed' },
@@ -18,7 +18,7 @@ export default function TimelinePanel({ auth }) {
 
   useEffect(() => {
     let active = true
-    fetch(apiUrl('/api/timeline?case=KSP-2026-OPS-0047'), { headers: { 'x-auth-token': auth.token } })
+    fetch(withToken('/api/timeline?case=KSP-2026-OPS-0047', auth.token))
       .then(r => r.json())
       .then(d => { if (active) setData(d) })
       .catch(() => {})

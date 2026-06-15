@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import * as d3 from 'd3'
-import { apiUrl } from '../api'
+import { withToken } from '../api'
 
 const NODE_STYLE = {
   accused:  { color: '#ef4444', shape: 'circle',  label: 'Accused' },
@@ -20,7 +20,7 @@ export default function NetworkPanel({ auth }) {
 
   useEffect(() => {
     let active = true
-    fetch(apiUrl('/api/network'), { headers: { 'x-auth-token': auth.token } })
+    fetch(withToken('/api/network', auth.token))
       .then(r => r.json())
       .then(d => { if (active) setData(d) })
       .catch(() => {})

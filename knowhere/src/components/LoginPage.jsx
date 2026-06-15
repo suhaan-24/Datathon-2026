@@ -98,7 +98,7 @@ export default function LoginPage({ onLogin }) {
     try {
       const res = await fetch(apiUrl('/api/auth/login'), {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'text/plain' },
         body: JSON.stringify(body),
       })
       const data = await res.json()

@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { apiUrl } from '../api'
+import { withToken } from '../api'
 
 const SUGGESTED = [
   'Show recent FIRs in Bengaluru North',
@@ -112,9 +112,8 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
     try {
       const fd = new FormData()
       fd.append('audio', blob, 'recording.webm')
-      const res = await fetch(apiUrl('/api/transcribe'), {
+      const res = await fetch(withToken('/api/transcribe', auth.token), {
         method: 'POST',
-        headers: { 'x-auth-token': auth.token },
         body: fd,
       })
       const data = await res.json()
@@ -220,8 +219,8 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
     try {
       const res = await fetch(apiUrl('/api/chat'), {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-auth-token': auth.token },
-        body: JSON.stringify({ query: fullQuery, detectedLanguage }),
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({ query: fullQuery, detectedLanguage, token: auth.token }),
       })
       const data = await res.json()
       setMessages(prev => [...prev, {
@@ -267,12 +266,13 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
     try {
       const res = await fetch(apiUrl('/api/case-summary'), {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-auth-token': auth.token },
+        headers: { 'Content-Type': 'text/plain' },
         body: JSON.stringify({
           conversationHistory: messages.map(m => ({ role: m.role, text: m.text })),
           language: detectScript(
             [...messages].reverse().find(m => m.role === 'user')?.text || ''
           ).split('-')[0],
+          token: auth.token,
         }),
       })
       const data = await res.json()

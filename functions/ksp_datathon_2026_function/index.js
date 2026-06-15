@@ -44,6 +44,16 @@ function retrieveRelevantFIRs(query, topN = 8) {
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.text({ type: 'text/plain', limit: '10mb' }));
+// Browsers only send a CORS preflight (OPTIONS) for "non-simple" requests —
+// Catalyst's gateway answers OPTIONS itself without forwarding to this function,
+// so the frontend avoids preflight entirely by posting JSON as text/plain.
+app.use((req, res, next) => {
+  if (typeof req.body === 'string' && req.body) {
+    try { req.body = JSON.parse(req.body); } catch { req.body = {}; }
+  }
+  next();
+});
 
 // When run directly with `node index.js`, accept the same
 // /server/<function>/ prefixed paths that `catalyst serve` exposes,
@@ -72,7 +82,7 @@ const ROLE_PERMISSIONS = {
 
 // ─── AUTH MIDDLEWARE ───────────────────────────────────────────────────────────
 function authMiddleware(req, res, next) {
-  const token = req.headers['x-auth-token'];
+  const token = req.headers['x-auth-token'] || req.query.token || (req.body && req.body.token);
   if (!token) return res.status(401).json({ error: 'No token provided' });
 
   try {
