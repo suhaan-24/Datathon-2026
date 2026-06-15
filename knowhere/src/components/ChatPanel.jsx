@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { withToken } from '../api'
+import { apiUrl, withToken } from '../api'
 
 const SUGGESTED = [
   'Show recent FIRs in Bengaluru North',
@@ -235,7 +235,7 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
       setMessages(prev => [...prev, {
         id: Date.now() + 1,
         role: 'bot',
-        text: `CONNECTION ERROR — ${err?.name || 'Error'}: ${err?.message || err}`,
+        text: 'CONNECTION ERROR — verify KNOWHERE backend is running on port 3000.',
         ts: new Date(),
         isError: true,
       }])
