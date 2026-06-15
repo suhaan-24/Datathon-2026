@@ -47,6 +47,28 @@ function retrieveRelevantFIRs(query, topN = 8) {
   return results.map(x => x.block).join('\n\n---\n\n');
 }
 
+// The KSP dataset is English/Latin-script only, so keyword retrieval above can't
+// match Kannada/Hindi/etc. queries. For non-Latin queries, do a cheap translation
+// pass first so retrieval searches on English terms (district names, locations, ...).
+const hasNonLatin = (text) => /[^\x00-\x7F]/.test(text);
+
+async function translateToEnglish(groq, text) {
+  try {
+    const completion = await groq.chat.completions.create({
+      model: 'llama-3.3-70b-versatile',
+      messages: [
+        { role: 'system', content: 'Translate the user message to English. Use current official Karnataka district names (Bengaluru, Mysuru, Mangaluru, Kalaburagi, Belagavi, Hubballi-Dharwad, Tumakuru, Ballari, Shivamogga, Vijayapura), not older British-era names (Bangalore, Mysore, Mangalore, Gulbarga, Belgaum, Hubli, Tumkur, Bellary, Shimoga, Bijapur). Reply with ONLY the translation, no commentary.' },
+        { role: 'user', content: text },
+      ],
+      temperature: 0,
+      max_tokens: 200,
+    });
+    return completion.choices[0]?.message?.content?.trim() || text;
+  } catch {
+    return text;
+  }
+}
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -182,7 +204,8 @@ Be precise, professional, and factual. Never speculate beyond the data.`;
     }
     try {
       const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
-      const relevantFIRs = retrieveRelevantFIRs(query);
+      const retrievalQuery = hasNonLatin(query) ? await translateToEnglish(groq, query) : query;
+      const relevantFIRs = retrieveRelevantFIRs(retrievalQuery);
       const systemPrompt = `You are KNOWHERE, an intelligent crime analytics assistant for Karnataka State Police.
 The user is a ${req.user.role} named ${req.user.name}.
 Their permissions are: ${ROLE_PERMISSIONS[req.user.role].join(', ')}.
