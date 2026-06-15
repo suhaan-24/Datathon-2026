@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { apiUrl } from '../api'
 
 const SEV_LABEL = { critical: '🔴 CRITICAL', warning: '🟡 WARNING', normal: '🟢 NORMAL' }
 
@@ -12,7 +13,7 @@ function useAlerts(auth) {
   const [alerts, setAlerts] = useState([])
   useEffect(() => {
     let active = true
-    fetch('/api/alerts', { headers: { 'x-auth-token': auth.token } })
+    fetch(apiUrl('/api/alerts'), { headers: { 'x-auth-token': auth.token } })
       .then(r => r.json())
       .then(d => { if (active) setAlerts(d.alerts || []) })
       .catch(() => {})

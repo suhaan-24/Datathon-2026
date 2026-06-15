@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { apiUrl } from '../api'
 
 const ACCESS_CARDS = [
   { cls: 'inv', name: 'INVESTIGATOR ACCESS', clearance: 'Clearance Level 1', email: 'investigator@ksp.gov.in', password: 'inv123' },
@@ -95,7 +96,7 @@ export default function LoginPage({ onLogin }) {
     setError('')
     setLoading(true)
     try {
-      const res = await fetch('/api/auth/login', {
+      const res = await fetch(apiUrl('/api/auth/login'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),

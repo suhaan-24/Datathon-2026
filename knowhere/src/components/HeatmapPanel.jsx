@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { apiUrl } from '../api'
 
 /* Stylized tile cartogram of Karnataka — 31 districts placed
    approximately geographically (north at top, coast at left). */
@@ -29,7 +30,7 @@ export default function HeatmapPanel({ auth, onDistrictSelect }) {
 
   useEffect(() => {
     let active = true
-    fetch('/api/heatmap', { headers: { 'x-auth-token': auth.token } })
+    fetch(apiUrl('/api/heatmap'), { headers: { 'x-auth-token': auth.token } })
       .then(r => r.json())
       .then(d => { if (active) setDistricts(d.districts || []) })
       .catch(() => {})

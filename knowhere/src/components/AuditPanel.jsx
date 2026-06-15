@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { apiUrl } from '../api'
 
 const ACTION_COLOR = {
   LOGIN: '#00ff9d',
@@ -15,7 +16,7 @@ export default function AuditPanel({ auth }) {
 
   useEffect(() => {
     let active = true
-    fetch('/api/audit', { headers: { 'x-auth-token': auth.token } })
+    fetch(apiUrl('/api/audit'), { headers: { 'x-auth-token': auth.token } })
       .then(r => r.json())
       .then(d => {
         if (!active) return

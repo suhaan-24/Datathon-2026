@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { apiUrl } from '../api'
 
 const SUGGESTED = [
   'Show recent FIRs in Bengaluru North',
@@ -111,7 +112,7 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
     try {
       const fd = new FormData()
       fd.append('audio', blob, 'recording.webm')
-      const res = await fetch('/api/transcribe', {
+      const res = await fetch(apiUrl('/api/transcribe'), {
         method: 'POST',
         headers: { 'x-auth-token': auth.token },
         body: fd,
@@ -217,7 +218,7 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
     voiceLangRef.current = null
 
     try {
-      const res = await fetch('/api/chat', {
+      const res = await fetch(apiUrl('/api/chat'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-auth-token': auth.token },
         body: JSON.stringify({ query: fullQuery, detectedLanguage }),
@@ -264,7 +265,7 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
     setBriefBusy(true)
     showToast('GENERATING CASE BRIEF…', 0)
     try {
-      const res = await fetch('/api/case-summary', {
+      const res = await fetch(apiUrl('/api/case-summary'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-auth-token': auth.token },
         body: JSON.stringify({
