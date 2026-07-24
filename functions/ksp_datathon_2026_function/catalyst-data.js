@@ -64,9 +64,11 @@ async function insertAudit(catalystApp, entry) {
 }
 
 // Read audit rows from Data Store (supervisor view). Throws if unavailable.
-async function readAudit(catalystApp, limit = 500) {
+// ZCQL rejects a LIMIT above 300, so clamp to stay under the cap.
+async function readAudit(catalystApp, limit = 300) {
+  const capped = Math.min(Math.max(1, limit), 300);
   const rows = await catalystApp.zcql().executeZCQLQuery(
-    `SELECT * FROM ${TABLES.AUDIT} ORDER BY CREATEDTIME DESC LIMIT ${limit}`
+    `SELECT * FROM ${TABLES.AUDIT} ORDER BY CREATEDTIME DESC LIMIT ${capped}`
   );
   return rows
     .map(x => x[TABLES.AUDIT])
@@ -109,4 +111,81 @@ async function writeAlerts(catalystApp, alerts) {
   return alerts.length;
 }
 
-module.exports = { TABLES, firRowToContext, retrieveFIRContext, insertAudit, readAudit, readAlerts, writeAlerts };
+// ── Seeding ──────────────────────────────────────────────────────────────────
+// Populates the FIRs and Accused tables from the parsed dataset. Used instead of
+// `catalyst ds:import`, which requires a Stratus bucket to stage the CSV.
+// Inserts are chunked because the bulk-insert API caps rows per call.
+
+async function insertChunked(table, rows, size = 100) {
+  let inserted = 0;
+  for (let i = 0; i < rows.length; i += size) {
+    const batch = rows.slice(i, i + size);
+    await table.insertRows(batch);
+    inserted += batch.length;
+  }
+  return inserted;
+}
+
+function firToRow(f) {
+  const accused = f.accused.join('; ');
+  return {
+    fir_number: f.number,
+    fir_date: f.date,
+    date_iso: f.dateISO || '',
+    police_station: f.station,
+    district: f.district,
+    crime_type: f.crimeType,
+    accused,
+    victim: f.victim,
+    location: f.location,
+    status: f.status,
+    is_open: f.isOpen,
+    officer: f.officer,
+    event_type: f.eventType,
+    is_cross_district: f.isCrossDistrict,
+    is_black_cobra: f.isBlackCobra,
+    search_text: [f.number, f.district, f.station, f.crimeType, f.victim, f.location, f.status, f.officer, accused]
+      .filter(Boolean).join(' '),
+  };
+}
+
+function accusedRowsFrom(firs) {
+  const byName = {};
+  for (const f of firs) {
+    for (const name of f.accused) (byName[name] ||= { name, firs: [] }).firs.push(f);
+  }
+  return Object.values(byName).map(a => {
+    const last = [...a.firs].sort((x, y) => (y.dateISO || '').localeCompare(x.dateISO || ''))[0];
+    return {
+      name: a.name,
+      fir_count: a.firs.length,
+      is_repeat_offender: a.firs.length >= 2,
+      fir_numbers: a.firs.map(f => f.number).join('; '),
+      last_district: last?.district || '',
+      last_seen: last?.dateISO || '',
+    };
+  });
+}
+
+// Wipes and repopulates FIRs + Accused. Returns per-table counts.
+async function seedFromFIRs(catalystApp, firs) {
+  const ds = catalystApp.datastore();
+  const result = {};
+
+  for (const [tableName, rows] of [
+    [TABLES.FIRS, firs.map(firToRow)],
+    [TABLES.ACCUSED, accusedRowsFrom(firs)],
+  ]) {
+    const table = ds.table(tableName);
+    // Clear existing rows so re-seeding stays idempotent
+    const existing = await catalystApp.zcql().executeZCQLQuery(`SELECT ROWID FROM ${tableName}`);
+    const ids = existing.map(x => x[tableName]?.ROWID).filter(Boolean);
+    for (let i = 0; i < ids.length; i += 100) {
+      await table.deleteRows(ids.slice(i, i + 100));
+    }
+    result[tableName] = { deleted: ids.length, inserted: await insertChunked(table, rows) };
+  }
+  return result;
+}
+
+module.exports = { TABLES, firRowToContext, retrieveFIRContext, insertAudit, readAudit, readAlerts, writeAlerts, seedFromFIRs };

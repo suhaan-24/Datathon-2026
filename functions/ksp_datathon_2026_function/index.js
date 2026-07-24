@@ -127,14 +127,23 @@ function authMiddleware(req, res, next) {
 
 // ─── AUDIT LOG ────────────────────────────────────────────────────────────────
 const auditLog = [];
-function logAudit(user, action, query) {
-  auditLog.push({
+// Records to the in-memory log always, and additionally persists to the Catalyst
+// Data Store AuditLog table when a request context is supplied. The Data Store
+// write is fire-and-forget so audit logging never delays or breaks a response.
+function logAudit(user, action, query, req) {
+  const entry = {
     timestamp: new Date().toISOString(),
     user: user.email,
     role: user.role,
     action,
     query: query || null,
-  });
+  };
+  auditLog.push(entry);
+  if (req) {
+    try {
+      store.insertAudit(catalyst.initialize(req), entry);
+    } catch { /* best-effort — never surface audit failures to the caller */ }
+  }
 }
 
 // ─── ROUTES ───────────────────────────────────────────────────────────────────
@@ -180,7 +189,7 @@ app.post('/api/auth/login', (req, res) => {
 
   const token = jwt.sign({ email, role: user.role, name: user.name }, JWT_SECRET, { expiresIn: '24h' });
 
-  logAudit({ email, role: user.role }, 'LOGIN');
+  logAudit({ email, role: user.role }, 'LOGIN', null, req);
   res.json({ token, role: user.role, name: user.name, permissions: ROLE_PERMISSIONS[user.role] });
 });
 
@@ -190,18 +199,12 @@ app.post('/api/chat', authMiddleware, async (req, res) => {
 
   if (!query) return res.status(400).json({ error: 'Query is required' });
 
-  const auditEntry = {
-    user: req.user.email, role: req.user.role, action: 'QUERY', query,
-    timestamp: new Date().toISOString(),
-  };
-
   // ── Primary path: Catalyst QuickML Knowledge Base (managed RAG over the FIR
   //    docs). Falls through to the Groq + Data Store path on any failure. ──
   if (quickmlRag.isConfigured()) {
     try {
       const answer = await quickmlRag.answerFromKB(query);
-      logAudit(req.user, 'QUERY', query);
-      try { store.insertAudit(catalyst.initialize(req), auditEntry); } catch { /* best-effort */ }
+      logAudit(req.user, 'QUERY', query, req);
       return res.json({ answer, query, role: req.user.role, timestamp: new Date().toISOString(), retrieval: 'quickml-kb' });
     } catch (kbErr) {
       console.error('QuickML RAG unavailable, falling back:', kbErr?.message);
@@ -210,7 +213,7 @@ app.post('/api/chat', authMiddleware, async (req, res) => {
 
   // No Groq key → answer straight from the parsed FIRs (offline mode).
   if (!process.env.GROQ_API_KEY) {
-    logAudit(req.user, 'QUERY', query);
+    logAudit(req.user, 'QUERY', query, req);
     return res.json({
       answer: buildDemoAnswer(query),
       query, role: req.user.role, timestamp: new Date().toISOString(), demo: true,
@@ -229,7 +232,6 @@ app.post('/api/chat', authMiddleware, async (req, res) => {
       const catalystApp = catalyst.initialize(req);
       relevantFIRs = await store.retrieveFIRContext(catalystApp, retrievalQuery);
       retrievalSource = 'catalyst-datastore';
-      store.insertAudit(catalystApp, auditEntry); // best-effort; never throws
     } catch {
       relevantFIRs = retrieveRelevantFIRs(retrievalQuery);
     }
@@ -263,13 +265,13 @@ ${relevantFIRs}
     });
 
     const answer = completion.choices[0]?.message?.content || 'No response from model.';
-    logAudit(req.user, 'QUERY', query);
+    logAudit(req.user, 'QUERY', query, req);
     return res.json({ answer, query, role: req.user.role, timestamp: new Date().toISOString(), retrieval: retrievalSource });
   } catch (groqErr) {
     console.error('Chat generation error:', groqErr?.message);
     // Groq unreachable (e.g. expired key) — answer from the parsed FIRs so chat
     // never dead-ends for the officer.
-    logAudit(req.user, 'QUERY', query);
+    logAudit(req.user, 'QUERY', query, req);
     return res.json({
       answer: buildDemoAnswer(query),
       query, role: req.user.role, timestamp: new Date().toISOString(), demo: true,
@@ -294,6 +296,37 @@ app.get('/api/audit', authMiddleware, async (req, res) => {
     return res.json({ logs, source: 'catalyst-datastore' });
   } catch {
     return res.json({ logs: auditLog, source: 'in-memory' });
+  }
+});
+
+// POST /api/admin/seed — populate Data Store (FIRs, Accused) from the parsed
+// dataset. Supervisor-only; replaces `catalyst ds:import`, which needs a Stratus
+// bucket. Safe to re-run: it clears each table before inserting.
+app.post('/api/admin/seed', authMiddleware, async (req, res) => {
+  if (req.user.role !== 'supervisor')
+    return res.status(403).json({ error: 'Access denied. Supervisors only.' });
+  try {
+    const result = await store.seedFromFIRs(catalyst.initialize(req), PARSED_FIRS);
+    logAudit(req.user, 'DATASTORE_SEED', null, req);
+    res.json({ ok: true, result });
+  } catch (err) {
+    console.error('Seed error:', err?.message);
+    res.status(500).json({ ok: false, error: err?.message });
+  }
+});
+
+// POST /api/admin/zcql — run a read-only ZCQL query (supervisor-only).
+// Diagnostic aid for verifying Data Store contents and query syntax.
+app.post('/api/admin/zcql', authMiddleware, async (req, res) => {
+  if (req.user.role !== 'supervisor')
+    return res.status(403).json({ error: 'Access denied. Supervisors only.' });
+  const q = String(req.body?.query || '').trim();
+  if (!/^select\s/i.test(q)) return res.status(400).json({ error: 'Only SELECT queries are allowed' });
+  try {
+    const rows = await catalyst.initialize(req).zcql().executeZCQLQuery(q);
+    res.json({ ok: true, count: rows.length, rows: rows.slice(0, 5) });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err?.message });
   }
 });
 
@@ -666,7 +699,7 @@ function activeRepeatCount() {
 
 // GET /api/network?query= — criminal network graph data
 app.get('/api/network', authMiddleware, (req, res) => {
-  logAudit(req.user, 'NETWORK_VIEW', req.query.query);
+  logAudit(req.user, 'NETWORK_VIEW', req.query.query, req);
   const q = (req.query.query || '').toLowerCase().trim();
   if (!q) return res.json(NETWORK_DATA);
 
@@ -700,7 +733,7 @@ app.get('/api/alerts', authMiddleware, async (req, res) => {
 
 // GET /api/timeline?case= — investigative timeline events
 app.get('/api/timeline', authMiddleware, (req, res) => {
-  logAudit(req.user, 'TIMELINE_VIEW', req.query.case);
+  logAudit(req.user, 'TIMELINE_VIEW', req.query.case, req);
   res.json({
     caseId: req.query.case || 'KSP-2026-OPS-0047',
     codename: 'OPERATION SAHYADRI',
@@ -842,7 +875,7 @@ function buildCaseBriefHtml(data, user) {
 // the feature still works if SmartBrowz isn't enabled on the plan.
 app.post('/api/case-summary', authMiddleware, async (req, res) => {
   const { conversationHistory, language } = req.body;
-  logAudit(req.user, 'CASE_SUMMARY');
+  logAudit(req.user, 'CASE_SUMMARY', null, req);
 
   const convo = (conversationHistory || [])
     .map(m => `${m.role === 'user' ? 'Officer' : 'KNOWHERE'}: ${m.text}`)
@@ -948,7 +981,7 @@ app.post('/api/transcribe', authMiddleware, upload.single('audio'), async (req, 
       ? Math.round((segs.reduce((s, x) => s + Math.exp(x.avg_logprob ?? 0), 0) / segs.length) * 100) / 100
       : null;
 
-    logAudit(req.user, 'VOICE_TRANSCRIBE', `${detectedLanguage} — ${transcript.slice(0, 80)}`);
+    logAudit(req.user, 'VOICE_TRANSCRIBE', `${detectedLanguage} — ${transcript.slice(0, 80)}`, req);
 
     res.json({ transcript, detectedLanguage, confidence });
   } catch (err) {
