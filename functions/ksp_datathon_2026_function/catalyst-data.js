@@ -47,6 +47,54 @@ async function retrieveFIRContext(catalystApp, query, topN = 8) {
   return chosen.map(x => firRowToContext(x.r)).join('\n\n---\n\n');
 }
 
+// Catalyst returns booleans as real booleans or as 'true'/'false' strings
+// depending on the column and transport; normalise both.
+const toBool = (v) => v === true || v === 'true' || v === 1 || v === '1';
+
+// Fetch all FIRs from Data Store and map them back into the in-memory FIR shape
+// (the same objects parseFIRs produces), so buildNetwork/buildTimeline/
+// buildHeatmap can consume Data Store rows unchanged.
+async function fetchFIRs(catalystApp) {
+  const rows = await catalystApp.zcql().executeZCQLQuery(`SELECT * FROM ${TABLES.FIRS}`);
+  const firs = rows.map(x => x[TABLES.FIRS]).filter(Boolean).map(r => ({
+    number: r.fir_number,
+    date: r.fir_date,
+    dateISO: r.date_iso || null,
+    station: r.police_station,
+    district: r.district,
+    crimeType: r.crime_type,
+    accused: String(r.accused || '').split(';').map(s => s.trim()).filter(Boolean),
+    victim: r.victim,
+    location: r.location,
+    status: r.status,
+    isOpen: toBool(r.is_open),
+    officer: r.officer,
+    eventType: r.event_type,
+    isCrossDistrict: toBool(r.is_cross_district),
+    isBlackCobra: toBool(r.is_black_cobra),
+  }));
+  if (!firs.length) throw new Error('FIRs table empty or missing');
+  return firs;
+}
+
+// Short-lived cache so the panel routes don't re-query ZCQL on every request.
+let firCache = null;
+let firCacheAt = 0;
+const FIR_CACHE_MS = 60000;
+
+async function getFIRs(catalystApp) {
+  if (firCache && Date.now() - firCacheAt < FIR_CACHE_MS) return firCache;
+  const firs = await fetchFIRs(catalystApp);
+  firCache = firs;
+  firCacheAt = Date.now();
+  return firs;
+}
+
+function invalidateFIRCache() {
+  firCache = null;
+  firCacheAt = 0;
+}
+
 // Best-effort audit write to Data Store. Never throws to the caller.
 async function insertAudit(catalystApp, entry) {
   try {
@@ -188,4 +236,7 @@ async function seedFromFIRs(catalystApp, firs) {
   return result;
 }
 
-module.exports = { TABLES, firRowToContext, retrieveFIRContext, insertAudit, readAudit, readAlerts, writeAlerts, seedFromFIRs };
+module.exports = {
+  TABLES, firRowToContext, retrieveFIRContext, insertAudit, readAudit, readAlerts, writeAlerts,
+  seedFromFIRs, fetchFIRs, getFIRs, invalidateFIRCache,
+};

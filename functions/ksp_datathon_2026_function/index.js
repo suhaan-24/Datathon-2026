@@ -307,6 +307,7 @@ app.post('/api/admin/seed', authMiddleware, async (req, res) => {
     return res.status(403).json({ error: 'Access denied. Supervisors only.' });
   try {
     const result = await store.seedFromFIRs(catalyst.initialize(req), PARSED_FIRS);
+    store.invalidateFIRCache(); // panels must not serve pre-seed cached rows
     logAudit(req.user, 'DATASTORE_SEED', null, req);
     res.json({ ok: true, result });
   } catch (err) {
@@ -353,7 +354,9 @@ const ALL_KA_DISTRICTS = [
 function parseDate(str) {
   const m = str.match(/(\d{1,2})\s+(\w+)\s+(\d{4})/);
   if (!m || MONTHS[m[2]] === undefined) return null;
-  return new Date(+m[3], MONTHS[m[2]], +m[1]).toISOString().slice(0, 10);
+  // Build in UTC: a local-time Date fed to toISOString() shifts the calendar day
+  // in any timezone east of UTC (e.g. IST turned "14 January" into 2025-01-13).
+  return new Date(Date.UTC(+m[3], MONTHS[m[2]], +m[1])).toISOString().slice(0, 10);
 }
 
 function parseFIRs(blocks) {
@@ -697,25 +700,40 @@ function activeRepeatCount() {
   return Object.values(oc).filter(c=>c>=2).length;
 }
 
+// Panel data is built from Catalyst Data Store rows, falling back to the
+// dataset parsed at startup if Data Store is unavailable. The builders are
+// shared, so both sources produce identical output.
+async function panelFIRs(req) {
+  try {
+    return { firs: await store.getFIRs(catalyst.initialize(req)), source: 'catalyst-datastore' };
+  } catch {
+    return { firs: PARSED_FIRS, source: 'in-memory' };
+  }
+}
+
 // GET /api/network?query= — criminal network graph data
-app.get('/api/network', authMiddleware, (req, res) => {
+app.get('/api/network', authMiddleware, async (req, res) => {
   logAudit(req.user, 'NETWORK_VIEW', req.query.query, req);
+  const { firs, source } = await panelFIRs(req);
+  const data = source === 'catalyst-datastore' ? buildNetwork(firs) : NETWORK_DATA;
+
   const q = (req.query.query || '').toLowerCase().trim();
-  if (!q) return res.json(NETWORK_DATA);
+  if (!q) return res.json({ ...data, source });
 
   const ids = new Set(
-    NETWORK_DATA.nodes
+    data.nodes
       .filter(n => n.label.toLowerCase().includes(q) || (n.detail.location || '').toLowerCase().includes(q))
       .map(n => n.id)
   );
   // include direct neighbours of matched nodes
-  NETWORK_DATA.edges.forEach(e => {
+  data.edges.forEach(e => {
     if (ids.has(e.source)) ids.add(e.target);
     else if (ids.has(e.target)) ids.add(e.source);
   });
   res.json({
-    nodes: NETWORK_DATA.nodes.filter(n => ids.has(n.id)),
-    edges: NETWORK_DATA.edges.filter(e => ids.has(e.source) && ids.has(e.target)),
+    nodes: data.nodes.filter(n => ids.has(n.id)),
+    edges: data.edges.filter(e => ids.has(e.source) && ids.has(e.target)),
+    source,
   });
 });
 
@@ -727,23 +745,34 @@ app.get('/api/alerts', authMiddleware, async (req, res) => {
     const alerts = await store.readAlerts(catalyst.initialize(req));
     return res.json({ alerts, generatedAt: new Date().toISOString(), source: 'catalyst-datastore' });
   } catch {
-    return res.json({ alerts: ALERTS, generatedAt: new Date().toISOString(), source: 'computed' });
+    // No Cron-populated Alerts table yet — compute from Data Store FIRs so the
+    // feed still reflects live data rather than the startup snapshot.
+    const { firs, source } = await panelFIRs(req);
+    const alerts = source === 'catalyst-datastore' ? buildAlerts(firs) : ALERTS;
+    return res.json({ alerts, generatedAt: new Date().toISOString(), source: `computed:${source}` });
   }
 });
 
 // GET /api/timeline?case= — investigative timeline events
-app.get('/api/timeline', authMiddleware, (req, res) => {
+app.get('/api/timeline', authMiddleware, async (req, res) => {
   logAudit(req.user, 'TIMELINE_VIEW', req.query.case, req);
+  const { firs, source } = await panelFIRs(req);
   res.json({
     caseId: req.query.case || 'KSP-2026-OPS-0047',
     codename: 'OPERATION SAHYADRI',
-    events: TIMELINE_EVENTS,
+    events: source === 'catalyst-datastore' ? buildTimeline(firs) : TIMELINE_EVENTS,
+    source,
   });
 });
 
 // GET /api/heatmap — district threat levels
-app.get('/api/heatmap', authMiddleware, (req, res) => {
-  res.json({ districts: HEATMAP, updatedAt: new Date().toISOString() });
+app.get('/api/heatmap', authMiddleware, async (req, res) => {
+  const { firs, source } = await panelFIRs(req);
+  res.json({
+    districts: source === 'catalyst-datastore' ? buildHeatmap(firs) : HEATMAP,
+    updatedAt: new Date().toISOString(),
+    source,
+  });
 });
 
 // Server-side case-brief HTML (KSP letterhead) — rendered to PDF by SmartBrowz.
