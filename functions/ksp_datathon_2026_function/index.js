@@ -9,6 +9,7 @@ const catalyst = require('zcatalyst-sdk-node');
 const fs = require('fs');
 const path = require('path');
 const store = require('./catalyst-data');
+const quickmlRag = require('./quickml-rag');
 require('dotenv').config();
 
 // Catalyst's Node 18 runtime predates the global `File` class (added in Node 20),
@@ -193,6 +194,19 @@ app.post('/api/chat', authMiddleware, async (req, res) => {
     user: req.user.email, role: req.user.role, action: 'QUERY', query,
     timestamp: new Date().toISOString(),
   };
+
+  // ── Primary path: Catalyst QuickML Knowledge Base (managed RAG over the FIR
+  //    docs). Falls through to the Groq + Data Store path on any failure. ──
+  if (quickmlRag.isConfigured()) {
+    try {
+      const answer = await quickmlRag.answerFromKB(query);
+      logAudit(req.user, 'QUERY', query);
+      try { store.insertAudit(catalyst.initialize(req), auditEntry); } catch { /* best-effort */ }
+      return res.json({ answer, query, role: req.user.role, timestamp: new Date().toISOString(), retrieval: 'quickml-kb' });
+    } catch (kbErr) {
+      console.error('QuickML RAG unavailable, falling back:', kbErr?.message);
+    }
+  }
 
   // No Groq key → answer straight from the parsed FIRs (offline mode).
   if (!process.env.GROQ_API_KEY) {
