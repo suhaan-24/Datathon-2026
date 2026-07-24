@@ -142,6 +142,30 @@ app.get('/', (req, res) => {
   res.json({ status: 'KNOWHERE API is running', version: '1.0.0' });
 });
 
+// GET /api/health — service + Groq connectivity check (public, no auth needed)
+app.get('/api/health', async (req, res) => {
+  const timestamp = new Date().toISOString();
+  const dataset = PARSED_FIRS.length;
+
+  let groqStatus;
+  if (!process.env.GROQ_API_KEY) {
+    groqStatus = 'missing_key';
+  } else {
+    try {
+      // Lightweight authenticated GET — verifies the key without spending tokens
+      const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+      await groq.models.list();
+      groqStatus = 'connected';
+    } catch (err) {
+      console.warn('[HEALTH] Groq check failed:', err?.status, err?.message);
+      groqStatus = 'invalid_key';
+    }
+  }
+
+  const status = groqStatus === 'connected' && dataset > 0 ? 'ok' : 'error';
+  res.json({ status, groq: groqStatus, dataset, timestamp });
+});
+
 // POST /api/auth/login
 app.post('/api/auth/login', (req, res) => {
   const { email, password } = req.body;
@@ -152,7 +176,7 @@ app.post('/api/auth/login', (req, res) => {
   if (!user || user.password !== password)
     return res.status(401).json({ error: 'Invalid credentials' });
 
-  const token = jwt.sign({ email, role: user.role, name: user.name }, JWT_SECRET, { expiresIn: '8h' });
+  const token = jwt.sign({ email, role: user.role, name: user.name }, JWT_SECRET, { expiresIn: '24h' });
 
   logAudit({ email, role: user.role }, 'LOGIN');
   res.json({ token, role: user.role, name: user.name, permissions: ROLE_PERMISSIONS[user.role] });
@@ -195,10 +219,12 @@ Be precise, professional, and factual. Never speculate beyond the data.`;
   } catch (err) {
     console.error('Catalyst RAG unavailable:', err?.response?.data || err.message);
 
-    // Groq LLM fallback — uses the locally loaded KSP dataset for real answers
+    // Groq LLM fallback — uses the locally loaded KSP dataset for real answers.
+    // If no Groq key is configured, still answer directly from the parsed FIRs.
     if (!process.env.GROQ_API_KEY) {
+      logAudit(req.user, 'QUERY', query);
       return res.json({
-        answer: '[OFFLINE] No Groq API key configured. Cannot answer without Catalyst or Groq.',
+        answer: buildDemoAnswer(query),
         query, role: req.user.role, timestamp: new Date().toISOString(), demo: true,
       });
     }
@@ -239,8 +265,11 @@ ${relevantFIRs}
       return res.json({ answer, query, role: req.user.role, timestamp: new Date().toISOString() });
     } catch (groqErr) {
       console.error('Groq fallback error:', groqErr?.message);
+      // Groq unreachable (e.g. expired key) — answer from the parsed FIRs so chat
+      // never dead-ends for the officer.
+      logAudit(req.user, 'QUERY', query);
       return res.json({
-        answer: `[ERROR] Both Catalyst RAG and Groq LLM are unavailable. Please check server logs.`,
+        answer: buildDemoAnswer(query),
         query, role: req.user.role, timestamp: new Date().toISOString(), demo: true,
       });
     }
@@ -536,7 +565,20 @@ function buildAlerts(firs) {
   const resolved2026 = firs.filter(f => !f.isOpen && f.dateISO >= '2026-01-01').length;
   if (resolved2026) alerts.push({ id: id++, severity: 'normal', district: 'State-wide', type: 'Cases Resolved', message: `${resolved2026} case${resolved2026>1?'s':''} successfully closed in 2026`, change: `-${resolved2026}`, minutesAgo: 203 });
 
-  return alerts.slice(0, 10);
+  // Dedup near-duplicate alerts — e.g. two districts each with the same open-FIR
+  // count would otherwise surface as two identical-looking "Active FIR Surge" rows.
+  // Key on category + magnitude so genuinely distinct alerts are preserved, then
+  // renumber ids so they stay contiguous after any drops.
+  const seen = new Set();
+  return alerts
+    .filter(a => {
+      const key = `${a.type}|${a.change}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .slice(0, 10)
+    .map((a, i) => ({ ...a, id: i + 1 }));
 }
 
 // Build all intelligence data from the parsed FIRs
@@ -546,6 +588,44 @@ let ALERTS          = buildAlerts(PARSED_FIRS);
 let TIMELINE_EVENTS = buildTimeline(PARSED_FIRS);
 let HEATMAP         = buildHeatmap(PARSED_FIRS);
 console.log(`[KNOWHERE] Built intelligence data — ${PARSED_FIRS.length} FIRs · ${NETWORK_DATA.nodes.length} network nodes · ${TIMELINE_EVENTS.length} timeline events · ${ALERTS.length} alerts`);
+
+// ─── OFFLINE ANSWER BUILDER ──────────────────────────────────────────────────
+// Keyword-matches the structured PARSED_FIRS and formats an intelligent, cited
+// response so /api/chat still returns real intelligence when both Catalyst RAG
+// and Groq are unavailable (e.g. an expired GROQ_API_KEY).
+function buildDemoAnswer(query) {
+  const terms = (query || '').toLowerCase().split(/\W+/).filter(t => t.length > 2);
+  const searchable = (f) => [
+    f.number, f.district, f.station, f.crimeType, f.victim,
+    f.location, f.status, f.officer, ...f.accused,
+  ].join(' ').toLowerCase();
+
+  const scored = PARSED_FIRS
+    .map(f => {
+      const hay = searchable(f);
+      const score = terms.reduce((s, t) => s + (hay.split(t).length - 1), 0);
+      return { f, score };
+    })
+    .sort((a, b) => b.score - a.score);
+
+  const top = scored.filter(x => x.score > 0).slice(0, 3);
+  const header = `**KNOWHERE — Offline Intelligence Mode**\n_(Live AI model unavailable; answering directly from ${PARSED_FIRS.length} indexed KSP FIR records.)_`;
+
+  if (!top.length) {
+    const openCount = PARSED_FIRS.filter(f => f.isOpen).length;
+    const districts = [...new Set(PARSED_FIRS.map(f => f.district))];
+    const crimeTypes = [...new Set(PARSED_FIRS.map(f => f.crimeType))];
+    return `${header}\n\nI could not match your query to specific FIRs, but here is the current dataset overview:\n\n• **${PARSED_FIRS.length} FIRs** on record — **${openCount} open**, ${PARSED_FIRS.length - openCount} closed.\n• Coverage across **${districts.length} districts**: ${districts.join(', ')}.\n• Crime categories: ${crimeTypes.join(', ')}.\n\nTry naming a district (e.g. "Bengaluru Urban"), a crime type (e.g. "drug trafficking"), an FIR number, or an accused name.`;
+  }
+
+  const blocks = top.map(({ f }, i) => {
+    const accused = f.accused.length ? f.accused.join(', ') : 'Not named';
+    const victim = f.victim && f.victim !== 'N/A' ? f.victim.split('(')[0].trim() : '—';
+    return `**${i + 1}. FIR ${f.number}** — ${f.crimeType}\n   • District / Station: ${f.district} · ${f.station}\n   • Date: ${f.date || '—'}  |  Status: ${f.status.split('—')[0].trim()}\n   • Accused: ${accused}\n   • Victim: ${victim}\n   • Location: ${f.location || '—'}\n   • Investigating Officer: ${f.officer || '—'}`;
+  }).join('\n\n');
+
+  return `${header}\n\nTop ${top.length} matching record${top.length > 1 ? 's' : ''} for "${query}":\n\n${blocks}\n\n_Cite these FIR numbers in your report. Ask a follow-up to narrow by district, crime type, or accused._`;
+}
 
 // ─── DEMO CASE BRIEF (references real repeat offenders from dataset) ──────────
 const topAccused = Object.entries(
