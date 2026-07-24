@@ -45,6 +45,65 @@ const TTS_LANG = {
   'ml-IN': 'ml-IN',
 }
 
+/* ── Minimal Markdown renderer (no external deps) ──
+   The model replies in Markdown (**bold**, *italic*, `code`, headings,
+   numbered + bulleted lists). Rendering that subset keeps replies readable
+   instead of showing raw asterisks. */
+function renderInline(text, kp) {
+  const nodes = []
+  const re = /\*\*(.+?)\*\*|__(.+?)__|\*(.+?)\*|_(.+?)_|`([^`]+?)`/g
+  let last = 0, m, i = 0
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index))
+    const bold = m[1] ?? m[2]
+    const ital = m[3] ?? m[4]
+    if (bold != null)       nodes.push(<strong key={`${kp}-b${i++}`}>{bold}</strong>)
+    else if (ital != null)  nodes.push(<em key={`${kp}-i${i++}`}>{ital}</em>)
+    else                    nodes.push(<code key={`${kp}-c${i++}`}>{m[5]}</code>)
+    last = re.lastIndex
+  }
+  if (last < text.length) nodes.push(text.slice(last))
+  return nodes
+}
+
+function MarkdownText({ text }) {
+  const lines = String(text ?? '').split('\n')
+  return (
+    <div className="md">
+      {lines.map((line, i) => {
+        if (line.trim() === '') return <div key={i} className="md-gap" />
+        const h = line.match(/^\s*#{1,6}\s+(.*)$/)
+        if (h) return <div key={i} className="md-h">{renderInline(h[1], i)}</div>
+        const num = line.match(/^(\s*)(\d+)\.\s+(.*)$/)
+        if (num) return (
+          <div key={i} className={`md-item${num[1].length ? ' md-sub' : ''}`}>
+            <span className="md-marker">{num[2]}.</span>
+            <span className="md-body">{renderInline(num[3], i)}</span>
+          </div>
+        )
+        const b = line.match(/^(\s*)[-*•]\s+(.*)$/)
+        if (b) return (
+          <div key={i} className={`md-item${b[1].length ? ' md-sub' : ''}`}>
+            <span className="md-marker">•</span>
+            <span className="md-body">{renderInline(b[2], i)}</span>
+          </div>
+        )
+        return <div key={i} className="md-p">{renderInline(line, i)}</div>
+      })}
+    </div>
+  )
+}
+
+/* Plain-text form for TTS so it doesn't read out markup characters */
+function stripMd(text) {
+  return String(text ?? '')
+    .replace(/\*\*(.+?)\*\*|__(.+?)__/g, '$1$2')
+    .replace(/\*(.+?)\*|_(.+?)_/g, '$1$2')
+    .replace(/`([^`]+?)`/g, '$1')
+    .replace(/^\s*#{1,6}\s+/gm, '')
+    .replace(/^\s*[-*•]\s+/gm, '')
+}
+
 export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
   const [messages, setMessages] = useState([])
   const [input, setInput]       = useState('')
@@ -84,7 +143,7 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
       return
     }
     window.speechSynthesis.cancel()
-    const utter = new SpeechSynthesisUtterance(msg.text)
+    const utter = new SpeechSynthesisUtterance(stripMd(msg.text))
     const lang = TTS_LANG[detectScript(msg.text)] || 'en-IN'
     utter.lang = lang
     utter.rate = 0.95
@@ -276,8 +335,21 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
           token: auth.token,
         }),
       })
-      const data = await res.json()
-      openBriefWindow(data, auth)
+      const ct = res.headers.get('content-type') || ''
+      if (ct.includes('application/pdf')) {
+        // SmartBrowz returned a real PDF — open it (falls back to a download if popups are blocked)
+        const url = URL.createObjectURL(await res.blob())
+        const w = window.open(url, '_blank')
+        if (!w) {
+          const a = document.createElement('a')
+          a.href = url; a.download = 'KNOWHERE-Case-Brief.pdf'
+          document.body.appendChild(a); a.click(); a.remove()
+        }
+        setTimeout(() => URL.revokeObjectURL(url), 60000)
+      } else {
+        // Fallback: SmartBrowz unavailable → render the print-ready brief window
+        openBriefWindow(await res.json(), auth)
+      }
     } catch {
       showToast('CASE BRIEF GENERATION FAILED')
     } finally {
@@ -330,7 +402,7 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
                       )}
                     </button>
                   </div>
-                  {m.text}
+                  <MarkdownText text={m.text} />
                 </div>
               ) : (
                 <div className="bubble-user">{m.text}</div>

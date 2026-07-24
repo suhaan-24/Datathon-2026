@@ -713,7 +713,104 @@ app.get('/api/heatmap', authMiddleware, (req, res) => {
   res.json({ districts: HEATMAP, updatedAt: new Date().toISOString() });
 });
 
-// POST /api/case-summary — generate structured case brief via LLM (demo fallback)
+// Server-side case-brief HTML (KSP letterhead) — rendered to PDF by SmartBrowz.
+function escapeHtml(str = '') {
+  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function buildCaseBriefHtml(data, user) {
+  const s = data.sections;
+  const generated = new Date(data.generatedAt || Date.now());
+  const body = data.raw
+    ? `<div class="sec"><h2>CASE BRIEF</h2><div class="prose">${escapeHtml(data.raw)}</div></div>`
+    : `
+      <div class="sec"><h2>CASE OVERVIEW</h2><div class="prose">${escapeHtml(s.overview)}</div></div>
+      <div class="sec"><h2>PERSONS OF INTEREST</h2>
+        <table><thead><tr><th>Name</th><th>Role</th><th>Status</th></tr></thead><tbody>
+        ${s.personsOfInterest.map(p => `<tr><td>${escapeHtml(p.name)}</td><td>${escapeHtml(p.role)}</td><td>${escapeHtml(p.status)}</td></tr>`).join('')}
+        </tbody></table>
+      </div>
+      <div class="sec"><h2>TIMELINE OF EVENTS</h2>
+        <table><thead><tr><th>Date</th><th>Event</th></tr></thead><tbody>
+        ${s.timeline.map(t => `<tr><td class="nowrap">${escapeHtml(t.date)}</td><td>${escapeHtml(t.event)}</td></tr>`).join('')}
+        </tbody></table>
+      </div>
+      <div class="sec"><h2>RECOMMENDED LEADS</h2>
+        <ol>${s.leads.map(l => `<li>${escapeHtml(l)}</li>`).join('')}</ol>
+      </div>
+      <div class="sec"><h2>RELATED FIR NUMBERS</h2>
+        <p class="firs">${s.firNumbers.map(f => `<span>${escapeHtml(f)}</span>`).join('')}</p>
+      </div>
+      <div class="sec"><h2>RISK ASSESSMENT</h2><div class="risk">${escapeHtml(s.riskAssessment)}</div></div>`;
+
+  return `<!DOCTYPE html><html><head><meta charset="UTF-8"/>
+<title>KNOWHERE Case Brief — ${escapeHtml(data.caseId || '')}</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: #1a1a2e; padding: 20px 26px; position: relative; }
+  .watermark { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none; z-index: 0; }
+  .watermark span { transform: rotate(-32deg); font-family: Arial, sans-serif; font-size: 42px; font-weight: 800;
+    color: rgba(220, 38, 38, 0.13); letter-spacing: 4px; text-align: center; line-height: 1.6;
+    border: 4px solid rgba(220, 38, 38, 0.13); padding: 14px 30px; border-radius: 8px; }
+  .content { position: relative; z-index: 1; }
+  .letterhead { display: flex; align-items: center; justify-content: space-between; border-bottom: 3px double #1e3a8a; padding-bottom: 14px; }
+  .lh-left { display: flex; align-items: center; gap: 14px; }
+  .shield { width: 46px; height: 54px; background: linear-gradient(160deg, #0ea5e9, #1e3a8a);
+    clip-path: polygon(50% 0%, 100% 16%, 100% 56%, 50% 100%, 0% 56%, 0% 16%);
+    display: flex; align-items: center; justify-content: center; color: #fff; font-family: Arial, sans-serif; font-weight: 800; font-size: 11px; }
+  .lh-org { font-family: Arial, sans-serif; }
+  .lh-org b { font-size: 15px; letter-spacing: 1px; color: #1e3a8a; display: block; }
+  .lh-org span { font-size: 10px; color: #555; letter-spacing: 2px; text-transform: uppercase; }
+  .lh-right { text-align: right; font-family: Arial, sans-serif; }
+  .lh-right .wordmark { font-size: 17px; font-weight: 800; letter-spacing: 5px; color: #0e7490; }
+  .lh-right .cls-stamp { display: inline-block; margin-top: 6px; border: 2px solid #b91c1c; color: #b91c1c;
+    font-size: 10px; font-weight: 800; letter-spacing: 3px; padding: 3px 10px; transform: rotate(-3deg); }
+  .meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px;
+    font-family: Arial, sans-serif; font-size: 10.5px; color: #444; padding: 10px 0 4px; border-bottom: 1px solid #ccc; }
+  .meta b { color: #111; }
+  h1 { font-family: Arial, sans-serif; font-size: 19px; letter-spacing: 2px; color: #1e3a8a; margin: 22px 0 2px; }
+  .codename { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 3px; color: #b91c1c; font-weight: 700; margin-bottom: 14px; }
+  .sec { margin-top: 20px; page-break-inside: avoid; }
+  .sec h2 { font-family: Arial, sans-serif; font-size: 12px; letter-spacing: 2.5px; color: #0e7490; border-bottom: 1px solid #0e7490; padding-bottom: 3px; margin-bottom: 8px; }
+  .prose { font-size: 13px; line-height: 1.75; text-align: justify; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; text-align: left; background: #eef2f7; color: #1e3a8a; padding: 6px 10px; border: 1px solid #c7d2e0; }
+  td { padding: 6px 10px; border: 1px solid #c7d2e0; line-height: 1.5; }
+  .nowrap { white-space: nowrap; }
+  ol { padding-left: 22px; font-size: 13px; line-height: 1.8; }
+  .firs span { display: inline-block; font-family: 'Courier New', monospace; font-size: 12px; font-weight: 700; border: 1px solid #1e3a8a; color: #1e3a8a; border-radius: 4px; padding: 2px 10px; margin: 0 8px 6px 0; }
+  .risk { border-left: 4px solid #b91c1c; background: #fef2f2; padding: 10px 14px; font-size: 13px; line-height: 1.7; }
+  footer { margin-top: 34px; border-top: 1px solid #ccc; padding-top: 8px; display: flex; justify-content: space-between; font-family: Arial, sans-serif; font-size: 9px; color: #888; letter-spacing: 1px; }
+</style></head>
+<body>
+  <div class="watermark"><span>DEMO DATA<br/>NOT FOR OFFICIAL USE</span></div>
+  <div class="content">
+    <div class="letterhead">
+      <div class="lh-left"><div class="shield">KSP</div>
+        <div class="lh-org"><b>KARNATAKA STATE POLICE</b><span>Crime Intelligence Division</span></div>
+      </div>
+      <div class="lh-right"><div class="wordmark">KNOWHERE</div><div class="cls-stamp">CONFIDENTIAL</div></div>
+    </div>
+    <div class="meta">
+      <span>OFFICER: <b>${escapeHtml(user.name)}</b> (${escapeHtml(String(user.role).toUpperCase())})</span>
+      <span>CASE ID: <b>${escapeHtml(data.caseId || '—')}</b></span>
+      <span>GENERATED: <b>${generated.toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })} IST</b></span>
+    </div>
+    <h1>AUTO-GENERATED CASE BRIEF</h1>
+    <div class="codename">${escapeHtml(data.codename || '')}</div>
+    ${body}
+    <footer>
+      <span>KNOWHERE — AI-ASSISTED CRIME INTELLIGENCE · KSP DATATHON 2026</span>
+      <span>RENDERED SERVER-SIDE BY CATALYST SMARTBROWZ</span>
+    </footer>
+  </div>
+</body></html>`;
+}
+
+// POST /api/case-summary — case brief as a real PDF via Catalyst SmartBrowz.
+// Content is generated by the LLM (falls back to a structured demo brief); the
+// HTML is rendered to a downloadable PDF by SmartBrowz, with a JSON fallback so
+// the feature still works if SmartBrowz isn't enabled on the plan.
 app.post('/api/case-summary', authMiddleware, async (req, res) => {
   const { conversationHistory, language } = req.body;
   logAudit(req.user, 'CASE_SUMMARY');
@@ -739,18 +836,42 @@ ${convo}`;
     generatedAt: new Date().toISOString(),
   };
 
-  try {
-    const catalystApp = catalyst.initialize(req);
-    const quickml = catalystApp.quickML();
-    const ragResponse = await quickml.predict({ query: prompt });
-    const text = ragResponse.answer || ragResponse.response || ragResponse.data?.answer;
-    if (typeof text === 'string' && text.trim()) {
-      return res.json({ ...meta, demo: false, raw: text });
+  // 1. Generate the brief content (LLM → free text; fallback → demo sections).
+  let content = null;
+  if (process.env.GROQ_API_KEY) {
+    try {
+      const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+      const completion = await groq.chat.completions.create({
+        model: 'llama-3.3-70b-versatile',
+        messages: [{ role: 'user', content: prompt }],
+        temperature: 0.3,
+        max_tokens: 1500,
+      });
+      const text = completion.choices[0]?.message?.content?.trim();
+      if (text) content = { demo: false, raw: text };
+    } catch (e) {
+      console.error('Case brief LLM error:', e?.message);
     }
-    throw new Error('Empty RAG response');
+  }
+  if (!content) content = { demo: true, sections: DEMO_CASE_BRIEF };
+  const briefData = { ...meta, ...content };
+
+  // 2. Render to a real PDF via SmartBrowz; fall back to JSON if unavailable.
+  try {
+    const html = buildCaseBriefHtml(briefData, req.user);
+    const catalystApp = catalyst.initialize(req);
+    const pdfStream = await catalystApp.smartbrowz().convertToPdf(html, {
+      pdf_options: { format: 'A4', print_background: true, margin: { top: '14mm', bottom: '14mm', left: '12mm', right: '12mm' } },
+    });
+    const chunks = [];
+    for await (const chunk of pdfStream) chunks.push(chunk);
+    const pdf = Buffer.concat(chunks);
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', `attachment; filename="KNOWHERE-Case-Brief-${meta.caseId}.pdf"`);
+    return res.send(pdf);
   } catch (err) {
-    console.error('Case summary RAG error:', err?.response?.data || err.message);
-    res.json({ ...meta, demo: true, sections: DEMO_CASE_BRIEF });
+    console.error('SmartBrowz PDF unavailable, returning JSON:', err?.message);
+    return res.json(briefData);
   }
 });
 
