@@ -54,6 +54,23 @@ function retrieveRelevantFIRs(query, topN = 8) {
 // pass first so retrieval searches on English terms (district names, locations, ...).
 const hasNonLatin = (text) => /[^\x00-\x7F]/.test(text);
 
+// Script → language name, used to tell the Knowledge Base which language to
+// answer in. The KB indexes English-only FIR documents, so a non-Latin query
+// retrieves nothing unless it is translated first; the instruction then brings
+// the generated answer back into the officer's language.
+const SCRIPT_LANGUAGES = [
+  [/[ಀ-೿]/, 'Kannada (ಕನ್ನಡ)'],
+  [/[ఀ-౿]/, 'Telugu (తెలుగు)'],
+  [/[஀-௿]/, 'Tamil (தமிழ்)'],
+  [/[ഀ-ൿ]/, 'Malayalam (മലയാളം)'],
+  [/[ऀ-ॿ]/, 'Hindi (हिन्दी)'],
+];
+
+function detectLanguageName(text) {
+  for (const [re, name] of SCRIPT_LANGUAGES) if (re.test(text)) return name;
+  return null;
+}
+
 async function translateToEnglish(groq, text) {
   try {
     const completion = await groq.chat.completions.create({
@@ -201,7 +218,15 @@ app.post('/api/chat', authMiddleware, async (req, res) => {
 
   // ── Primary path: Catalyst QuickML Knowledge Base (managed RAG over the FIR
   //    docs). Falls through to the Groq + Data Store path on any failure. ──
-  if (quickmlRag.isConfigured()) {
+  // Non-Latin queries skip the Knowledge Base deliberately. The KB indexes
+  // English FIR documents, and asking it to generate Kannada/Tamil/etc. is
+  // unreliable in practice — measured at 60s and an INTERNAL_SERVER_ERROR,
+  // well past the function's 30s execution limit. Those queries go to the
+  // Groq + Data Store path below, which translates for retrieval and mirrors
+  // the officer's language quickly and consistently.
+  const nonLatinQuery = Boolean(detectLanguageName(query));
+
+  if (quickmlRag.isConfigured() && !nonLatinQuery) {
     try {
       const answer = await quickmlRag.answerFromKB(query);
       logAudit(req.user, 'QUERY', query, req);
