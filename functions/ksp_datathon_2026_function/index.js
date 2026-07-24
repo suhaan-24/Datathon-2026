@@ -331,6 +331,106 @@ app.post('/api/admin/zcql', authMiddleware, async (req, res) => {
   }
 });
 
+// POST /api/cron/refresh-alerts — invoked on a schedule by Catalyst Cron.
+// Recomputes the anomaly alerts from Data Store and replaces the Alerts table,
+// so the feed is produced server-side instead of being derived per-request.
+// Authenticated by a shared secret header rather than a user JWT, since the
+// caller is the platform scheduler and not a signed-in officer.
+app.post('/api/cron/refresh-alerts', async (req, res) => {
+  const secret = req.headers['x-cron-secret'] || req.query.secret;
+  if (!process.env.CRON_SECRET || secret !== process.env.CRON_SECRET) {
+    return res.status(401).json({ error: 'Invalid cron secret' });
+  }
+  try {
+    const catalystApp = catalyst.initialize(req);
+    const firs = await store.fetchFIRs(catalystApp);
+    const alerts = buildAlerts(firs);
+    const written = await store.writeAlerts(catalystApp, alerts);
+    const entry = {
+      timestamp: new Date().toISOString(),
+      user: 'system@cron', role: 'system', action: 'ALERTS_REFRESH',
+      query: `${written} alerts`,
+    };
+    auditLog.push(entry);
+    store.insertAudit(catalystApp, entry);
+    console.log(`[CRON] Refreshed ${written} alerts from ${firs.length} FIRs`);
+    res.json({ ok: true, alerts: written, firs: firs.length, at: entry.timestamp });
+  } catch (err) {
+    console.error('Cron alert refresh failed:', err?.message);
+    res.status(500).json({ ok: false, error: err?.message });
+  }
+});
+
+// GET /api/admin/cron-list — inspect existing crons (supervisor-only diagnostic)
+app.get('/api/admin/cron-list', authMiddleware, async (req, res) => {
+  if (req.user.role !== 'supervisor')
+    return res.status(403).json({ error: 'Access denied. Supervisors only.' });
+  try {
+    const crons = await catalyst.initialize(req).cron().getAllCron();
+    // The stored webhook headers carry CRON_SECRET — never echo it back.
+    const safe = crons.map(c => {
+      const meta = c.job_meta || c.cron_url_details;
+      if (meta?.headers) {
+        meta.headers = Object.fromEntries(Object.keys(meta.headers).map(k => [k, '<redacted>']));
+      }
+      return c;
+    });
+    res.json({ ok: true, count: safe.length, crons: safe });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err?.message });
+  }
+});
+
+// DELETE /api/admin/cron/:id — remove a cron (supervisor-only)
+app.delete('/api/admin/cron/:id', authMiddleware, async (req, res) => {
+  if (req.user.role !== 'supervisor')
+    return res.status(403).json({ error: 'Access denied. Supervisors only.' });
+  try {
+    const ok = await catalyst.initialize(req).cron().deleteCron(req.params.id);
+    res.json({ ok });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err?.message });
+  }
+});
+
+// POST /api/admin/create-cron — registers the recurring alert-refresh job with
+// Catalyst Cron (supervisor-only), so the schedule is created from code rather
+// than by hand in the console.
+app.post('/api/admin/create-cron', authMiddleware, async (req, res) => {
+  if (req.user.role !== 'supervisor')
+    return res.status(403).json({ error: 'Access denied. Supervisors only.' });
+  if (!process.env.CRON_SECRET)
+    return res.status(400).json({ error: 'CRON_SECRET not configured on the server' });
+
+  // Catalyst's Periodic cron enforces a 60-minute minimum interval, so the
+  // schedule is expressed in hours (minute/second must stay within 0-59).
+  const hours = Math.max(1, Number(req.body?.hours) || 1);
+  // Catalyst terminates TLS at the gateway, so req.protocol is http and host
+  // carries a :443 suffix — build the public https URL explicitly.
+  const host = String(req.get('host') || '').replace(/:\d+$/, '');
+  const fnUrl = `https://${host}/server/ksp_datathon_2026_function/api/cron/refresh-alerts`;
+  const cronSpec = req.body?.raw || {
+    cron_name: 'KNOWHERE_Alert_Refresh',
+    description: 'Recomputes KSP anomaly alerts from Data Store into the Alerts table',
+    cron_type: 'Periodic',
+    status: true,
+    cron_url_details: {
+      url: fnUrl,
+      request_method: 'POST',
+      headers: { 'x-cron-secret': process.env.CRON_SECRET },
+    },
+    job_detail: { repetition_type: 'every', hour: hours, minute: 0, second: 0, timezone: 'Asia/Kolkata' },
+  };
+  try {
+    const created = await catalyst.initialize(req).cron().createCron(cronSpec);
+    logAudit(req.user, 'CRON_CREATE', `every ${hours}h`, req);
+    res.json({ ok: true, cron: { id: created.id, name: created.cron_name, status: created.status }, url: fnUrl });
+  } catch (err) {
+    console.error('Cron creation failed:', err?.message);
+    res.status(500).json({ ok: false, error: err?.message, attemptedUrl: fnUrl });
+  }
+});
+
 // GET /api/roles  — returns role info
 app.get('/api/roles', (req, res) => {
   res.json({ roles: Object.keys(ROLE_PERMISSIONS), permissions: ROLE_PERMISSIONS });
