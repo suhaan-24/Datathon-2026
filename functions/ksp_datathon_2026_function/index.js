@@ -718,11 +718,37 @@ function escapeHtml(str = '') {
   return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// Convert the LLM's Markdown brief to clean HTML (headings, bold, lists) so the
+// PDF doesn't show raw ## / ** markers.
+function mdToHtmlBlock(text) {
+  const inline = (t) => escapeHtml(t)
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>');
+  let html = '';
+  let inList = false;
+  for (const line of String(text || '').split('\n')) {
+    const heading = line.match(/^\s*#{1,6}\s+(.*)$/);
+    const bullet = line.match(/^\s*[-*]\s+(.*)$/);
+    const numbered = line.match(/^\s*\d+\.\s+(.*)$/);
+    if (bullet || numbered) {
+      if (!inList) { html += '<ul class="mdl">'; inList = true; }
+      html += `<li>${inline((bullet || numbered)[1])}</li>`;
+      continue;
+    }
+    if (inList) { html += '</ul>'; inList = false; }
+    if (line.trim() === '') continue;
+    if (heading) html += `<h3 class="mdh">${inline(heading[1])}</h3>`;
+    else html += `<p class="mdp">${inline(line)}</p>`;
+  }
+  if (inList) html += '</ul>';
+  return html;
+}
+
 function buildCaseBriefHtml(data, user) {
   const s = data.sections;
   const generated = new Date(data.generatedAt || Date.now());
   const body = data.raw
-    ? `<div class="sec"><h2>CASE BRIEF</h2><div class="prose">${escapeHtml(data.raw)}</div></div>`
+    ? `<div class="sec">${mdToHtmlBlock(data.raw)}</div>`
     : `
       <div class="sec"><h2>CASE OVERVIEW</h2><div class="prose">${escapeHtml(s.overview)}</div></div>
       <div class="sec"><h2>PERSONS OF INTEREST</h2>
@@ -773,6 +799,9 @@ function buildCaseBriefHtml(data, user) {
   .sec { margin-top: 20px; page-break-inside: avoid; }
   .sec h2 { font-family: Arial, sans-serif; font-size: 12px; letter-spacing: 2.5px; color: #0e7490; border-bottom: 1px solid #0e7490; padding-bottom: 3px; margin-bottom: 8px; }
   .prose { font-size: 13px; line-height: 1.75; text-align: justify; white-space: pre-wrap; }
+  .mdh { font-family: Arial, sans-serif; font-size: 12px; letter-spacing: 2.5px; color: #0e7490; border-bottom: 1px solid #0e7490; padding-bottom: 3px; margin: 20px 0 8px; }
+  .mdp { font-size: 13px; line-height: 1.7; text-align: justify; margin: 4px 0; }
+  .mdl { padding-left: 22px; font-size: 13px; line-height: 1.7; margin: 4px 0; }
   table { width: 100%; border-collapse: collapse; font-size: 12px; }
   th { font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; text-align: left; background: #eef2f7; color: #1e3a8a; padding: 6px 10px; border: 1px solid #c7d2e0; }
   td { padding: 6px 10px; border: 1px solid #c7d2e0; line-height: 1.5; }
@@ -861,7 +890,7 @@ ${convo}`;
     const html = buildCaseBriefHtml(briefData, req.user);
     const catalystApp = catalyst.initialize(req);
     const pdfStream = await catalystApp.smartbrowz().convertToPdf(html, {
-      pdf_options: { format: 'A4', print_background: true, margin: { top: '14mm', bottom: '14mm', left: '12mm', right: '12mm' } },
+      pdf_options: { format: 'A4', print_background: true },
     });
     const chunks = [];
     for await (const chunk of pdfStream) chunks.push(chunk);
@@ -870,7 +899,8 @@ ${convo}`;
     res.setHeader('Content-Disposition', `attachment; filename="KNOWHERE-Case-Brief-${meta.caseId}.pdf"`);
     return res.send(pdf);
   } catch (err) {
-    console.error('SmartBrowz PDF unavailable, returning JSON:', err?.message);
+    const emsg = err?.response?.data ? JSON.stringify(err.response.data) : err?.message;
+    console.error('SmartBrowz PDF unavailable, returning JSON:', emsg);
     return res.json(briefData);
   }
 });

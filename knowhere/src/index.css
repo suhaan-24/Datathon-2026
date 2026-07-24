@@ -724,6 +724,20 @@ input, textarea, select { font-family: inherit; outline: none; }
 }
 .bubble-bot.demo { animation: kw-demo-pulse 2.4s ease-in-out infinite; }
 .bubble-bot.error { border-color: rgba(239, 68, 68, 0.5); color: #fca5a5; }
+
+/* Rendered Markdown inside bot replies — the renderer owns spacing,
+   so switch off the bubble's pre-wrap for this subtree. */
+.md { white-space: normal; }
+.md-gap { height: 0.5rem; }
+.md-h { font-weight: 700; color: #fff; margin: 0.45rem 0 0.15rem; letter-spacing: 0.01em; }
+.md-p { margin: 0.15rem 0; }
+.md-item { display: flex; gap: 0.5rem; margin: 0.14rem 0; align-items: baseline; }
+.md-item.md-sub { padding-left: 1.15rem; }
+.md-marker { flex: 0 0 auto; color: var(--cyan); font-variant-numeric: tabular-nums; }
+.md-body { flex: 1 1 auto; min-width: 0; word-break: break-word; }
+.md strong { font-weight: 700; color: #fff; }
+.md em { font-style: italic; color: var(--muted, #94a3b8); }
+.md code { font-family: 'JetBrains Mono', monospace; font-size: 0.82em; background: rgba(0, 212, 255, 0.08); padding: 0.05rem 0.3rem; border-radius: 3px; }
 .bot-head {
   font-family: var(--font-mono);
   font-size: 0.58rem;
