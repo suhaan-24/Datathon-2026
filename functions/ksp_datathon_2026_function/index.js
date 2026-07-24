@@ -8,6 +8,7 @@ const jwt = require('jsonwebtoken');
 const catalyst = require('zcatalyst-sdk-node');
 const fs = require('fs');
 const path = require('path');
+const store = require('./catalyst-data');
 require('dotenv').config();
 
 // Catalyst's Node 18 runtime predates the global `File` class (added in Node 20),
@@ -188,51 +189,38 @@ app.post('/api/chat', authMiddleware, async (req, res) => {
 
   if (!query) return res.status(400).json({ error: 'Query is required' });
 
-  // Language: voice detection is a hint; primary rule is always mirror the query language.
-  const langHint = detectedLanguage ? ` The user's voice-detected language is ${detectedLanguage}.` : '';
+  const auditEntry = {
+    user: req.user.email, role: req.user.role, action: 'QUERY', query,
+    timestamp: new Date().toISOString(),
+  };
 
-  const roleContext = `You are KNOWHERE, an intelligent crime analytics assistant for Karnataka State Police.
-The user is a ${req.user.role} named ${req.user.name}.
-Their permissions are: ${ROLE_PERMISSIONS[req.user.role].join(', ')}.
-Only answer questions within their permitted scope.
-Always cite the FIR number, location, or data source in your response.
-CRITICAL: Respond in the exact same language the user wrote their query in. English query → English reply. Kannada script query → Kannada reply. Hindi script query → Hindi reply. Never switch languages.${langHint}
-Be precise, professional, and factual. Never speculate beyond the data.`;
-
-  const fullQuery = `${roleContext}\n\nUser Query: ${query}`;
+  // No Groq key → answer straight from the parsed FIRs (offline mode).
+  if (!process.env.GROQ_API_KEY) {
+    logAudit(req.user, 'QUERY', query);
+    return res.json({
+      answer: buildDemoAnswer(query),
+      query, role: req.user.role, timestamp: new Date().toISOString(), demo: true,
+    });
+  }
 
   try {
-    // Catalyst SDK handles auth from the serve/deploy context —
-    // no manual OAuth tokens (they expire and cause INVALID_OAUTHTOKEN)
-    const catalystApp = catalyst.initialize(req);
-    const quickml = catalystApp.quickML();
-    const ragResponse = await quickml.predict({ query: fullQuery });
+    const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+    const retrievalQuery = hasNonLatin(query) ? await translateToEnglish(groq, query) : query;
 
-    logAudit(req.user, 'QUERY', query);
-
-    res.json({
-      answer: ragResponse.answer || ragResponse.response || ragResponse.data?.answer || ragResponse,
-      query,
-      role: req.user.role,
-      timestamp: new Date().toISOString(),
-    });
-  } catch (err) {
-    console.error('Catalyst RAG unavailable:', err?.response?.data || err.message);
-
-    // Groq LLM fallback — uses the locally loaded KSP dataset for real answers.
-    // If no Groq key is configured, still answer directly from the parsed FIRs.
-    if (!process.env.GROQ_API_KEY) {
-      logAudit(req.user, 'QUERY', query);
-      return res.json({
-        answer: buildDemoAnswer(query),
-        query, role: req.user.role, timestamp: new Date().toISOString(), demo: true,
-      });
-    }
+    // ── Retrieval: Catalyst Data Store (ZCQL candidates + keyword re-rank),
+    //    with an in-memory fallback so chat works before the tables exist. ──
+    let relevantFIRs;
+    let retrievalSource = 'in-memory';
     try {
-      const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
-      const retrievalQuery = hasNonLatin(query) ? await translateToEnglish(groq, query) : query;
-      const relevantFIRs = retrieveRelevantFIRs(retrievalQuery);
-      const systemPrompt = `You are KNOWHERE, an intelligent crime analytics assistant for Karnataka State Police.
+      const catalystApp = catalyst.initialize(req);
+      relevantFIRs = await store.retrieveFIRContext(catalystApp, retrievalQuery);
+      retrievalSource = 'catalyst-datastore';
+      store.insertAudit(catalystApp, auditEntry); // best-effort; never throws
+    } catch {
+      relevantFIRs = retrieveRelevantFIRs(retrievalQuery);
+    }
+
+    const systemPrompt = `You are KNOWHERE, an intelligent crime analytics assistant for Karnataka State Police.
 The user is a ${req.user.role} named ${req.user.name}.
 Their permissions are: ${ROLE_PERMISSIONS[req.user.role].join(', ')}.
 Only answer questions within their permitted scope.
@@ -245,34 +233,33 @@ Answer only from the KSP crime records shown below.
 ${relevantFIRs}
 === END OF RECORDS ===`;
 
-      const messages = [{ role: 'system', content: systemPrompt }];
-      if (Array.isArray(conversationHistory)) {
-        for (const m of conversationHistory.slice(-6)) {
-          messages.push({ role: m.role === 'user' ? 'user' : 'assistant', content: m.text });
-        }
+    const messages = [{ role: 'system', content: systemPrompt }];
+    if (Array.isArray(conversationHistory)) {
+      for (const m of conversationHistory.slice(-6)) {
+        messages.push({ role: m.role === 'user' ? 'user' : 'assistant', content: m.text });
       }
-      messages.push({ role: 'user', content: query });
-
-      const completion = await groq.chat.completions.create({
-        model: 'llama-3.3-70b-versatile',
-        messages,
-        temperature: 0.2,
-        max_tokens: 1024,
-      });
-
-      const answer = completion.choices[0]?.message?.content || 'No response from model.';
-      logAudit(req.user, 'QUERY', query);
-      return res.json({ answer, query, role: req.user.role, timestamp: new Date().toISOString() });
-    } catch (groqErr) {
-      console.error('Groq fallback error:', groqErr?.message);
-      // Groq unreachable (e.g. expired key) — answer from the parsed FIRs so chat
-      // never dead-ends for the officer.
-      logAudit(req.user, 'QUERY', query);
-      return res.json({
-        answer: buildDemoAnswer(query),
-        query, role: req.user.role, timestamp: new Date().toISOString(), demo: true,
-      });
     }
+    messages.push({ role: 'user', content: query });
+
+    const completion = await groq.chat.completions.create({
+      model: 'llama-3.3-70b-versatile',
+      messages,
+      temperature: 0.2,
+      max_tokens: 1024,
+    });
+
+    const answer = completion.choices[0]?.message?.content || 'No response from model.';
+    logAudit(req.user, 'QUERY', query);
+    return res.json({ answer, query, role: req.user.role, timestamp: new Date().toISOString(), retrieval: retrievalSource });
+  } catch (groqErr) {
+    console.error('Chat generation error:', groqErr?.message);
+    // Groq unreachable (e.g. expired key) — answer from the parsed FIRs so chat
+    // never dead-ends for the officer.
+    logAudit(req.user, 'QUERY', query);
+    return res.json({
+      answer: buildDemoAnswer(query),
+      query, role: req.user.role, timestamp: new Date().toISOString(), demo: true,
+    });
   }
 });
 
@@ -283,10 +270,17 @@ app.get('/api/chat/history', authMiddleware, (req, res) => {
 });
 
 // GET /api/audit  — supervisors only
-app.get('/api/audit', authMiddleware, (req, res) => {
+app.get('/api/audit', authMiddleware, async (req, res) => {
   if (req.user.role !== 'supervisor')
     return res.status(403).json({ error: 'Access denied. Supervisors only.' });
-  res.json({ logs: auditLog });
+  // Prefer the durable Catalyst Data Store audit trail; fall back to the
+  // in-memory log if the AuditLog table isn't provisioned yet.
+  try {
+    const logs = await store.readAudit(catalyst.initialize(req));
+    return res.json({ logs, source: 'catalyst-datastore' });
+  } catch {
+    return res.json({ logs: auditLog, source: 'in-memory' });
+  }
 });
 
 // GET /api/roles  — returns role info
@@ -679,8 +673,15 @@ app.get('/api/network', authMiddleware, (req, res) => {
 });
 
 // GET /api/alerts — anomaly alert feed
-app.get('/api/alerts', authMiddleware, (req, res) => {
-  res.json({ alerts: ALERTS, generatedAt: new Date().toISOString() });
+app.get('/api/alerts', authMiddleware, async (req, res) => {
+  // Prefer alerts computed server-side by the Cron job and stored in Data Store;
+  // fall back to the on-the-fly computed set until the Cron job has populated it.
+  try {
+    const alerts = await store.readAlerts(catalyst.initialize(req));
+    return res.json({ alerts, generatedAt: new Date().toISOString(), source: 'catalyst-datastore' });
+  } catch {
+    return res.json({ alerts: ALERTS, generatedAt: new Date().toISOString(), source: 'computed' });
+  }
 });
 
 // GET /api/timeline?case= — investigative timeline events
@@ -802,3 +803,8 @@ if (require.main === module) {
 }
 
 module.exports = app;
+
+// Exposed for tooling (Data Store seed generation, tests). Requiring this module
+// never starts the server or makes network calls, so this is side-effect free.
+module.exports.PARSED_FIRS = PARSED_FIRS;
+module.exports.parseFIRs = parseFIRs;

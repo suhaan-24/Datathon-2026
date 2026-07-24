@@ -1,0 +1,125 @@
+name,fir_count,is_repeat_offender,fir_numbers,last_district,last_seen
+Arjun Reddy,1,false,KSP/BLR-U/2025/0047,Bengaluru Urban,2025-01-13
+Sameer Patel,1,false,KSP/BLR-U/2025/0047,Bengaluru Urban,2025-01-13
+Khalid Ibrahim,3,true,KSP/BLR-U/2025/0083; KSP/HBD/2025/0197; KSP/MLR/2026/0041,Dakshina Kannada,2025-10-16
+Mohammed Aziz,1,false,KSP/BLR-U/2025/0083,Bengaluru Urban,2025-01-21
+Tanveer Sheikh,1,false,KSP/BLR-U/2025/0083,Bengaluru Urban,2025-01-21
+Riyaz Ahmed Khan,3,true,KSP/MYS/2025/0119; KSP/KBG/2025/0203; KSP/TMK/2025/0461,Tumakuru,2025-08-29
+Ravikumar Nayak,2,true,KSP/HBD/2025/0058; KSP/BAL/2025/0357,Ballari,2025-06-09
+Siddappa Lamani,1,false,KSP/HBD/2025/0058,Dharwad,2025-02-18
+Santosh Kamble,2,true,KSP/BLG/2025/0312; KSP/BLG/2026/0093,Belagavi,2025-11-01
+Anil Khot,1,false,KSP/BLG/2025/0312,Belagavi,2025-02-27
+Suresh Gowda,3,true,KSP/TMK/2025/0174; KSP/BLR-R/2025/0187; KSP/KBG/2026/0089,Kalaburagi,2025-11-09
+Manjunath S,1,false,KSP/TMK/2025/0174,Tumakuru,2025-03-06
+Naveen Kumar,1,false,KSP/BAL/2025/0291,Ballari,2025-03-14
+Sudhir Raj,1,false,KSP/BAL/2025/0291,Ballari,2025-03-14
+Mehtab Singh,2,true,KSP/KBG/2025/0096; KSP/KBG/2025/0341,Kalaburagi,2025-08-21
+Farukh Ansari,1,false,KSP/KBG/2025/0096,Kalaburagi,2025-03-20
+Hanumantha Gowda,1,false,KSP/SHV/2025/0145,Shivamogga,2025-03-28
+Pradeep Kumar Shetty,3,true,KSP/BLR-U/2025/0247; KSP/SHV/2025/0489; KSP/MYS/2026/0052,Mysuru,2025-12-27
+Imran Basha,1,false,KSP/BLR-U/2025/0247,Bengaluru Urban,2025-04-04
+Lokesh R,1,false,KSP/BLR-U/2025/0247,Bengaluru Urban,2025-04-04
+Ashok Thimmaiah,1,false,KSP/BLR-R/2025/0063,Bengaluru Rural,2025-04-13
+Salim Khan,1,false,KSP/MYS/2025/0338,Mysuru,2025-04-21
+Maqbool Ahmed,1,false,KSP/MYS/2025/0338,Mysuru,2025-04-21
+Yunus Mohammed,1,false,KSP/MLR/2025/0409,Dakshina Kannada,2025-04-30
+Salman Rehman,1,false,KSP/MLR/2025/0409,Dakshina Kannada,2025-04-30
+Shakeel Mirza,1,false,KSP/HBD/2025/0197,Dharwad,2025-05-08
+Raju Lamani,1,false,KSP/HBD/2025/0197,Dharwad,2025-05-08
+Irfan Sheikh,1,false,KSP/HBD/2025/0197,Dharwad,2025-05-08
+Rajendra Pol,1,false,KSP/BLG/2025/0488,Belagavi,2025-05-16
+Sunil Chavan,1,false,KSP/BLG/2025/0488,Belagavi,2025-05-16
+Nazir Pasha,1,false,KSP/KBG/2025/0203,Kalaburagi,2025-05-24
+Nagaraj Balu,1,false,KSP/TMK/2025/0388,Tumakuru,2025-06-01
+Chandrappa K,1,false,KSP/TMK/2025/0388,Tumakuru,2025-06-01
+Venkatesha Reddy,1,false,KSP/BAL/2025/0357,Ballari,2025-06-09
+investigation ongoing),1,false,KSP/SHV/2025/0302,Shivamogga,2025-06-17
+Deepak Raj,1,false,KSP/BLR-U/2025/0561,Bengaluru Urban,2025-06-25
+Mohan Das,1,false,KSP/BLR-U/2025/0561,Bengaluru Urban,2025-06-25
+Ramesh T,1,false,KSP/BLR-R/2025/0187,Bengaluru Rural,2025-07-03
+Ashfaq Hussain,1,false,KSP/BLR-U/2025/0629,Bengaluru Urban,2025-07-11
+Ravi Sharma,1,false,KSP/BLR-U/2025/0629,Bengaluru Urban,2025-07-11
+Vinod Kumar,1,false,KSP/BLR-U/2025/0629,Bengaluru Urban,2025-07-11
+Anand Tiwari,1,false,KSP/BLR-U/2025/0629,Bengaluru Urban,2025-07-11
+Dr Kiran Bopanna,1,false,KSP/MYS/2025/0511,Mysuru,2025-07-19
+Anwar Hussein,1,false,KSP/MLR/2025/0574,Dakshina Kannada,2025-07-27
+Sudhir Gowda,1,false,KSP/MLR/2025/0574,Dakshina Kannada,2025-07-27
+Fayaz Khan,1,false,KSP/MLR/2025/0574,Dakshina Kannada,2025-07-27
+Gangadhar Shettar,1,false,KSP/HBD/2025/0413,Dharwad,2025-08-04
+Chandrakant Badiger,1,false,KSP/HBD/2025/0413,Dharwad,2025-08-04
+Salim Shaikh,1,false,KSP/BLG/2025/0618,Belagavi,2025-08-12
+Ravi Garg,1,false,KSP/KBG/2025/0341,Kalaburagi,2025-08-21
+Mohammed Rafi,1,false,KSP/TMK/2025/0461,Tumakuru,2025-08-29
+Salim Bhai,1,false,KSP/TMK/2025/0461,Tumakuru,2025-08-29
+Ranga Nayaka,1,false,KSP/BAL/2025/0468,Ballari,2025-09-06
+Shekar Lamani,1,false,KSP/BAL/2025/0468,Ballari,2025-09-06
+Gopal Naik,1,false,KSP/SHV/2025/0489,Shivamogga,2025-09-14
+Bhimappa,1,false,KSP/SHV/2025/0489,Shivamogga,2025-09-14
+Ganesh Kumar,1,false,KSP/BLR-U/2025/0793,Bengaluru Urban,2025-09-22
+Arjun Bhoomi,1,false,KSP/BLR-U/2025/0793,Bengaluru Urban,2025-09-22
+Srinivas Gowda,1,false,KSP/BLR-R/2025/0291,Bengaluru Rural,2025-09-30
+Lokesh Babu,1,false,KSP/MYS/2025/0681,Mysuru,2025-10-08
+Channabasappa,1,false,KSP/MYS/2025/0681,Mysuru,2025-10-08
+Babu Naik,1,false,KSP/MLR/2026/0041,Dakshina Kannada,2025-10-16
+Yusuf Mirza,1,false,KSP/MLR/2026/0041,Dakshina Kannada,2025-10-16
+Chandrakant Hooli,1,false,KSP/HBD/2026/0017,Dharwad,2025-10-24
+Ravi Nayak,1,false,KSP/HBD/2026/0017,Dharwad,2025-10-24
+Rafiq Mulla,1,false,KSP/BLG/2026/0093,Belagavi,2025-11-01
+Jakeer Hussain,1,false,KSP/KBG/2026/0089,Kalaburagi,2025-11-09
+Ramesh Nayak,1,false,KSP/TMK/2026/0129,Tumakuru,2025-11-17
+Latha Kumari,1,false,KSP/TMK/2026/0129,Tumakuru,2025-11-17
+Ramu Naik,1,false,KSP/BAL/2026/0153,Ballari,2025-11-25
+Satish Bhoovi,1,false,KSP/BAL/2026/0153,Ballari,2025-11-25
+Mohammed Riyaz,1,false,KSP/BAL/2026/0153,Ballari,2025-11-25
+Sadiq Bhai,1,false,KSP/SHV/2026/0102,Dakshina Kannada,2025-12-03
+Mohan Kulkarni,1,false,KSP/SHV/2026/0102,Dakshina Kannada,2025-12-03
+Vishwanath Pati,1,false,KSP/SHV/2026/0102,Dakshina Kannada,2025-12-03
+Nagaraju D,1,false,KSP/BLR-R/2026/0048,Bengaluru Rural,2025-12-19
+Krishnappa T,1,false,KSP/BLR-R/2026/0048,Bengaluru Rural,2025-12-19
+Ramu Bhoovi,1,false,KSP/BLR-R/2026/0048,Bengaluru Rural,2025-12-19
+Hussain Bhai,1,false,KSP/MYS/2026/0052,Mysuru,2025-12-27
+Anand Gowda,1,false,KSP/MYS/2026/0052,Mysuru,2025-12-27
+Shabbir Khan,1,false,KSP/MLR/2026/0117,Dakshina Kannada,2026-01-04
+Rafiq Mohammed,1,false,KSP/MLR/2026/0117,Dakshina Kannada,2026-01-04
+Prabhu Halakatti,1,false,KSP/HBD/2026/0231,Dharwad,2026-01-12
+Raveendra Chikkodi,1,false,KSP/HBD/2026/0231,Dharwad,2026-01-12
+Manjunath Sali (suspect,1,false,KSP/BLG/2026/0194,Belagavi,2026-01-20
+not yet chargesheeted),1,false,KSP/BLG/2026/0194,Belagavi,2026-01-20
+Basalingappa Patil,1,false,KSP/KBG/2026/0176,Kalaburagi,2026-01-28
+Nagappa Sangam,1,false,KSP/KBG/2026/0176,Kalaburagi,2026-01-28
+Sathyanarayana K,1,false,KSP/TMK/2026/0217,Tumakuru,2026-02-05
+Venkatesh M,1,false,KSP/TMK/2026/0217,Tumakuru,2026-02-05
+Rajesh Bhoomi,1,false,KSP/BAL/2026/0237,Ballari,2026-02-13
+Chandru Naik,1,false,KSP/BAL/2026/0237,Ballari,2026-02-13
+Lakshman G,1,false,KSP/BAL/2026/0237,Ballari,2026-02-13
+Kiran Joshi,1,false,KSP/SHV/2026/0189,Shivamogga,2026-02-21
+Amir Khan,1,false,KSP/BLR-U/2026/0319,Bengaluru Urban,2026-03-01
+Santhosh G,1,false,KSP/BLR-U/2026/0319,Bengaluru Urban,2026-03-01
+Murtaza Beg,1,false,KSP/BLR-R/2026/0139,Bengaluru Rural,2026-03-09
+Salim D,1,false,KSP/BLR-R/2026/0139,Bengaluru Rural,2026-03-09
+Shabu Khan,1,false,KSP/BLR-R/2026/0139,Bengaluru Rural,2026-03-09
+two unidentified,1,false,KSP/BLR-R/2026/0139,Bengaluru Rural,2026-03-09
+Ramesh Shetty,1,false,KSP/MYS/2026/0193,Mysuru,2026-03-17
+Deepika Naik,1,false,KSP/MYS/2026/0193,Mysuru,2026-03-17
+two at large,1,false,KSP/MLR/2026/0253,Dakshina Kannada,2026-03-25
+Iqbal Desai,1,false,KSP/HBD/2026/0344,Dharwad,2026-04-02
+Nasir Khan,1,false,KSP/HBD/2026/0344,Dharwad,2026-04-02
+Aijaz Bagwan,1,false,KSP/BLG/2026/0428,Belagavi,2026-04-10
+Ganesh Kadam,1,false,KSP/BLG/2026/0428,Belagavi,2026-04-10
+local mule Farhan Sheikh,1,false,KSP/KBG/2026/0311,Kalaburagi,2026-04-18
+Manjappa K,1,false,KSP/TMK/2026/0367,Tumakuru,2026-04-26
+Shiva Gowda,1,false,KSP/TMK/2026/0367,Tumakuru,2026-04-26
+Ravi Chandra,1,false,KSP/BAL/2026/0381,Ballari,2026-05-04
+Akash Reddy,1,false,KSP/BAL/2026/0381,Ballari,2026-05-04
+Murthy Naik,1,false,KSP/SHV/2026/0278,Shivamogga,2026-05-12
+Shashidhar V,1,false,KSP/SHV/2026/0278,Shivamogga,2026-05-12
+Sureshkumar P,1,false,KSP/BLR-U/2026/0481,Bengaluru Urban,2026-05-20
+Vandana Reddy,1,false,KSP/BLR-U/2026/0481,Bengaluru Urban,2026-05-20
+Tousif Khan,1,false,KSP/BLR-R/2026/0248,Bengaluru Rural,2026-05-28
+Mahadev Reddy,1,false,KSP/BLR-R/2026/0248,Bengaluru Rural,2026-05-28
+Sohail Mirza,1,false,KSP/BLR-R/2026/0248,Bengaluru Rural,2026-05-28
+Vikas Hegde,1,false,KSP/BLR-R/2026/0248,Bengaluru Rural,2026-05-28
+Rajashekar T,1,false,KSP/MYS/2026/0347,Mysuru,2026-06-05
+Mahadevaswamy,1,false,KSP/MYS/2026/0347,Mysuru,2026-06-05
+Irshad Ali,1,false,KSP/MLR/2026/0389,Dakshina Kannada,2026-06-10
+Sonu Kumar,1,false,KSP/MLR/2026/0389,Dakshina Kannada,2026-06-10
