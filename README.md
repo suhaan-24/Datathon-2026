@@ -124,9 +124,9 @@ QuickML retires the Qwen model family on **31 July 2026** in favour of **GLM 4.7
 
 | Layer | Technology |
 |---|---|
-| Frontend | React 18, Vite, D3.js v7 |
+| Frontend | React 18.3, Vite 5 (SWC), D3.js v7 |
 | Styling | Pure CSS variables — no framework |
-| Backend | Node.js 18, Express 5 |
+| Backend | Node.js 18 runtime, Express 5 |
 | AI — Chat | Catalyst QuickML KB (GLM 4.7B Flash) · Groq LLaMA 3.3-70b |
 | AI — Voice | Groq Whisper large-v3 |
 | Auth | JWT (HS256, 24h) + server-side role middleware |
@@ -138,22 +138,48 @@ QuickML retires the Qwen model family on **31 July 2026** in favour of **GLM 4.7
 
 ```
 KSP-Datathon-2026/
-├── functions/
+├── catalyst.json                        # Catalyst targets: functions + slate
+├── .catalystrc                          # Catalyst project/env binding
+├── README.md
+│
+├── functions/                           # ── Backend (Catalyst Advanced I/O function)
 │   └── ksp_datathon_2026_function/
-│       ├── index.js                 # API routes, auth, RBAC, data builders
-│       ├── catalyst-data.js         # Data Store / ZCQL: retrieval, audit, alerts, seeding
-│       ├── quickml-rag.js           # QuickML Knowledge Base client (OAuth + RAG)
-│       ├── synthetic_ksp_data.txt   # 65 FIRs — seed source + offline fallback
-│       └── .env                     # secrets (git-ignored)
-├── knowhere/                        # React + Vite frontend (deployed to Slate)
+│       ├── index.js                     # Routes, auth + RBAC, data builders, panels
+│       ├── catalyst-data.js             # Data Store / ZCQL: retrieval, audit, alerts, seeding
+│       ├── quickml-rag.js               # QuickML Knowledge Base client (OAuth + RAG)
+│       ├── synthetic_ksp_data.txt       # 65 FIRs — seed source + offline fallback
+│       ├── catalyst-config.json         # Function stack (node18) + entry point
+│       ├── package.json
+│       └── .env                         # secrets — git-ignored, ships in the deploy bundle
+│
+├── knowhere/                            # ── Frontend (React + Vite, deployed to Slate)
+│   ├── index.html
+│   ├── vite.config.js                   # Dev proxy: /api → localhost:3000
+│   ├── cli-config.json                  # Slate dev-server command
+│   ├── .eslintrc.cjs
+│   ├── package.json
+│   ├── public/vite.svg
 │   └── src/
-│       ├── api.js                   # API base URL
-│       ├── index.css                # All styling (dark tactical theme)
-│       └── components/              # LoginPage, Dashboard, ChatPanel, NetworkPanel,
-│                                    # TimelinePanel, HeatmapPanel, AlertFeed, AuditPanel
-├── catalyst-kb/                     # Cleaned dataset uploaded to the QuickML KB
-├── tests/smoke.js                   # 73-check live API test suite
-└── catalyst.json                    # Catalyst targets: functions + slate
+│       ├── main.jsx                     # Entry point
+│       ├── App.jsx                      # Auth gate: login vs dashboard
+│       ├── api.js                       # API base URL + token helper
+│       ├── index.css                    # All styling (dark tactical theme)
+│       ├── assets/react.svg
+│       └── components/
+│           ├── LoginPage.jsx            # Particle canvas + 3 access cards
+│           ├── Dashboard.jsx            # Shell: nav, clock, alert rail
+│           ├── ChatPanel.jsx            # Chat, voice, TTS, markdown, case-brief PDF
+│           ├── NetworkPanel.jsx         # D3 force graph
+│           ├── TimelinePanel.jsx
+│           ├── HeatmapPanel.jsx         # 31-district grid
+│           ├── AlertFeed.jsx
+│           └── AuditPanel.jsx           # Supervisor only
+│
+├── catalyst-kb/
+│   └── ksp-firs-knowledge-base.txt      # Cleaned dataset uploaded to the QuickML KB
+│
+└── tests/
+    └── smoke.js                         # 73-check live API test suite
 ```
 
 ---
@@ -162,9 +188,12 @@ KSP-Datathon-2026/
 
 | Method | Route | Auth | Description |
 |---|---|---|---|
+| GET | `/` | Public | Liveness ping |
 | GET | `/api/health` | Public | Service + Groq status, dataset size |
+| GET | `/api/roles` | Public | Role list and their permissions |
 | POST | `/api/auth/login` | Public | Returns signed JWT (24h) |
 | POST | `/api/chat` | Token | RAG chat (KB for English, ZCQL + Groq otherwise) |
+| GET | `/api/chat/history` | Token | The caller's own past queries |
 | POST | `/api/transcribe` | Token | Audio → Whisper → transcript + language |
 | POST | `/api/case-summary` | Token | Case brief as a SmartBrowz PDF |
 | GET | `/api/network` | Token | Link graph (`?query=` for a subgraph) |
@@ -174,8 +203,12 @@ KSP-Datathon-2026/
 | GET | `/api/audit` | Supervisor | Data Store audit trail |
 | POST | `/api/cron/refresh-alerts` | Cron secret | Recomputes the Alerts table |
 | POST | `/api/admin/seed` | Supervisor | Re-seeds Data Store from the dataset |
+| POST | `/api/admin/zcql` | Supervisor | Read-only ZCQL query (SELECT only) |
 | POST | `/api/admin/create-cron` | Supervisor | Registers the hourly alert job |
-| GET/DELETE | `/api/admin/cron*` | Supervisor | Inspect / remove crons |
+| GET | `/api/admin/cron-list` | Supervisor | List crons (secrets redacted) |
+| DELETE | `/api/admin/cron/:id` | Supervisor | Remove a cron |
+
+Panel and chat responses include a `source` / `retrieval` field (`catalyst-datastore`, `quickml-kb`, `in-memory`) showing which backend actually served the request.
 
 ---
 
@@ -209,7 +242,7 @@ ZOHO_CLIENT_SECRET=...
 ZOHO_REFRESH_TOKEN=...
 ```
 
-Only `GROQ_API_KEY` and `JWT_SECRET` are required to run locally.
+**`JWT_SECRET` is the only hard requirement** — the server refuses to start without it. Everything else degrades gracefully: without `GROQ_API_KEY` chat answers directly from the parsed FIRs, and without the QuickML variables it falls back to ZCQL + Groq. `CRON_SECRET` is only needed if you run the scheduled alert job.
 
 ---
 
@@ -236,11 +269,16 @@ node tests/smoke.js
 
 `synthetic_ksp_data.txt` — 65 synthetic FIRs, Jan 2025 → Jun 2026, written for this platform. No real case data is used.
 
-**10 districts:** Bengaluru Urban · Bengaluru Rural · Mysuru · Mangaluru · Hubballi-Dharwad · Belagavi · Kalaburagi · Tumakuru · Ballari · Shivamogga
+**10 districts with case data:** Bengaluru Urban · Bengaluru Rural · Mysuru · Dakshina Kannada · Dharwad · Belagavi · Kalaburagi · Tumakuru · Ballari · Shivamogga
+
+> The raw FIRs name the city (*Mangaluru*, *Hubballi-Dharwad*); the backend maps these to their official district names (*Dakshina Kannada*, *Dharwad*) so they line up with the 31-district heatmap.
 
 **Crime types:** Robbery · Drug Trafficking · Gang Activity · Cybercrime · Murder · Kidnapping · Assault · Burglary · Vehicle Theft · Fraud
 
-**Deliberate patterns to explore:** 7 repeat offenders spanning districts · the **Black Cobra syndicate** across 3 districts · 2 cross-district investigations.
+**Deliberate patterns to explore:**
+- **7 repeat offenders** appearing across multiple districts (try searching `Khalid` in the network graph)
+- The **Black Cobra syndicate** — 4 linked FIRs spanning 3 districts (Bengaluru Urban, Dharwad, Dakshina Kannada)
+- **2 cross-district investigations**
 
 ---
 
