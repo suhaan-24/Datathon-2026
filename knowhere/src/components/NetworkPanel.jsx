@@ -187,7 +187,7 @@ export default function NetworkPanel({ auth }) {
       const ty    = h / 2 - scale * (bbox.y + bbox.height / 2)
       svg.transition().duration(600)
         .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale))
-    } catch {}
+    } catch { /* getBBox throws on an empty/detached graph — nothing to fit */ }
   }
 
   function handleFit() {

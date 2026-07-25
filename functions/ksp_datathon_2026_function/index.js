@@ -212,7 +212,7 @@ app.post('/api/auth/login', (req, res) => {
 
 // POST /api/chat  — proxies to Catalyst QuickML RAG
 app.post('/api/chat', authMiddleware, async (req, res) => {
-  const { query, conversationHistory, language, detectedLanguage } = req.body;
+  const { query, conversationHistory, detectedLanguage } = req.body;
 
   if (!query) return res.status(400).json({ error: 'Query is required' });
 

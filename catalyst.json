@@ -6,16 +6,6 @@
     "ignore": [],
     "source": "functions"
   },
-  "client": {
-    "source": "knowhere-client",
-    "plugin": "zcatalyst-cli-plugin-react"
-  },
-  "appsail": [
-    {
-      "source": ".",
-      "name": "knowhere-appsail"
-    }
-  ],
   "slate": [
     {
       "name": "knowhere",
