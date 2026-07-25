@@ -93,7 +93,7 @@ KNOWHERE doesn't merely *run* on Catalyst — its data and AI paths depend on Ca
 
 | Catalyst service | What it does here |
 |---|---|
-| **QuickML Knowledge Base** | RAG chat — FIR documents indexed in the KB, answered by Qwen 2.5 14B grounded in them |
+| **QuickML Knowledge Base** | RAG chat — FIR documents indexed in the KB, answered by GLM 4.7B Flash grounded in them |
 | **Data Store** | `FIRs` (65) · `Accused` (124) · `AuditLog` · `Alerts` — the runtime source of truth |
 | **ZCQL** | Powers the network graph, timeline, heatmap and alert aggregation |
 | **SmartBrowz** | Renders the case brief server-side into a real PDF |
@@ -112,6 +112,12 @@ KNOWHERE doesn't merely *run* on Catalyst — its data and AI paths depend on Ca
 ### Graceful degradation
 Every Catalyst path has a fallback: without Data Store it parses the local dataset, without the Knowledge Base it uses ZCQL + Groq, and without Groq it answers directly from the parsed FIRs. The app never dead-ends.
 
+### LLM deprecation status ✅
+QuickML retires the Qwen model family on **31 July 2026** in favour of **GLM 4.7B Flash**. KNOWHERE needs no migration:
+- Live responses report `model_usage.model = crm-di-glm47b_30b_it` — already the GLM 4.7B Flash replacement, not Qwen.
+- The guide's payload changes target the **LLM Serving** API (`prompt` / `system_prompt` → `messages`). We use the **RAG** API (`/rag/answer` with `{query, documents}`), which rejects any extra key, so there's no `model` field to change.
+- GLM keeps the answer in the top-level `response` field, which is what the client already reads; `choices[0].message.content` is parsed as a fallback.
+
 ---
 
 ## Tech Stack
@@ -121,7 +127,7 @@ Every Catalyst path has a fallback: without Data Store it parses the local datas
 | Frontend | React 18, Vite, D3.js v7 |
 | Styling | Pure CSS variables — no framework |
 | Backend | Node.js 18, Express 5 |
-| AI — Chat | Catalyst QuickML KB (Qwen 2.5 14B) · Groq LLaMA 3.3-70b |
+| AI — Chat | Catalyst QuickML KB (GLM 4.7B Flash) · Groq LLaMA 3.3-70b |
 | AI — Voice | Groq Whisper large-v3 |
 | Auth | JWT (HS256, 24h) + server-side role middleware |
 | Platform | Zoho Catalyst |
