@@ -88,13 +88,17 @@ async function answerFromKB(query) {
     throw new Error(`RAG API ${res.status}: ${JSON.stringify(res.data).slice(0, 200)}`);
   }
   const d = res.data || {};
-  // Confirmed shape: { status: 'success', response: '<text>', usage, retrieved_nodes }.
-  // Accept a few alternates defensively.
+  // Confirmed shape on GLM 4.7B Flash (crm-di-glm47b_30b_it, the model that
+  // replaced the deprecated Qwen family on 2026-07-31):
+  //   { status, response: '<text>', usage, model_usage, retrieved_nodes }
+  // GLM can also nest text under choices[0].message.content when tool calling
+  // is involved — we never send tools, but parse it as a fallback anyway.
   const answer =
     (typeof d.response === 'string' && d.response) ||
     (typeof d.answer === 'string' && d.answer) ||
     (typeof d.output === 'string' && d.output) ||
     (typeof d.text === 'string' && d.text) ||
+    (typeof d.choices?.[0]?.message?.content === 'string' && d.choices[0].message.content) ||
     (d.data && (d.data.response || d.data.answer || d.data.text)) ||
     null;
   if (!answer || typeof answer !== 'string') {
