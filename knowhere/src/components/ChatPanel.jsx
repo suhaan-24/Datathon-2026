@@ -321,6 +321,10 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
   /* ── Case brief ── */
   const generateBrief = async () => {
     if (briefBusy) return
+    // The tab must be opened synchronously inside the click handler — opening it
+    // after the await puts it outside the user-gesture window, where browsers
+    // block it. It's parked on about:blank until the PDF is ready.
+    const win = window.open('', '_blank')
     setBriefBusy(true)
     showToast('GENERATING CASE BRIEF…', 0)
     try {
@@ -335,30 +339,38 @@ export default function ChatPanel({ auth, districtFilter, onClearDistrict }) {
           token: auth.token,
         }),
       })
+      if (!res.ok) throw new Error(`Server returned ${res.status}`)
+
       const ct = res.headers.get('content-type') || ''
       if (ct.includes('application/pdf')) {
-        // SmartBrowz returned a real PDF — open it (falls back to a download if popups are blocked)
         const url = URL.createObjectURL(await res.blob())
-        const w = window.open(url, '_blank')
-        if (!w) {
+        if (win && !win.closed) {
+          win.location = url
+        } else {
+          // Popup blocked — fall back to a direct download
           const a = document.createElement('a')
           a.href = url; a.download = 'KNOWHERE-Case-Brief.pdf'
           document.body.appendChild(a); a.click(); a.remove()
+          showToast('CASE BRIEF DOWNLOADED')
         }
         setTimeout(() => URL.revokeObjectURL(url), 60000)
       } else {
-        // Fallback: SmartBrowz unavailable → render the print-ready brief window
+        // SmartBrowz unavailable — render the print-ready brief window instead
+        if (win && !win.closed) win.close()
         openBriefWindow(await res.json(), auth)
       }
-    } catch {
-      showToast('CASE BRIEF GENERATION FAILED')
+    } catch (err) {
+      if (win && !win.closed) win.close()
+      showToast(`CASE BRIEF FAILED — ${err.message || 'unknown error'}`, 5000)
     } finally {
       setBriefBusy(false)
-      setToast('')
+      setTimeout(() => setToast(''), 100)
     }
   }
 
-  const showBriefBtn = messages.filter(m => m.role === 'user').length >= 3
+  // Available as soon as there's something to summarise — requiring several
+  // questions first hid the feature during short demos.
+  const showBriefBtn = messages.some(m => m.role === 'user')
 
   return (
     <div className="chat-wrap">
