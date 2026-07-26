@@ -1,0 +1,7598 @@
+{
+ "State": [
+  {
+   "StateID": 29,
+   "StateName": "Karnataka",
+   "NationalityID": 1,
+   "Active": true
+  }
+ ],
+ "District": [
+  {
+   "DistrictID": 1,
+   "DistrictName": "Bagalkote",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 2,
+   "DistrictName": "Ballari",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 3,
+   "DistrictName": "Belagavi",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 4,
+   "DistrictName": "Bengaluru Rural",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 5,
+   "DistrictName": "Bengaluru Urban",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 6,
+   "DistrictName": "Bidar",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 7,
+   "DistrictName": "Chamarajanagara",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 8,
+   "DistrictName": "Chikkaballapura",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 9,
+   "DistrictName": "Chikkamagaluru",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 10,
+   "DistrictName": "Chitradurga",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 11,
+   "DistrictName": "Dakshina Kannada",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 12,
+   "DistrictName": "Davanagere",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 13,
+   "DistrictName": "Dharwad",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 14,
+   "DistrictName": "Gadag",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 15,
+   "DistrictName": "Hassan",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 16,
+   "DistrictName": "Haveri",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 17,
+   "DistrictName": "Kalaburagi",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 18,
+   "DistrictName": "Kodagu",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 19,
+   "DistrictName": "Kolar",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 20,
+   "DistrictName": "Koppal",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 21,
+   "DistrictName": "Mandya",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 22,
+   "DistrictName": "Mysuru",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 23,
+   "DistrictName": "Raichur",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 24,
+   "DistrictName": "Ramanagara",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 25,
+   "DistrictName": "Shivamogga",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 26,
+   "DistrictName": "Tumakuru",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 27,
+   "DistrictName": "Udupi",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 28,
+   "DistrictName": "Uttara Kannada",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 29,
+   "DistrictName": "Vijayanagara",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 30,
+   "DistrictName": "Vijayapura",
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "DistrictID": 31,
+   "DistrictName": "Yadgir",
+   "StateID": 29,
+   "Active": true
+  }
+ ],
+ "UnitType": [
+  {
+   "UnitTypeID": 1,
+   "UnitTypeName": "Police Station",
+   "CityDistState": "City",
+   "Hierarchy": 4,
+   "Active": true
+  },
+  {
+   "UnitTypeID": 2,
+   "UnitTypeName": "Circle Office",
+   "CityDistState": "City",
+   "Hierarchy": 3,
+   "Active": true
+  },
+  {
+   "UnitTypeID": 3,
+   "UnitTypeName": "Sub-Division",
+   "CityDistState": "District",
+   "Hierarchy": 2,
+   "Active": true
+  },
+  {
+   "UnitTypeID": 4,
+   "UnitTypeName": "District HQ",
+   "CityDistState": "District",
+   "Hierarchy": 1,
+   "Active": true
+  }
+ ],
+ "Unit": [
+  {
+   "UnitID": 1,
+   "UnitName": "Bengaluru Urban District Police HQ",
+   "TypeID": 4,
+   "ParentUnit": null,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 5,
+   "Active": true
+  },
+  {
+   "UnitID": 2,
+   "UnitName": "Mysuru District Police HQ",
+   "TypeID": 4,
+   "ParentUnit": null,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 22,
+   "Active": true
+  },
+  {
+   "UnitID": 3,
+   "UnitName": "Dakshina Kannada District Police HQ",
+   "TypeID": 4,
+   "ParentUnit": null,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 11,
+   "Active": true
+  },
+  {
+   "UnitID": 4,
+   "UnitName": "Dharwad District Police HQ",
+   "TypeID": 4,
+   "ParentUnit": null,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 13,
+   "Active": true
+  },
+  {
+   "UnitID": 5,
+   "UnitName": "Belagavi District Police HQ",
+   "TypeID": 4,
+   "ParentUnit": null,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 3,
+   "Active": true
+  },
+  {
+   "UnitID": 6,
+   "UnitName": "Tumakuru District Police HQ",
+   "TypeID": 4,
+   "ParentUnit": null,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 26,
+   "Active": true
+  },
+  {
+   "UnitID": 7,
+   "UnitName": "Ballari District Police HQ",
+   "TypeID": 4,
+   "ParentUnit": null,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 2,
+   "Active": true
+  },
+  {
+   "UnitID": 8,
+   "UnitName": "Kalaburagi District Police HQ",
+   "TypeID": 4,
+   "ParentUnit": null,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 17,
+   "Active": true
+  },
+  {
+   "UnitID": 9,
+   "UnitName": "Shivamogga District Police HQ",
+   "TypeID": 4,
+   "ParentUnit": null,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 25,
+   "Active": true
+  },
+  {
+   "UnitID": 10,
+   "UnitName": "Bengaluru Rural District Police HQ",
+   "TypeID": 4,
+   "ParentUnit": null,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 4,
+   "Active": true
+  },
+  {
+   "UnitID": 11,
+   "UnitName": "Cubbon Park Police Station",
+   "TypeID": 1,
+   "ParentUnit": 1,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 5,
+   "Active": true
+  },
+  {
+   "UnitID": 12,
+   "UnitName": "Shivajinagar Police Station",
+   "TypeID": 1,
+   "ParentUnit": 1,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 5,
+   "Active": true
+  },
+  {
+   "UnitID": 13,
+   "UnitName": "Jayalakshmipuram Police Station",
+   "TypeID": 1,
+   "ParentUnit": 2,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 22,
+   "Active": true
+  },
+  {
+   "UnitID": 14,
+   "UnitName": "Mangaluru North Police Station",
+   "TypeID": 1,
+   "ParentUnit": 3,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 11,
+   "Active": true
+  },
+  {
+   "UnitID": 15,
+   "UnitName": "Hubballi Central Police Station",
+   "TypeID": 1,
+   "ParentUnit": 4,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 13,
+   "Active": true
+  },
+  {
+   "UnitID": 16,
+   "UnitName": "Belagavi City East Police Station",
+   "TypeID": 1,
+   "ParentUnit": 5,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 3,
+   "Active": true
+  },
+  {
+   "UnitID": 17,
+   "UnitName": "Tumakuru Urban Police Station",
+   "TypeID": 1,
+   "ParentUnit": 6,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 26,
+   "Active": true
+  },
+  {
+   "UnitID": 18,
+   "UnitName": "Ballari City Police Station",
+   "TypeID": 1,
+   "ParentUnit": 7,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 2,
+   "Active": true
+  },
+  {
+   "UnitID": 19,
+   "UnitName": "Kalaburagi Urban Police Station",
+   "TypeID": 1,
+   "ParentUnit": 8,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 17,
+   "Active": true
+  },
+  {
+   "UnitID": 20,
+   "UnitName": "Shivamogga City Police Station",
+   "TypeID": 1,
+   "ParentUnit": 9,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 25,
+   "Active": true
+  },
+  {
+   "UnitID": 21,
+   "UnitName": "Rajajinagar Police Station",
+   "TypeID": 1,
+   "ParentUnit": 1,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 5,
+   "Active": true
+  },
+  {
+   "UnitID": 22,
+   "UnitName": "Ramanagara Police Station",
+   "TypeID": 1,
+   "ParentUnit": 10,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 4,
+   "Active": true
+  },
+  {
+   "UnitID": 23,
+   "UnitName": "Vijayanagar Police Station, Mysuru",
+   "TypeID": 1,
+   "ParentUnit": 2,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 22,
+   "Active": true
+  },
+  {
+   "UnitID": 24,
+   "UnitName": "Mangaluru South Police Station",
+   "TypeID": 1,
+   "ParentUnit": 3,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 11,
+   "Active": true
+  },
+  {
+   "UnitID": 25,
+   "UnitName": "Dharwad City Police Station",
+   "TypeID": 1,
+   "ParentUnit": 4,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 13,
+   "Active": true
+  },
+  {
+   "UnitID": 26,
+   "UnitName": "Belagavi North Police Station",
+   "TypeID": 1,
+   "ParentUnit": 5,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 3,
+   "Active": true
+  },
+  {
+   "UnitID": 27,
+   "UnitName": "Kalaburagi Rural Police Station",
+   "TypeID": 1,
+   "ParentUnit": 8,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 17,
+   "Active": true
+  },
+  {
+   "UnitID": 28,
+   "UnitName": "Tiptur Police Station",
+   "TypeID": 1,
+   "ParentUnit": 6,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 26,
+   "Active": true
+  },
+  {
+   "UnitID": 29,
+   "UnitName": "Ballari Rural Police Station",
+   "TypeID": 1,
+   "ParentUnit": 7,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 2,
+   "Active": true
+  },
+  {
+   "UnitID": 30,
+   "UnitName": "Bhadravathi Police Station",
+   "TypeID": 1,
+   "ParentUnit": 9,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 25,
+   "Active": true
+  },
+  {
+   "UnitID": 31,
+   "UnitName": "Indiranagar Police Station",
+   "TypeID": 1,
+   "ParentUnit": 1,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 5,
+   "Active": true
+  },
+  {
+   "UnitID": 32,
+   "UnitName": "Kengeri Police Station",
+   "TypeID": 1,
+   "ParentUnit": 10,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 4,
+   "Active": true
+  },
+  {
+   "UnitID": 33,
+   "UnitName": "Yeshwanthpur Police Station",
+   "TypeID": 1,
+   "ParentUnit": 1,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 5,
+   "Active": true
+  },
+  {
+   "UnitID": 34,
+   "UnitName": "Chamundi Hills Police Station",
+   "TypeID": 1,
+   "ParentUnit": 2,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 22,
+   "Active": true
+  },
+  {
+   "UnitID": 35,
+   "UnitName": "Mangaluru Port Police Station",
+   "TypeID": 1,
+   "ParentUnit": 3,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 11,
+   "Active": true
+  },
+  {
+   "UnitID": 36,
+   "UnitName": "Hubli South Police Station",
+   "TypeID": 1,
+   "ParentUnit": 4,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 13,
+   "Active": true
+  },
+  {
+   "UnitID": 37,
+   "UnitName": "Belagavi Rural Police Station",
+   "TypeID": 1,
+   "ParentUnit": 5,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 3,
+   "Active": true
+  },
+  {
+   "UnitID": 38,
+   "UnitName": "Gulbarga East Police Station",
+   "TypeID": 1,
+   "ParentUnit": 8,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 17,
+   "Active": true
+  },
+  {
+   "UnitID": 39,
+   "UnitName": "Madhugiri Police Station",
+   "TypeID": 1,
+   "ParentUnit": 6,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 26,
+   "Active": true
+  },
+  {
+   "UnitID": 40,
+   "UnitName": "Hospet Police Station",
+   "TypeID": 1,
+   "ParentUnit": 7,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 2,
+   "Active": true
+  },
+  {
+   "UnitID": 41,
+   "UnitName": "HSR Layout Police Station",
+   "TypeID": 1,
+   "ParentUnit": 1,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 5,
+   "Active": true
+  },
+  {
+   "UnitID": 42,
+   "UnitName": "Magadi Police Station",
+   "TypeID": 1,
+   "ParentUnit": 10,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 4,
+   "Active": true
+  },
+  {
+   "UnitID": 43,
+   "UnitName": "Hunsur Police Station",
+   "TypeID": 1,
+   "ParentUnit": 2,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 22,
+   "Active": true
+  },
+  {
+   "UnitID": 44,
+   "UnitName": "Ullal Police Station",
+   "TypeID": 1,
+   "ParentUnit": 3,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 11,
+   "Active": true
+  },
+  {
+   "UnitID": 45,
+   "UnitName": "Hubballi East Police Station",
+   "TypeID": 1,
+   "ParentUnit": 4,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 13,
+   "Active": true
+  },
+  {
+   "UnitID": 46,
+   "UnitName": "Belagavi City West Police Station",
+   "TypeID": 1,
+   "ParentUnit": 5,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 3,
+   "Active": true
+  },
+  {
+   "UnitID": 47,
+   "UnitName": "Sedam Police Station",
+   "TypeID": 1,
+   "ParentUnit": 8,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 17,
+   "Active": true
+  },
+  {
+   "UnitID": 48,
+   "UnitName": "Whitefield Police Station",
+   "TypeID": 1,
+   "ParentUnit": 1,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 5,
+   "Active": true
+  },
+  {
+   "UnitID": 49,
+   "UnitName": "Channapatna Police Station",
+   "TypeID": 1,
+   "ParentUnit": 10,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 4,
+   "Active": true
+  },
+  {
+   "UnitID": 50,
+   "UnitName": "Nanjangud Police Station",
+   "TypeID": 1,
+   "ParentUnit": 2,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 22,
+   "Active": true
+  },
+  {
+   "UnitID": 51,
+   "UnitName": "Dharwad Rural Police Station",
+   "TypeID": 1,
+   "ParentUnit": 4,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 13,
+   "Active": true
+  },
+  {
+   "UnitID": 52,
+   "UnitName": "Belgaum Cantonment Police Station",
+   "TypeID": 1,
+   "ParentUnit": 5,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 3,
+   "Active": true
+  },
+  {
+   "UnitID": 53,
+   "UnitName": "Aland Police Station",
+   "TypeID": 1,
+   "ParentUnit": 8,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 17,
+   "Active": true
+  },
+  {
+   "UnitID": 54,
+   "UnitName": "Gubbi Police Station",
+   "TypeID": 1,
+   "ParentUnit": 6,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 26,
+   "Active": true
+  },
+  {
+   "UnitID": 55,
+   "UnitName": "Kurugodu Police Station",
+   "TypeID": 1,
+   "ParentUnit": 7,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 2,
+   "Active": true
+  },
+  {
+   "UnitID": 56,
+   "UnitName": "Koramangala Police Station",
+   "TypeID": 1,
+   "ParentUnit": 1,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 5,
+   "Active": true
+  },
+  {
+   "UnitID": 57,
+   "UnitName": "Doddaballapura Police Station",
+   "TypeID": 1,
+   "ParentUnit": 10,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 4,
+   "Active": true
+  },
+  {
+   "UnitID": 58,
+   "UnitName": "Mysuru North Police Station",
+   "TypeID": 1,
+   "ParentUnit": 2,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 22,
+   "Active": true
+  },
+  {
+   "UnitID": 59,
+   "UnitName": "Mangaluru Central Police Station",
+   "TypeID": 1,
+   "ParentUnit": 3,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 11,
+   "Active": true
+  },
+  {
+   "UnitID": 60,
+   "UnitName": "Hubli Central Police Station",
+   "TypeID": 1,
+   "ParentUnit": 4,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 13,
+   "Active": true
+  },
+  {
+   "UnitID": 61,
+   "UnitName": "Belagavi East Police Station",
+   "TypeID": 1,
+   "ParentUnit": 5,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 3,
+   "Active": true
+  },
+  {
+   "UnitID": 62,
+   "UnitName": "Koratagere Police Station",
+   "TypeID": 1,
+   "ParentUnit": 6,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 26,
+   "Active": true
+  },
+  {
+   "UnitID": 63,
+   "UnitName": "Hebbal Police Station",
+   "TypeID": 1,
+   "ParentUnit": 1,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 5,
+   "Active": true
+  },
+  {
+   "UnitID": 64,
+   "UnitName": "Nelamangala Police Station",
+   "TypeID": 1,
+   "ParentUnit": 10,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 4,
+   "Active": true
+  },
+  {
+   "UnitID": 65,
+   "UnitName": "Mysuru South Police Station",
+   "TypeID": 1,
+   "ParentUnit": 2,
+   "NationalityID": 1,
+   "StateID": 29,
+   "DistrictID": 22,
+   "Active": true
+  }
+ ],
+ "Rank": [
+  {
+   "RankID": 1,
+   "RankName": "Constable",
+   "Hierarchy": 1,
+   "Active": true
+  },
+  {
+   "RankID": 2,
+   "RankName": "Head Constable",
+   "Hierarchy": 2,
+   "Active": true
+  },
+  {
+   "RankID": 3,
+   "RankName": "Assistant Sub-Inspector",
+   "Hierarchy": 3,
+   "Active": true
+  },
+  {
+   "RankID": 4,
+   "RankName": "Sub-Inspector",
+   "Hierarchy": 4,
+   "Active": true
+  },
+  {
+   "RankID": 5,
+   "RankName": "Police Sub-Inspector",
+   "Hierarchy": 5,
+   "Active": true
+  },
+  {
+   "RankID": 6,
+   "RankName": "Inspector",
+   "Hierarchy": 6,
+   "Active": true
+  },
+  {
+   "RankID": 7,
+   "RankName": "Deputy Superintendent of Police",
+   "Hierarchy": 7,
+   "Active": true
+  },
+  {
+   "RankID": 8,
+   "RankName": "Superintendent of Police",
+   "Hierarchy": 8,
+   "Active": true
+  }
+ ],
+ "Designation": [
+  {
+   "DesignationID": 1,
+   "DesignationName": "Investigating Officer",
+   "Active": true,
+   "SortOrder": 1
+  },
+  {
+   "DesignationID": 2,
+   "DesignationName": "Station House Officer",
+   "Active": true,
+   "SortOrder": 2
+  },
+  {
+   "DesignationID": 3,
+   "DesignationName": "Beat Officer",
+   "Active": true,
+   "SortOrder": 3
+  },
+  {
+   "DesignationID": 4,
+   "DesignationName": "Circle Inspector",
+   "Active": true,
+   "SortOrder": 4
+  },
+  {
+   "DesignationID": 5,
+   "DesignationName": "Superintendent",
+   "Active": true,
+   "SortOrder": 5
+  }
+ ],
+ "Employee": [
+  {
+   "EmployeeID": 1,
+   "DistrictID": 5,
+   "UnitID": 11,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00001",
+   "FirstName": "Sub-Inspector Kavitha Nagaraj",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 2,
+   "DistrictID": 5,
+   "UnitID": 12,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00002",
+   "FirstName": "Inspector Dhananjaya Rao",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 3,
+   "DistrictID": 22,
+   "UnitID": 13,
+   "RankID": 2,
+   "DesignationID": 1,
+   "KGID": "KG00003",
+   "FirstName": "Head Constable Shanthi Prasad",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 4,
+   "DistrictID": 11,
+   "UnitID": 14,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00004",
+   "FirstName": "Sub-Inspector Prakash Kamath",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 5,
+   "DistrictID": 13,
+   "UnitID": 15,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00005",
+   "FirstName": "Inspector Girish Mallapur",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 6,
+   "DistrictID": 3,
+   "UnitID": 16,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00006",
+   "FirstName": "Sub-Inspector Priya Desai",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 7,
+   "DistrictID": 26,
+   "UnitID": 17,
+   "RankID": 2,
+   "DesignationID": 1,
+   "KGID": "KG00007",
+   "FirstName": "Head Constable Lokesh Kumar",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 8,
+   "DistrictID": 2,
+   "UnitID": 18,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00008",
+   "FirstName": "Inspector Suresh Babu",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 9,
+   "DistrictID": 17,
+   "UnitID": 19,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00009",
+   "FirstName": "Sub-Inspector Deepa Hegde",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 10,
+   "DistrictID": 25,
+   "UnitID": 20,
+   "RankID": 7,
+   "DesignationID": 4,
+   "KGID": "KG00010",
+   "FirstName": "Deputy SP Anand Kumar",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 11,
+   "DistrictID": 5,
+   "UnitID": 21,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00011",
+   "FirstName": "Inspector Nagesh Prasad",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 12,
+   "DistrictID": 4,
+   "UnitID": 22,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00012",
+   "FirstName": "Inspector Suma Reddy",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 13,
+   "DistrictID": 22,
+   "UnitID": 23,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00013",
+   "FirstName": "Inspector Padmavathi Rao",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 14,
+   "DistrictID": 11,
+   "UnitID": 24,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00014",
+   "FirstName": "Sub-Inspector Clement Pais",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 15,
+   "DistrictID": 13,
+   "UnitID": 25,
+   "RankID": 7,
+   "DesignationID": 4,
+   "KGID": "KG00015",
+   "FirstName": "Deputy SP Ramesh Deshpande",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 16,
+   "DistrictID": 3,
+   "UnitID": 26,
+   "RankID": 2,
+   "DesignationID": 1,
+   "KGID": "KG00016",
+   "FirstName": "Head Constable Vijay Patil",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 17,
+   "DistrictID": 17,
+   "UnitID": 27,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00017",
+   "FirstName": "Inspector Vijayakumar Patil",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 18,
+   "DistrictID": 26,
+   "UnitID": 28,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00018",
+   "FirstName": "Sub-Inspector Ravi Kumar",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 19,
+   "DistrictID": 2,
+   "UnitID": 29,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00019",
+   "FirstName": "Inspector Suresh Reddy",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 20,
+   "DistrictID": 25,
+   "UnitID": 30,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00020",
+   "FirstName": "Inspector Sunil S",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 21,
+   "DistrictID": 5,
+   "UnitID": 31,
+   "RankID": 7,
+   "DesignationID": 4,
+   "KGID": "KG00021",
+   "FirstName": "Deputy SP Geeta Menon",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 22,
+   "DistrictID": 4,
+   "UnitID": 32,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00022",
+   "FirstName": "Sub-Inspector Chandra Reddy",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 23,
+   "DistrictID": 5,
+   "UnitID": 33,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00023",
+   "FirstName": "Inspector Kiran Raj",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 24,
+   "DistrictID": 22,
+   "UnitID": 34,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00024",
+   "FirstName": "Inspector Bharat Shetty",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 25,
+   "DistrictID": 11,
+   "UnitID": 35,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00025",
+   "FirstName": "Inspector Anand Pai",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 26,
+   "DistrictID": 13,
+   "UnitID": 36,
+   "RankID": 7,
+   "DesignationID": 4,
+   "KGID": "KG00026",
+   "FirstName": "Deputy SP Krishnamurthy",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 27,
+   "DistrictID": 3,
+   "UnitID": 37,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00027",
+   "FirstName": "Sub-Inspector Nisha Patil",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 28,
+   "DistrictID": 17,
+   "UnitID": 38,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00028",
+   "FirstName": "Inspector Mallikarjun",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 29,
+   "DistrictID": 26,
+   "UnitID": 39,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00029",
+   "FirstName": "Inspector Ramakrishna Hegde",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 30,
+   "DistrictID": 2,
+   "UnitID": 40,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00030",
+   "FirstName": "Sub-Inspector Deepak Nayak",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 31,
+   "DistrictID": 25,
+   "UnitID": 20,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00031",
+   "FirstName": "Inspector Chandrashekar B",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 32,
+   "DistrictID": 5,
+   "UnitID": 41,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00032",
+   "FirstName": "Sub-Inspector Revathi S",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 33,
+   "DistrictID": 4,
+   "UnitID": 42,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00033",
+   "FirstName": "Inspector Nageshwar Rao",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 34,
+   "DistrictID": 22,
+   "UnitID": 43,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00034",
+   "FirstName": "Sub-Inspector Manjunath G",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 35,
+   "DistrictID": 11,
+   "UnitID": 44,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00035",
+   "FirstName": "Inspector Dinesh Shetty",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 36,
+   "DistrictID": 13,
+   "UnitID": 45,
+   "RankID": 2,
+   "DesignationID": 1,
+   "KGID": "KG00036",
+   "FirstName": "Head Constable Basavaraj",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 37,
+   "DistrictID": 3,
+   "UnitID": 46,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00037",
+   "FirstName": "Inspector Priya Yargeri",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 38,
+   "DistrictID": 17,
+   "UnitID": 47,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00038",
+   "FirstName": "Sub-Inspector Ramaiah",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 39,
+   "DistrictID": 26,
+   "UnitID": 17,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00039",
+   "FirstName": "Inspector Suma Patil",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 40,
+   "DistrictID": 2,
+   "UnitID": 18,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00040",
+   "FirstName": "Inspector Ganesh Babu",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 41,
+   "DistrictID": 11,
+   "UnitID": 14,
+   "RankID": 7,
+   "DesignationID": 4,
+   "KGID": "KG00041",
+   "FirstName": "Deputy SP Anita Rao",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 42,
+   "DistrictID": 5,
+   "UnitID": 48,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00042",
+   "FirstName": "Inspector Suhas Mehta",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 43,
+   "DistrictID": 4,
+   "UnitID": 49,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00043",
+   "FirstName": "Inspector Hanumareddy",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 44,
+   "DistrictID": 22,
+   "UnitID": 50,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00044",
+   "FirstName": "Inspector Sowmya D",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 45,
+   "DistrictID": 11,
+   "UnitID": 24,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00045",
+   "FirstName": "Inspector Lawrence Fernandes",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 46,
+   "DistrictID": 13,
+   "UnitID": 51,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00046",
+   "FirstName": "Inspector Basavaraj Kulli",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 47,
+   "DistrictID": 3,
+   "UnitID": 52,
+   "RankID": 7,
+   "DesignationID": 4,
+   "KGID": "KG00047",
+   "FirstName": "Deputy SP Vijayendra Rao",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 48,
+   "DistrictID": 17,
+   "UnitID": 53,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00048",
+   "FirstName": "Sub-Inspector Nandakumar",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 49,
+   "DistrictID": 26,
+   "UnitID": 54,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00049",
+   "FirstName": "Inspector Ravi Kumar",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 50,
+   "DistrictID": 2,
+   "UnitID": 55,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00050",
+   "FirstName": "Inspector Mohan Reddy",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 51,
+   "DistrictID": 25,
+   "UnitID": 20,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00051",
+   "FirstName": "Sub-Inspector Anitha R",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 52,
+   "DistrictID": 5,
+   "UnitID": 56,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00052",
+   "FirstName": "Inspector Divya Menon",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 53,
+   "DistrictID": 4,
+   "UnitID": 57,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00053",
+   "FirstName": "Inspector Shyam Sunder",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 54,
+   "DistrictID": 22,
+   "UnitID": 58,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00054",
+   "FirstName": "Inspector Poornima K",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 55,
+   "DistrictID": 11,
+   "UnitID": 59,
+   "RankID": 7,
+   "DesignationID": 4,
+   "KGID": "KG00055",
+   "FirstName": "Deputy SP Vishwanath Kamath",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 56,
+   "DistrictID": 13,
+   "UnitID": 60,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00056",
+   "FirstName": "Inspector Malathi S",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 57,
+   "DistrictID": 3,
+   "UnitID": 61,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00057",
+   "FirstName": "Inspector Sanjay Patil",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 58,
+   "DistrictID": 17,
+   "UnitID": 19,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00058",
+   "FirstName": "Inspector Mohan Patil",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 59,
+   "DistrictID": 26,
+   "UnitID": 62,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00059",
+   "FirstName": "Inspector Pramila Gowda",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 60,
+   "DistrictID": 2,
+   "UnitID": 18,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00060",
+   "FirstName": "Inspector Sowmya T",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 61,
+   "DistrictID": 5,
+   "UnitID": 63,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00061",
+   "FirstName": "Inspector Anbu Selvam",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 62,
+   "DistrictID": 4,
+   "UnitID": 64,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00062",
+   "FirstName": "Inspector Manohar S",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 63,
+   "DistrictID": 22,
+   "UnitID": 65,
+   "RankID": 6,
+   "DesignationID": 4,
+   "KGID": "KG00063",
+   "FirstName": "Inspector Ravindra M",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  },
+  {
+   "EmployeeID": 64,
+   "DistrictID": 11,
+   "UnitID": 14,
+   "RankID": 7,
+   "DesignationID": 4,
+   "KGID": "KG00064",
+   "FirstName": "Deputy SP Sunil Shetty",
+   "EmployeeDOB": null,
+   "GenderID": 3,
+   "BloodGroupID": null,
+   "PhysicallyChallenged": false,
+   "AppointmentDate": null
+  }
+ ],
+ "CaseCategory": [
+  {
+   "CaseCategoryID": 1,
+   "LookupValue": "FIR"
+  },
+  {
+   "CaseCategoryID": 2,
+   "LookupValue": "UDR"
+  },
+  {
+   "CaseCategoryID": 3,
+   "LookupValue": "Zero FIR"
+  },
+  {
+   "CaseCategoryID": 4,
+   "LookupValue": "PAR"
+  }
+ ],
+ "GravityOffence": [
+  {
+   "GravityOffenceID": 1,
+   "LookupValue": "Heinous"
+  },
+  {
+   "GravityOffenceID": 2,
+   "LookupValue": "Non-Heinous"
+  }
+ ],
+ "CaseStatusMaster": [
+  {
+   "CaseStatusID": 1,
+   "CaseStatusName": "Under Investigation"
+  },
+  {
+   "CaseStatusID": 2,
+   "CaseStatusName": "Charge Sheeted"
+  },
+  {
+   "CaseStatusID": 3,
+   "CaseStatusName": "Closed"
+  },
+  {
+   "CaseStatusID": 4,
+   "CaseStatusName": "Undetected"
+  }
+ ],
+ "CasteMaster": [
+  {
+   "caste_master_id": 1,
+   "caste_master_name": "General"
+  },
+  {
+   "caste_master_id": 2,
+   "caste_master_name": "Scheduled Caste"
+  },
+  {
+   "caste_master_id": 3,
+   "caste_master_name": "Scheduled Tribe"
+  },
+  {
+   "caste_master_id": 4,
+   "caste_master_name": "Other Backward Class"
+  },
+  {
+   "caste_master_id": 99,
+   "caste_master_name": "Not Recorded"
+  }
+ ],
+ "ReligionMaster": [
+  {
+   "ReligionID": 1,
+   "ReligionName": "Hindu"
+  },
+  {
+   "ReligionID": 2,
+   "ReligionName": "Muslim"
+  },
+  {
+   "ReligionID": 3,
+   "ReligionName": "Christian"
+  },
+  {
+   "ReligionID": 4,
+   "ReligionName": "Sikh"
+  },
+  {
+   "ReligionID": 5,
+   "ReligionName": "Buddhist"
+  },
+  {
+   "ReligionID": 6,
+   "ReligionName": "Jain"
+  },
+  {
+   "ReligionID": 7,
+   "ReligionName": "Parsi"
+  },
+  {
+   "ReligionID": 8,
+   "ReligionName": "Other"
+  },
+  {
+   "ReligionID": 99,
+   "ReligionName": "Not Recorded"
+  }
+ ],
+ "OccupationMaster": [
+  {
+   "OccupationID": 1,
+   "OccupationName": "Agriculture"
+  },
+  {
+   "OccupationID": 2,
+   "OccupationName": "Business"
+  },
+  {
+   "OccupationID": 3,
+   "OccupationName": "Government Service"
+  },
+  {
+   "OccupationID": 4,
+   "OccupationName": "Private Service"
+  },
+  {
+   "OccupationID": 5,
+   "OccupationName": "Daily Wage Labour"
+  },
+  {
+   "OccupationID": 6,
+   "OccupationName": "Student"
+  },
+  {
+   "OccupationID": 7,
+   "OccupationName": "Homemaker"
+  },
+  {
+   "OccupationID": 8,
+   "OccupationName": "Self Employed"
+  },
+  {
+   "OccupationID": 9,
+   "OccupationName": "Unemployed"
+  },
+  {
+   "OccupationID": 99,
+   "OccupationName": "Not Recorded"
+  }
+ ],
+ "CrimeHead": [
+  {
+   "CrimeHeadID": 1,
+   "CrimeGroupName": "Crimes Against Body",
+   "Active": true
+  },
+  {
+   "CrimeHeadID": 2,
+   "CrimeGroupName": "Crimes Against Property",
+   "Active": true
+  },
+  {
+   "CrimeHeadID": 3,
+   "CrimeGroupName": "Crimes Against Women & Children",
+   "Active": true
+  },
+  {
+   "CrimeHeadID": 4,
+   "CrimeGroupName": "Cyber Crime",
+   "Active": true
+  },
+  {
+   "CrimeHeadID": 5,
+   "CrimeGroupName": "Narcotics & NDPS",
+   "Active": true
+  },
+  {
+   "CrimeHeadID": 6,
+   "CrimeGroupName": "Economic Offences",
+   "Active": true
+  },
+  {
+   "CrimeHeadID": 7,
+   "CrimeGroupName": "Public Order",
+   "Active": true
+  },
+  {
+   "CrimeHeadID": 8,
+   "CrimeGroupName": "Miscellaneous",
+   "Active": true
+  }
+ ],
+ "CrimeSubHead": [
+  {
+   "CrimeSubHeadID": 1,
+   "CrimeHeadID": 1,
+   "CrimeHeadName": "Murder",
+   "SeqID": 1
+  },
+  {
+   "CrimeSubHeadID": 2,
+   "CrimeHeadID": 1,
+   "CrimeHeadName": "Attempt to Murder",
+   "SeqID": 2
+  },
+  {
+   "CrimeSubHeadID": 3,
+   "CrimeHeadID": 1,
+   "CrimeHeadName": "Assault",
+   "SeqID": 3
+  },
+  {
+   "CrimeSubHeadID": 4,
+   "CrimeHeadID": 1,
+   "CrimeHeadName": "Grievous Hurt",
+   "SeqID": 4
+  },
+  {
+   "CrimeSubHeadID": 5,
+   "CrimeHeadID": 1,
+   "CrimeHeadName": "Kidnapping",
+   "SeqID": 5
+  },
+  {
+   "CrimeSubHeadID": 6,
+   "CrimeHeadID": 2,
+   "CrimeHeadName": "Robbery",
+   "SeqID": 6
+  },
+  {
+   "CrimeSubHeadID": 7,
+   "CrimeHeadID": 2,
+   "CrimeHeadName": "Burglary",
+   "SeqID": 7
+  },
+  {
+   "CrimeSubHeadID": 8,
+   "CrimeHeadID": 2,
+   "CrimeHeadName": "Theft",
+   "SeqID": 8
+  },
+  {
+   "CrimeSubHeadID": 9,
+   "CrimeHeadID": 2,
+   "CrimeHeadName": "Vehicle Theft",
+   "SeqID": 9
+  },
+  {
+   "CrimeSubHeadID": 10,
+   "CrimeHeadID": 2,
+   "CrimeHeadName": "Extortion",
+   "SeqID": 10
+  },
+  {
+   "CrimeSubHeadID": 11,
+   "CrimeHeadID": 2,
+   "CrimeHeadName": "Dacoity",
+   "SeqID": 11
+  },
+  {
+   "CrimeSubHeadID": 12,
+   "CrimeHeadID": 3,
+   "CrimeHeadName": "POCSO",
+   "SeqID": 12
+  },
+  {
+   "CrimeSubHeadID": 13,
+   "CrimeHeadID": 3,
+   "CrimeHeadName": "Crimes Against Women",
+   "SeqID": 13
+  },
+  {
+   "CrimeSubHeadID": 14,
+   "CrimeHeadID": 4,
+   "CrimeHeadName": "Cybercrime",
+   "SeqID": 14
+  },
+  {
+   "CrimeSubHeadID": 15,
+   "CrimeHeadID": 4,
+   "CrimeHeadName": "Cyber Fraud",
+   "SeqID": 15
+  },
+  {
+   "CrimeSubHeadID": 16,
+   "CrimeHeadID": 4,
+   "CrimeHeadName": "Online Harassment",
+   "SeqID": 16
+  },
+  {
+   "CrimeSubHeadID": 17,
+   "CrimeHeadID": 5,
+   "CrimeHeadName": "Drug Trafficking",
+   "SeqID": 17
+  },
+  {
+   "CrimeSubHeadID": 18,
+   "CrimeHeadID": 5,
+   "CrimeHeadName": "NDPS Possession",
+   "SeqID": 18
+  },
+  {
+   "CrimeSubHeadID": 19,
+   "CrimeHeadID": 6,
+   "CrimeHeadName": "Fraud",
+   "SeqID": 19
+  },
+  {
+   "CrimeSubHeadID": 20,
+   "CrimeHeadID": 6,
+   "CrimeHeadName": "Cheating",
+   "SeqID": 20
+  },
+  {
+   "CrimeSubHeadID": 21,
+   "CrimeHeadID": 7,
+   "CrimeHeadName": "Gang Activity",
+   "SeqID": 21
+  },
+  {
+   "CrimeSubHeadID": 22,
+   "CrimeHeadID": 7,
+   "CrimeHeadName": "Rioting",
+   "SeqID": 22
+  }
+ ],
+ "Act": [
+  {
+   "ActCode": 1,
+   "ActDescription": "Indian Penal Code, 1860",
+   "ShortName": "IPC",
+   "Active": true
+  },
+  {
+   "ActCode": 2,
+   "ActDescription": "Narcotic Drugs and Psychotropic Substances Act, 1985",
+   "ShortName": "NDPS",
+   "Active": true
+  },
+  {
+   "ActCode": 3,
+   "ActDescription": "Protection of Children from Sexual Offences Act, 2012",
+   "ShortName": "POCSO",
+   "Active": true
+  },
+  {
+   "ActCode": 4,
+   "ActDescription": "Information Technology Act, 2000",
+   "ShortName": "IT Act",
+   "Active": true
+  },
+  {
+   "ActCode": 5,
+   "ActDescription": "Arms Act, 1959",
+   "ShortName": "Arms Act",
+   "Active": true
+  }
+ ],
+ "Section": [
+  {
+   "ActCode": 1,
+   "SectionCode": "302",
+   "SectionDescription": "Punishment for murder",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "307",
+   "SectionDescription": "Attempt to murder",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "323",
+   "SectionDescription": "Punishment for voluntarily causing hurt",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "324",
+   "SectionDescription": "Voluntarily causing hurt by dangerous weapons",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "325",
+   "SectionDescription": "Punishment for voluntarily causing grievous hurt",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "341",
+   "SectionDescription": "Punishment for wrongful restraint",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "354",
+   "SectionDescription": "Assault or criminal force to woman",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "363",
+   "SectionDescription": "Punishment for kidnapping",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "364",
+   "SectionDescription": "Kidnapping in order to murder",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "366",
+   "SectionDescription": "Kidnapping or abducting a woman",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "379",
+   "SectionDescription": "Punishment for theft",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "380",
+   "SectionDescription": "Theft in dwelling house",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "384",
+   "SectionDescription": "Punishment for extortion",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "386",
+   "SectionDescription": "Extortion by putting a person in fear of death",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "392",
+   "SectionDescription": "Punishment for robbery",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "395",
+   "SectionDescription": "Punishment for dacoity",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "397",
+   "SectionDescription": "Robbery or dacoity with attempt to cause death",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "406",
+   "SectionDescription": "Punishment for criminal breach of trust",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "420",
+   "SectionDescription": "Cheating and dishonestly inducing delivery of property",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "427",
+   "SectionDescription": "Mischief causing damage",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "447",
+   "SectionDescription": "Punishment for criminal trespass",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "457",
+   "SectionDescription": "Lurking house-trespass by night",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "506",
+   "SectionDescription": "Punishment for criminal intimidation",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "120B",
+   "SectionDescription": "Punishment of criminal conspiracy",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "34",
+   "SectionDescription": "Acts done by several persons in furtherance of common intention",
+   "Active": true
+  },
+  {
+   "ActCode": 1,
+   "SectionCode": "149",
+   "SectionDescription": "Unlawful assembly with common object",
+   "Active": true
+  },
+  {
+   "ActCode": 2,
+   "SectionCode": "20(b)",
+   "SectionDescription": "Contravention in relation to cannabis plant and cannabis",
+   "Active": true
+  },
+  {
+   "ActCode": 2,
+   "SectionCode": "21(c)",
+   "SectionDescription": "Contravention in relation to manufactured drugs — commercial quantity",
+   "Active": true
+  },
+  {
+   "ActCode": 2,
+   "SectionCode": "22(c)",
+   "SectionDescription": "Contravention in relation to psychotropic substances — commercial quantity",
+   "Active": true
+  },
+  {
+   "ActCode": 2,
+   "SectionCode": "29",
+   "SectionDescription": "Abetment and criminal conspiracy under NDPS",
+   "Active": true
+  },
+  {
+   "ActCode": 3,
+   "SectionCode": "4",
+   "SectionDescription": "Punishment for penetrative sexual assault",
+   "Active": true
+  },
+  {
+   "ActCode": 3,
+   "SectionCode": "6",
+   "SectionDescription": "Punishment for aggravated penetrative sexual assault",
+   "Active": true
+  },
+  {
+   "ActCode": 4,
+   "SectionCode": "66C",
+   "SectionDescription": "Punishment for identity theft",
+   "Active": true
+  },
+  {
+   "ActCode": 4,
+   "SectionCode": "66D",
+   "SectionDescription": "Cheating by personation using computer resource",
+   "Active": true
+  },
+  {
+   "ActCode": 4,
+   "SectionCode": "43",
+   "SectionDescription": "Penalty for damage to computer system",
+   "Active": true
+  },
+  {
+   "ActCode": 5,
+   "SectionCode": "25",
+   "SectionDescription": "Punishment for acquisition or possession of arms",
+   "Active": true
+  },
+  {
+   "ActCode": 5,
+   "SectionCode": "27",
+   "SectionDescription": "Punishment for using arms",
+   "Active": true
+  }
+ ],
+ "CrimeHeadActSection": [
+  {
+   "CrimeHeadID": 1,
+   "ActCode": 1,
+   "SectionCode": "302"
+  },
+  {
+   "CrimeHeadID": 1,
+   "ActCode": 1,
+   "SectionCode": "34"
+  },
+  {
+   "CrimeHeadID": 1,
+   "ActCode": 1,
+   "SectionCode": "323"
+  },
+  {
+   "CrimeHeadID": 1,
+   "ActCode": 1,
+   "SectionCode": "324"
+  },
+  {
+   "CrimeHeadID": 1,
+   "ActCode": 1,
+   "SectionCode": "363"
+  },
+  {
+   "CrimeHeadID": 1,
+   "ActCode": 1,
+   "SectionCode": "364"
+  },
+  {
+   "CrimeHeadID": 2,
+   "ActCode": 1,
+   "SectionCode": "392"
+  },
+  {
+   "CrimeHeadID": 2,
+   "ActCode": 1,
+   "SectionCode": "397"
+  },
+  {
+   "CrimeHeadID": 2,
+   "ActCode": 1,
+   "SectionCode": "457"
+  },
+  {
+   "CrimeHeadID": 2,
+   "ActCode": 1,
+   "SectionCode": "380"
+  },
+  {
+   "CrimeHeadID": 2,
+   "ActCode": 1,
+   "SectionCode": "379"
+  },
+  {
+   "CrimeHeadID": 2,
+   "ActCode": 1,
+   "SectionCode": "427"
+  },
+  {
+   "CrimeHeadID": 5,
+   "ActCode": 2,
+   "SectionCode": "20(b)"
+  },
+  {
+   "CrimeHeadID": 5,
+   "ActCode": 2,
+   "SectionCode": "21(c)"
+  },
+  {
+   "CrimeHeadID": 5,
+   "ActCode": 2,
+   "SectionCode": "29"
+  },
+  {
+   "CrimeHeadID": 4,
+   "ActCode": 4,
+   "SectionCode": "66D"
+  },
+  {
+   "CrimeHeadID": 4,
+   "ActCode": 4,
+   "SectionCode": "66C"
+  },
+  {
+   "CrimeHeadID": 4,
+   "ActCode": 1,
+   "SectionCode": "420"
+  },
+  {
+   "CrimeHeadID": 6,
+   "ActCode": 1,
+   "SectionCode": "420"
+  },
+  {
+   "CrimeHeadID": 6,
+   "ActCode": 1,
+   "SectionCode": "406"
+  },
+  {
+   "CrimeHeadID": 7,
+   "ActCode": 1,
+   "SectionCode": "384"
+  },
+  {
+   "CrimeHeadID": 7,
+   "ActCode": 1,
+   "SectionCode": "386"
+  },
+  {
+   "CrimeHeadID": 7,
+   "ActCode": 1,
+   "SectionCode": "120B"
+  },
+  {
+   "CrimeHeadID": 7,
+   "ActCode": 1,
+   "SectionCode": "149"
+  }
+ ],
+ "Court": [
+  {
+   "CourtID": 1,
+   "CourtName": "Chief Judicial Magistrate Court, Bengaluru Urban",
+   "DistrictID": 5,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 2,
+   "CourtName": "District & Sessions Court, Bengaluru Urban",
+   "DistrictID": 5,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 3,
+   "CourtName": "Chief Judicial Magistrate Court, Mysuru",
+   "DistrictID": 22,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 4,
+   "CourtName": "District & Sessions Court, Mysuru",
+   "DistrictID": 22,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 5,
+   "CourtName": "Chief Judicial Magistrate Court, Dakshina Kannada",
+   "DistrictID": 11,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 6,
+   "CourtName": "District & Sessions Court, Dakshina Kannada",
+   "DistrictID": 11,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 7,
+   "CourtName": "Chief Judicial Magistrate Court, Dharwad",
+   "DistrictID": 13,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 8,
+   "CourtName": "District & Sessions Court, Dharwad",
+   "DistrictID": 13,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 9,
+   "CourtName": "Chief Judicial Magistrate Court, Belagavi",
+   "DistrictID": 3,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 10,
+   "CourtName": "District & Sessions Court, Belagavi",
+   "DistrictID": 3,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 11,
+   "CourtName": "Chief Judicial Magistrate Court, Tumakuru",
+   "DistrictID": 26,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 12,
+   "CourtName": "District & Sessions Court, Tumakuru",
+   "DistrictID": 26,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 13,
+   "CourtName": "Chief Judicial Magistrate Court, Ballari",
+   "DistrictID": 2,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 14,
+   "CourtName": "District & Sessions Court, Ballari",
+   "DistrictID": 2,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 15,
+   "CourtName": "Chief Judicial Magistrate Court, Kalaburagi",
+   "DistrictID": 17,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 16,
+   "CourtName": "District & Sessions Court, Kalaburagi",
+   "DistrictID": 17,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 17,
+   "CourtName": "Chief Judicial Magistrate Court, Shivamogga",
+   "DistrictID": 25,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 18,
+   "CourtName": "District & Sessions Court, Shivamogga",
+   "DistrictID": 25,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 19,
+   "CourtName": "Chief Judicial Magistrate Court, Bengaluru Rural",
+   "DistrictID": 4,
+   "StateID": 29,
+   "Active": true
+  },
+  {
+   "CourtID": 20,
+   "CourtName": "District & Sessions Court, Bengaluru Rural",
+   "DistrictID": 4,
+   "StateID": 29,
+   "Active": true
+  }
+ ],
+ "CaseMaster": [
+  {
+   "CaseMasterID": 1,
+   "CrimeNo": "100050011202500001",
+   "CaseNo": "KSP/BLR-U/2025/0047",
+   "CrimeRegisteredDate": "2025-01-14 00:00:00",
+   "PolicePersonID": 1,
+   "PoliceStationID": 11,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 6,
+   "CaseStatusID": 2,
+   "CourtID": 1,
+   "IncidentFromDate": "2025-01-14 00:00:00",
+   "IncidentToDate": "2025-01-14 00:00:00",
+   "InfoReceivedPSDate": "2025-01-14 00:00:00",
+   "latitude": 12.9716,
+   "longitude": 77.5946,
+   "BriefFacts": "Robbery reported at MG Road underpass, near Brigade Road junction, Bengaluru, Bengaluru Urban. Accused: Arjun Reddy, Sameer Patel. Victim: Venkatesh Murthy. Status: Closed — Chargesheet filed 09 February 2025 Investigating Officer: Sub-Inspector Kavitha Nagaraj, Cubbon Park PS"
+  },
+  {
+   "CaseMasterID": 2,
+   "CrimeNo": "100050012202500002",
+   "CaseNo": "KSP/BLR-U/2025/0083",
+   "CrimeRegisteredDate": "2025-01-22 00:00:00",
+   "PolicePersonID": 2,
+   "PoliceStationID": 12,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 7,
+   "CrimeMinorHeadID": 21,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-01-22 00:00:00",
+   "IncidentToDate": "2025-01-22 00:00:00",
+   "InfoReceivedPSDate": "2025-01-22 00:00:00",
+   "latitude": 12.9716,
+   "longitude": 77.5946,
+   "BriefFacts": "Gang Activity reported at Shivajinagar commercial complex, adjacent to KSRTC depot, Bengaluru Urban. Accused: Khalid Ibrahim, Mohammed Aziz, Tanveer Sheikh. Victim: Rajesh Kumar Bhat (property owner). Status: Open — Under investigation Investigating Officer: Inspector Dhananjaya Rao, Shivajinagar PS"
+  },
+  {
+   "CaseMasterID": 3,
+   "CrimeNo": "100220013202500001",
+   "CaseNo": "KSP/MYS/2025/0119",
+   "CrimeRegisteredDate": "2025-02-03 00:00:00",
+   "PolicePersonID": 3,
+   "PoliceStationID": 13,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 3,
+   "CaseStatusID": 3,
+   "CourtID": 3,
+   "IncidentFromDate": "2025-02-03 00:00:00",
+   "IncidentToDate": "2025-02-03 00:00:00",
+   "InfoReceivedPSDate": "2025-02-03 00:00:00",
+   "latitude": 12.2958,
+   "longitude": 76.6394,
+   "BriefFacts": "Assault reported at Vishwamanava Double Road, near Manasagangothri campus, Mysuru, Mysuru. Accused: Riyaz Ahmed Khan. Victim: Gopal Swamy. Status: Closed — Convicted, 6 months rigorous imprisonment awarded Investigating Officer: Head Constable Shanthi Prasad, Jayalakshmipuram PS"
+  },
+  {
+   "CaseMasterID": 4,
+   "CrimeNo": "100110014202500001",
+   "CaseNo": "KSP/MLR/2025/0201",
+   "CrimeRegisteredDate": "2025-02-11 00:00:00",
+   "PolicePersonID": 4,
+   "PoliceStationID": 14,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 9,
+   "CaseStatusID": 2,
+   "CourtID": 5,
+   "IncidentFromDate": "2025-02-11 00:00:00",
+   "IncidentToDate": "2025-02-11 00:00:00",
+   "InfoReceivedPSDate": "2025-02-11 00:00:00",
+   "latitude": 12.8703,
+   "longitude": 74.8806,
+   "BriefFacts": "Vehicle Theft reported at Hampankatta commercial area parking lot, Mangaluru, Dakshina Kannada. Victim: Anita D'Souza. Status: Closed — Untraced, case filed Investigating Officer: Sub-Inspector Prakash Kamath, Mangaluru North PS"
+  },
+  {
+   "CaseMasterID": 5,
+   "CrimeNo": "100130015202500001",
+   "CaseNo": "KSP/HBD/2025/0058",
+   "CrimeRegisteredDate": "2025-02-19 00:00:00",
+   "PolicePersonID": 5,
+   "PoliceStationID": 15,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 6,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-02-19 00:00:00",
+   "IncidentToDate": "2025-02-19 00:00:00",
+   "InfoReceivedPSDate": "2025-02-19 00:00:00",
+   "latitude": 15.4589,
+   "longitude": 75.0078,
+   "BriefFacts": "Robbery reported at NH-48 near Hosur bypass junction, Hubballi outskirts, Dharwad. Accused: Ravikumar Nayak, Siddappa Lamani. Victim: Basavraj Patil. Status: Open — Accused at large; lookout notice issued Investigating Officer: Inspector Girish Mallapur, Hubballi Central PS"
+  },
+  {
+   "CaseMasterID": 6,
+   "CrimeNo": "100030016202500001",
+   "CaseNo": "KSP/BLG/2025/0312",
+   "CrimeRegisteredDate": "2025-02-28 00:00:00",
+   "PolicePersonID": 6,
+   "PoliceStationID": 16,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 7,
+   "CaseStatusID": 2,
+   "CourtID": 9,
+   "IncidentFromDate": "2025-02-28 00:00:00",
+   "IncidentToDate": "2025-02-28 00:00:00",
+   "InfoReceivedPSDate": "2025-02-28 00:00:00",
+   "latitude": 15.8497,
+   "longitude": 74.4977,
+   "BriefFacts": "Burglary reported at Residential area, Shahapur Colony, Belagavi, Belagavi. Accused: Santosh Kamble, Anil Khot. Victim: Meena Patil. Status: Closed — Chargesheet filed Investigating Officer: Sub-Inspector Priya Desai, Belagavi City East PS"
+  },
+  {
+   "CaseMasterID": 7,
+   "CrimeNo": "100260017202500001",
+   "CaseNo": "KSP/TMK/2025/0174",
+   "CrimeRegisteredDate": "2025-03-07 00:00:00",
+   "PolicePersonID": 7,
+   "PoliceStationID": 17,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 9,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-03-07 00:00:00",
+   "IncidentToDate": "2025-03-07 00:00:00",
+   "InfoReceivedPSDate": "2025-03-07 00:00:00",
+   "latitude": 13.3409,
+   "longitude": 77.101,
+   "BriefFacts": "Vehicle Theft reported at Siddaganga Mutt Road, near Government Hospital, Tumakuru, Tumakuru. Accused: Suresh Gowda, Manjunath S. Victim: Ravi Shankar Reddy. Status: Open — Suresh Gowda absconding Investigating Officer: Head Constable Lokesh Kumar, Tumakuru Urban PS"
+  },
+  {
+   "CaseMasterID": 8,
+   "CrimeNo": "100020018202500001",
+   "CaseNo": "KSP/BAL/2025/0291",
+   "CrimeRegisteredDate": "2025-03-15 00:00:00",
+   "PolicePersonID": 8,
+   "PoliceStationID": 18,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 5,
+   "CrimeMinorHeadID": 17,
+   "CaseStatusID": 3,
+   "CourtID": 13,
+   "IncidentFromDate": "2025-03-15 00:00:00",
+   "IncidentToDate": "2025-03-15 00:00:00",
+   "InfoReceivedPSDate": "2025-03-15 00:00:00",
+   "latitude": 15.1394,
+   "longitude": 76.9214,
+   "BriefFacts": "Drug Trafficking reported at National Highway 63, Ballari-Hosapete stretch, Ballari. Accused: Naveen Kumar, Sudhir Raj. Victim: N/A (victimless offence). Status: Closed — Convicted Investigating Officer: Inspector Suresh Babu, Ballari City PS (Narcotics Cell)"
+  },
+  {
+   "CaseMasterID": 9,
+   "CrimeNo": "100170019202500001",
+   "CaseNo": "KSP/KBG/2025/0096",
+   "CrimeRegisteredDate": "2025-03-21 00:00:00",
+   "PolicePersonID": 9,
+   "PoliceStationID": 19,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 4,
+   "CrimeMinorHeadID": 14,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-03-21 00:00:00",
+   "IncidentToDate": "2025-03-21 00:00:00",
+   "InfoReceivedPSDate": "2025-03-21 00:00:00",
+   "latitude": 17.3297,
+   "longitude": 76.8343,
+   "BriefFacts": "Cybercrime reported at Online — Victim's residence, Sangam Nagar, Kalaburagi, Kalaburagi. Accused: Mehtab Singh, Farukh Ansari. Victim: Laxmidevi Kulkarni. Status: Open — Accused traced to Rajasthan; state police assistance requested Investigating Officer: Sub-Inspector Deepa Hegde, Kalaburagi Urban PS (Cyber Cell)"
+  },
+  {
+   "CaseMasterID": 10,
+   "CrimeNo": "100250020202500001",
+   "CaseNo": "KSP/SHV/2025/0145",
+   "CrimeRegisteredDate": "2025-03-29 00:00:00",
+   "PolicePersonID": 10,
+   "PoliceStationID": 20,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 1,
+   "CaseStatusID": 2,
+   "CourtID": 17,
+   "IncidentFromDate": "2025-03-29 00:00:00",
+   "IncidentToDate": "2025-03-29 00:00:00",
+   "InfoReceivedPSDate": "2025-03-29 00:00:00",
+   "latitude": 13.9299,
+   "longitude": 75.5681,
+   "BriefFacts": "Murder reported at Vinoba Nagar residential area, Shivamogga, Shivamogga. Accused: Hanumantha Gowda. Victim: Ramesh Babu. Status: Closed — Chargesheet filed; trial ongoing Investigating Officer: Deputy SP Anand Kumar, Shivamogga Division"
+  },
+  {
+   "CaseMasterID": 11,
+   "CrimeNo": "100050021202500003",
+   "CaseNo": "KSP/BLR-U/2025/0247",
+   "CrimeRegisteredDate": "2025-04-05 00:00:00",
+   "PolicePersonID": 11,
+   "PoliceStationID": 21,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 5,
+   "CrimeMinorHeadID": 17,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-04-05 00:00:00",
+   "IncidentToDate": "2025-04-05 00:00:00",
+   "InfoReceivedPSDate": "2025-04-05 00:00:00",
+   "latitude": 12.9716,
+   "longitude": 77.5946,
+   "BriefFacts": "Drug Trafficking reported at Rajajinagar Industrial Area, near Ring Road, Bengaluru, Bengaluru Urban. Accused: Pradeep Kumar Shetty, Imran Basha, Lokesh R. Status: Open — Pradeep Kumar Shetty arrested; associates at large Investigating Officer: Inspector Nagesh Prasad, Rajajinagar PS (Narcotics Wing)"
+  },
+  {
+   "CaseMasterID": 12,
+   "CrimeNo": "100040022202500001",
+   "CaseNo": "KSP/BLR-R/2025/0063",
+   "CrimeRegisteredDate": "2025-04-14 00:00:00",
+   "PolicePersonID": 12,
+   "PoliceStationID": 22,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 6,
+   "CrimeMinorHeadID": 19,
+   "CaseStatusID": 3,
+   "CourtID": 19,
+   "IncidentFromDate": "2025-04-14 00:00:00",
+   "IncidentToDate": "2025-04-14 00:00:00",
+   "InfoReceivedPSDate": "2025-04-14 00:00:00",
+   "latitude": 13.2846,
+   "longitude": 77.62,
+   "BriefFacts": "Fraud reported at Kanakapura Road, Bengaluru Rural, Bengaluru Rural. Accused: Ashok Thimmaiah. Victim: Cooperative Bank, Kanakapura branch (institutional victim). Status: Closed — Accused convicted; civil recovery proceedings ongoing Investigating Officer: Inspector Suma Reddy, Ramanagara PS (Economic Offences)"
+  },
+  {
+   "CaseMasterID": 13,
+   "CrimeNo": "100220023202500002",
+   "CaseNo": "KSP/MYS/2025/0338",
+   "CrimeRegisteredDate": "2025-04-22 00:00:00",
+   "PolicePersonID": 13,
+   "PoliceStationID": 23,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 5,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-04-22 00:00:00",
+   "IncidentToDate": "2025-04-22 00:00:00",
+   "InfoReceivedPSDate": "2025-04-22 00:00:00",
+   "latitude": 12.2958,
+   "longitude": 76.6394,
+   "BriefFacts": "Kidnapping reported at Near Kalidasa Road, Nazarbad, Mysuru, Mysuru. Accused: Salim Khan, Maqbool Ahmed. Victim: Pooja Nair (Minor, 14 years). Status: Open — Victim rescued; accused Salim Khan arrested; Maqbool Ahmed absconding Investigating Officer: Inspector Padmavathi Rao, Vijayanagar PS (Women and Children Cell)"
+  },
+  {
+   "CaseMasterID": 14,
+   "CrimeNo": "100110024202500002",
+   "CaseNo": "KSP/MLR/2025/0409",
+   "CrimeRegisteredDate": "2025-05-01 00:00:00",
+   "PolicePersonID": 14,
+   "PoliceStationID": 24,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 3,
+   "CaseStatusID": 3,
+   "CourtID": 5,
+   "IncidentFromDate": "2025-05-01 00:00:00",
+   "IncidentToDate": "2025-05-01 00:00:00",
+   "InfoReceivedPSDate": "2025-05-01 00:00:00",
+   "latitude": 12.8703,
+   "longitude": 74.8806,
+   "BriefFacts": "Assault reported at Falnir Road, near City Central Library, Mangaluru, Dakshina Kannada. Accused: Yunus Mohammed, Salman Rehman. Victim: David Rodrigues. Status: Closed — Convicted, 1-year rigorous imprisonment each Investigating Officer: Sub-Inspector Clement Pais, Mangaluru South PS"
+  },
+  {
+   "CaseMasterID": 15,
+   "CrimeNo": "100130025202500002",
+   "CaseNo": "KSP/HBD/2025/0197",
+   "CrimeRegisteredDate": "2025-05-09 00:00:00",
+   "PolicePersonID": 15,
+   "PoliceStationID": 25,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 7,
+   "CrimeMinorHeadID": 21,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-05-09 00:00:00",
+   "IncidentToDate": "2025-05-09 00:00:00",
+   "InfoReceivedPSDate": "2025-05-09 00:00:00",
+   "latitude": 15.4589,
+   "longitude": 75.0078,
+   "BriefFacts": "Gang Activity reported at Old Market Street and Cotton Market, Dharwad, Dharwad. Accused: Khalid Ibrahim, Shakeel Mirza, Raju Lamani, Irfan Sheikh. Victim: Multiple shopkeepers, Dharwad Market Area. Status: Open — Khalid Ibrahim NBW issued; Raju Lamani in custody Investigating Officer: Deputy SP Ramesh Deshpande, Hubballi-Dharwad Division"
+  },
+  {
+   "CaseMasterID": 16,
+   "CrimeNo": "100030026202500002",
+   "CaseNo": "KSP/BLG/2025/0488",
+   "CrimeRegisteredDate": "2025-05-17 00:00:00",
+   "PolicePersonID": 16,
+   "PoliceStationID": 26,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 9,
+   "CaseStatusID": 2,
+   "CourtID": 9,
+   "IncidentFromDate": "2025-05-17 00:00:00",
+   "IncidentToDate": "2025-05-17 00:00:00",
+   "InfoReceivedPSDate": "2025-05-17 00:00:00",
+   "latitude": 15.8497,
+   "longitude": 74.4977,
+   "BriefFacts": "Vehicle Theft reported at Hindwadi residential area, Belagavi, Belagavi. Accused: Rajendra Pol, Sunil Chavan. Victim: Prakash Joshi. Status: Closed — Both accused arrested and chargesheeted Investigating Officer: Head Constable Vijay Patil, Belagavi North PS"
+  },
+  {
+   "CaseMasterID": 17,
+   "CrimeNo": "100170027202500002",
+   "CaseNo": "KSP/KBG/2025/0203",
+   "CrimeRegisteredDate": "2025-05-25 00:00:00",
+   "PolicePersonID": 17,
+   "PoliceStationID": 27,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 6,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-05-25 00:00:00",
+   "IncidentToDate": "2025-05-25 00:00:00",
+   "InfoReceivedPSDate": "2025-05-25 00:00:00",
+   "latitude": 17.3297,
+   "longitude": 76.8343,
+   "BriefFacts": "Robbery reported at Gulbarga-Bidar Highway, 9 km from Kalaburagi, Kalaburagi. Accused: Riyaz Ahmed Khan, Nazir Pasha. Victim: Shantha Bai. Status: Open — Riyaz Ahmed Khan identified; warrant issued Investigating Officer: Inspector Vijayakumar Patil, Kalaburagi Rural PS"
+  },
+  {
+   "CaseMasterID": 18,
+   "CrimeNo": "100260028202500002",
+   "CaseNo": "KSP/TMK/2025/0388",
+   "CrimeRegisteredDate": "2025-06-02 00:00:00",
+   "PolicePersonID": 18,
+   "PoliceStationID": 28,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 7,
+   "CaseStatusID": 3,
+   "CourtID": 11,
+   "IncidentFromDate": "2025-06-02 00:00:00",
+   "IncidentToDate": "2025-06-02 00:00:00",
+   "InfoReceivedPSDate": "2025-06-02 00:00:00",
+   "latitude": 13.3409,
+   "longitude": 77.101,
+   "BriefFacts": "Burglary reported at Market Road, Tiptur Town, Tumakuru, Tumakuru. Accused: Nagaraj Balu, Chandrappa K. Victim: Srinivasa Hardware Store (owner: Venkataramu). Status: Closed — Both accused convicted Investigating Officer: Sub-Inspector Ravi Kumar, Tiptur PS"
+  },
+  {
+   "CaseMasterID": 19,
+   "CrimeNo": "100020029202500002",
+   "CaseNo": "KSP/BAL/2025/0357",
+   "CrimeRegisteredDate": "2025-06-10 00:00:00",
+   "PolicePersonID": 19,
+   "PoliceStationID": 29,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 3,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-06-10 00:00:00",
+   "IncidentToDate": "2025-06-10 00:00:00",
+   "InfoReceivedPSDate": "2025-06-10 00:00:00",
+   "latitude": 15.1394,
+   "longitude": 76.9214,
+   "BriefFacts": "Assault reported at Agricultural field, Kampli taluk, Ballari district, Ballari. Accused: Ravikumar Nayak, Venkatesha Reddy. Victim: Narasimha Reddy. Status: Open — Ravikumar Nayak absconding; Venkatesha Reddy arrested Investigating Officer: Inspector Suresh Reddy, Ballari Rural PS"
+  },
+  {
+   "CaseMasterID": 20,
+   "CrimeNo": "100250030202500002",
+   "CaseNo": "KSP/SHV/2025/0302",
+   "CrimeRegisteredDate": "2025-06-18 00:00:00",
+   "PolicePersonID": 20,
+   "PoliceStationID": 30,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 4,
+   "CrimeMinorHeadID": 14,
+   "CaseStatusID": 2,
+   "CourtID": 17,
+   "IncidentFromDate": "2025-06-18 00:00:00",
+   "IncidentToDate": "2025-06-18 00:00:00",
+   "InfoReceivedPSDate": "2025-06-18 00:00:00",
+   "latitude": 13.9299,
+   "longitude": 75.5681,
+   "BriefFacts": "Cybercrime reported at Online — Company servers, Bhadravathi, Shivamogga. Accused: investigation ongoing). Victim: Subbaiah Textiles Pvt Ltd. Status: Closed — Insurance claim settled; perpetrators untraced Investigating Officer: Inspector Sunil S, Bhadravathi PS (Cyber Cell)"
+  },
+  {
+   "CaseMasterID": 21,
+   "CrimeNo": "100050031202500004",
+   "CaseNo": "KSP/BLR-U/2025/0561",
+   "CrimeRegisteredDate": "2025-06-26 00:00:00",
+   "PolicePersonID": 21,
+   "PoliceStationID": 31,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 1,
+   "CaseStatusID": 3,
+   "CourtID": 1,
+   "IncidentFromDate": "2025-06-26 00:00:00",
+   "IncidentToDate": "2025-06-26 00:00:00",
+   "InfoReceivedPSDate": "2025-06-26 00:00:00",
+   "latitude": 12.9716,
+   "longitude": 77.5946,
+   "BriefFacts": "Murder reported at 100 Feet Road flyover underside, Indiranagar, Bengaluru, Bengaluru Urban. Accused: Deepak Raj, Mohan Das. Victim: Sridhar Naidu. Status: Closed — Both accused convicted; life imprisonment awarded Investigating Officer: Deputy SP Geeta Menon, Bengaluru Urban East Division"
+  },
+  {
+   "CaseMasterID": 22,
+   "CrimeNo": "100040032202500002",
+   "CaseNo": "KSP/BLR-R/2025/0187",
+   "CrimeRegisteredDate": "2025-07-04 00:00:00",
+   "PolicePersonID": 22,
+   "PoliceStationID": 32,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 9,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-07-04 00:00:00",
+   "IncidentToDate": "2025-07-04 00:00:00",
+   "InfoReceivedPSDate": "2025-07-04 00:00:00",
+   "latitude": 13.2846,
+   "longitude": 77.62,
+   "BriefFacts": "Vehicle Theft reported at Kengeri Satellite Town, near bus terminus, Bengaluru Rural. Accused: Suresh Gowda, Ramesh T. Victim: Narayan Rao. Status: Open — Ramesh T in custody; Suresh Gowda absconding (same accused as KSP/TMK/2025/0174) Investigating Officer: Sub-Inspector Chandra Reddy, Kengeri PS"
+  },
+  {
+   "CaseMasterID": 23,
+   "CrimeNo": "100050033202500005",
+   "CaseNo": "KSP/BLR-U/2025/0629",
+   "CrimeRegisteredDate": "2025-07-12 00:00:00",
+   "PolicePersonID": 23,
+   "PoliceStationID": 33,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 5,
+   "CrimeMinorHeadID": 17,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-07-12 00:00:00",
+   "IncidentToDate": "2025-07-12 00:00:00",
+   "InfoReceivedPSDate": "2025-07-12 00:00:00",
+   "latitude": 12.9716,
+   "longitude": 77.5946,
+   "BriefFacts": "Drug Trafficking reported at Yeshwanthpur depot area (Bengaluru Urban) and NH-48 highway corridor (Tumakuru segment), Bengaluru Urban. Accused: Ashfaq Hussain, Ravi Sharma, Vinod Kumar, Anand Tiwari. Status: Open — Ashfaq Hussain and Ravi Sharma in custody; Vinod Kumar and Anand Tiwari at large Investigating Officer: Inspector Kiran Raj, Yeshwanthpur PS (Narcotics Task Force); coordinating with Tumakuru SP Office"
+  },
+  {
+   "CaseMasterID": 24,
+   "CrimeNo": "100220034202500003",
+   "CaseNo": "KSP/MYS/2025/0511",
+   "CrimeRegisteredDate": "2025-07-20 00:00:00",
+   "PolicePersonID": 24,
+   "PoliceStationID": 34,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 6,
+   "CrimeMinorHeadID": 19,
+   "CaseStatusID": 3,
+   "CourtID": 3,
+   "IncidentFromDate": "2025-07-20 00:00:00",
+   "IncidentToDate": "2025-07-20 00:00:00",
+   "InfoReceivedPSDate": "2025-07-20 00:00:00",
+   "latitude": 12.2958,
+   "longitude": 76.6394,
+   "BriefFacts": "Fraud reported at Various residences, Jayalakshmipuram and Vijayanagar, Mysuru, Mysuru. Accused: Dr Kiran Bopanna. Victim: Twenty-three elderly investors. Status: Closed — Accused arrested and convicted; investors partially compensated Investigating Officer: Inspector Bharat Shetty, Chamundi Hills PS (Economic Offences)"
+  },
+  {
+   "CaseMasterID": 25,
+   "CrimeNo": "100110035202500003",
+   "CaseNo": "KSP/MLR/2025/0574",
+   "CrimeRegisteredDate": "2025-07-28 00:00:00",
+   "PolicePersonID": 25,
+   "PoliceStationID": 35,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 6,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-07-28 00:00:00",
+   "IncidentToDate": "2025-07-28 00:00:00",
+   "InfoReceivedPSDate": "2025-07-28 00:00:00",
+   "latitude": 12.8703,
+   "longitude": 74.8806,
+   "BriefFacts": "Robbery reported at Mangaluru New Port Container Yard, Dakshina Kannada. Accused: Anwar Hussein, Sudhir Gowda, Fayaz Khan. Victim: Coastal Transshipment Agency (institutional victim). Status: Open — Anwar Hussein in custody; Sudhir Gowda and Fayaz Khan at large Investigating Officer: Inspector Anand Pai, Mangaluru Port PS"
+  },
+  {
+   "CaseMasterID": 26,
+   "CrimeNo": "100130036202500003",
+   "CaseNo": "KSP/HBD/2025/0413",
+   "CrimeRegisteredDate": "2025-08-05 00:00:00",
+   "PolicePersonID": 26,
+   "PoliceStationID": 36,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 5,
+   "CaseStatusID": 3,
+   "CourtID": 7,
+   "IncidentFromDate": "2025-08-05 00:00:00",
+   "IncidentToDate": "2025-08-05 00:00:00",
+   "InfoReceivedPSDate": "2025-08-05 00:00:00",
+   "latitude": 15.4589,
+   "longitude": 75.0078,
+   "BriefFacts": "Kidnapping reported at Vidyanagar locality, Hubballi, Dharwad. Accused: Gangadhar Shettar, Chandrakant Badiger. Victim: Ramesh Patil (adult, 34 years; business rival). Status: Closed — Victim rescued within 18 hours; both accused convicted Investigating Officer: Deputy SP Krishnamurthy, Hubballi-Dharwad Division"
+  },
+  {
+   "CaseMasterID": 27,
+   "CrimeNo": "100030037202500003",
+   "CaseNo": "KSP/BLG/2025/0618",
+   "CrimeRegisteredDate": "2025-08-13 00:00:00",
+   "PolicePersonID": 27,
+   "PoliceStationID": 37,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 4,
+   "CrimeMinorHeadID": 14,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-08-13 00:00:00",
+   "IncidentToDate": "2025-08-13 00:00:00",
+   "InfoReceivedPSDate": "2025-08-13 00:00:00",
+   "latitude": 15.8497,
+   "longitude": 74.4977,
+   "BriefFacts": "Cybercrime reported at Online — Victim's home, Desur Village, Belagavi district, Belagavi. Accused: Salim Shaikh. Victim: Vijayalakshmi Desai. Status: Open — Salim Shaikh arrested; online associates unidentified Investigating Officer: Sub-Inspector Nisha Patil, Belagavi Rural PS (Cyber Cell)"
+  },
+  {
+   "CaseMasterID": 28,
+   "CrimeNo": "100170038202500003",
+   "CaseNo": "KSP/KBG/2025/0341",
+   "CrimeRegisteredDate": "2025-08-22 00:00:00",
+   "PolicePersonID": 28,
+   "PoliceStationID": 38,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 6,
+   "CrimeMinorHeadID": 19,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-08-22 00:00:00",
+   "IncidentToDate": "2025-08-22 00:00:00",
+   "InfoReceivedPSDate": "2025-08-22 00:00:00",
+   "latitude": 17.3297,
+   "longitude": 76.8343,
+   "BriefFacts": "Fraud reported at Kalaburagi Agricultural Market Yard, Kalaburagi. Accused: Mehtab Singh, Ravi Garg. Victim: Multiple agricultural supply shop owners. Status: Open — Mehtab Singh identified; Ravi Garg absconding Investigating Officer: Inspector Mallikarjun, Gulbarga East PS"
+  },
+  {
+   "CaseMasterID": 29,
+   "CrimeNo": "100260039202500003",
+   "CaseNo": "KSP/TMK/2025/0461",
+   "CrimeRegisteredDate": "2025-08-30 00:00:00",
+   "PolicePersonID": 29,
+   "PoliceStationID": 39,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 7,
+   "CrimeMinorHeadID": 21,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-08-30 00:00:00",
+   "IncidentToDate": "2025-08-30 00:00:00",
+   "InfoReceivedPSDate": "2025-08-30 00:00:00",
+   "latitude": 13.3409,
+   "longitude": 77.101,
+   "BriefFacts": "Gang Activity reported at Granite quarry belt, Madhugiri, Tumakuru, Tumakuru. Accused: Riyaz Ahmed Khan, Mohammed Rafi, Salim Bhai. Victim: Multiple quarry operators, Madhugiri taluk. Status: Open — Riyaz Ahmed Khan NBW issued; other accused at large Investigating Officer: Inspector Ramakrishna Hegde, Madhugiri PS"
+  },
+  {
+   "CaseMasterID": 30,
+   "CrimeNo": "100020040202500003",
+   "CaseNo": "KSP/BAL/2025/0468",
+   "CrimeRegisteredDate": "2025-09-07 00:00:00",
+   "PolicePersonID": 30,
+   "PoliceStationID": 40,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 7,
+   "CaseStatusID": 2,
+   "CourtID": 13,
+   "IncidentFromDate": "2025-09-07 00:00:00",
+   "IncidentToDate": "2025-09-07 00:00:00",
+   "InfoReceivedPSDate": "2025-09-07 00:00:00",
+   "latitude": 15.1394,
+   "longitude": 76.9214,
+   "BriefFacts": "Burglary reported at Hospet Main Road, near Tungabhadra Dam tourist point, Ballari. Accused: Ranga Nayaka, Shekar Lamani. Victim: Karnataka Bank ATM (Hospet branch). Status: Closed — Both accused arrested and chargesheeted Investigating Officer: Sub-Inspector Deepak Nayak, Hospet PS"
+  },
+  {
+   "CaseMasterID": 31,
+   "CrimeNo": "100250020202500003",
+   "CaseNo": "KSP/SHV/2025/0489",
+   "CrimeRegisteredDate": "2025-09-15 00:00:00",
+   "PolicePersonID": 31,
+   "PoliceStationID": 20,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 5,
+   "CrimeMinorHeadID": 17,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-09-15 00:00:00",
+   "IncidentToDate": "2025-09-15 00:00:00",
+   "InfoReceivedPSDate": "2025-09-15 00:00:00",
+   "latitude": 13.9299,
+   "longitude": 75.5681,
+   "BriefFacts": "Drug Trafficking reported at Old Bus Stand area, Shivamogga, Shivamogga. Accused: Pradeep Kumar Shetty, Gopal Naik, Bhimappa. Status: Open — Pradeep Kumar Shetty absconding; Gopal Naik and Bhimappa in custody Investigating Officer: Inspector Chandrashekar B, Shivamogga City PS (DISSA Cell)"
+  },
+  {
+   "CaseMasterID": 32,
+   "CrimeNo": "100050041202500006",
+   "CaseNo": "KSP/BLR-U/2025/0793",
+   "CrimeRegisteredDate": "2025-09-23 00:00:00",
+   "PolicePersonID": 32,
+   "PoliceStationID": 41,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 6,
+   "CaseStatusID": 2,
+   "CourtID": 1,
+   "IncidentFromDate": "2025-09-23 00:00:00",
+   "IncidentToDate": "2025-09-23 00:00:00",
+   "InfoReceivedPSDate": "2025-09-23 00:00:00",
+   "latitude": 12.9716,
+   "longitude": 77.5946,
+   "BriefFacts": "Robbery reported at HSR Layout Sector 2, near the metro feeder bus stop, Bengaluru Urban. Accused: Ganesh Kumar, Arjun Bhoomi. Victim: Sunita Krishnamurthy. Status: Closed — Both accused arrested; chargesheet filed Investigating Officer: Sub-Inspector Revathi S, HSR Layout PS"
+  },
+  {
+   "CaseMasterID": 33,
+   "CrimeNo": "100040042202500003",
+   "CaseNo": "KSP/BLR-R/2025/0291",
+   "CrimeRegisteredDate": "2025-10-01 00:00:00",
+   "PolicePersonID": 33,
+   "PoliceStationID": 42,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 1,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-10-01 00:00:00",
+   "IncidentToDate": "2025-10-01 00:00:00",
+   "InfoReceivedPSDate": "2025-10-01 00:00:00",
+   "latitude": 13.2846,
+   "longitude": 77.62,
+   "BriefFacts": "Murder reported at Hesaraghatta village, outskirts of Magadi taluk, Bengaluru Rural. Accused: Srinivas Gowda. Victim: Narayana Gowda. Status: Open — Forensic confirmation received; accused absconding Investigating Officer: Inspector Nageshwar Rao, Magadi PS"
+  },
+  {
+   "CaseMasterID": 34,
+   "CrimeNo": "100220043202500004",
+   "CaseNo": "KSP/MYS/2025/0681",
+   "CrimeRegisteredDate": "2025-10-09 00:00:00",
+   "PolicePersonID": 34,
+   "PoliceStationID": 43,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 9,
+   "CaseStatusID": 2,
+   "CourtID": 3,
+   "IncidentFromDate": "2025-10-09 00:00:00",
+   "IncidentToDate": "2025-10-09 00:00:00",
+   "InfoReceivedPSDate": "2025-10-09 00:00:00",
+   "latitude": 12.2958,
+   "longitude": 76.6394,
+   "BriefFacts": "Vehicle Theft reported at Hunsur KSRTC depot, Mysuru district, Mysuru. Accused: Lokesh Babu, Channabasappa. Victim: Karnataka State Road Transport Corporation (KSRTC). Status: Closed — Both accused arrested; KSRTC bus recovered Investigating Officer: Sub-Inspector Manjunath G, Hunsur PS"
+  },
+  {
+   "CaseMasterID": 35,
+   "CrimeNo": "100110044202500004",
+   "CaseNo": "KSP/MLR/2026/0041",
+   "CrimeRegisteredDate": "2025-10-17 00:00:00",
+   "PolicePersonID": 35,
+   "PoliceStationID": 44,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 7,
+   "CrimeMinorHeadID": 21,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-10-17 00:00:00",
+   "IncidentToDate": "2025-10-17 00:00:00",
+   "InfoReceivedPSDate": "2025-10-17 00:00:00",
+   "latitude": 12.8703,
+   "longitude": 74.8806,
+   "BriefFacts": "Gang Activity reported at Ullal Fishing Harbour and surrounding coastal belt, Dakshina Kannada. Accused: Khalid Ibrahim, Babu Naik, Yusuf Mirza. Victim: Fishermen Cooperative Society, Ullal. Status: Open — Babu Naik in custody; Khalid Ibrahim and Yusuf Mirza absconding Investigating Officer: Inspector Dinesh Shetty, Ullal PS"
+  },
+  {
+   "CaseMasterID": 36,
+   "CrimeNo": "100130045202500004",
+   "CaseNo": "KSP/HBD/2026/0017",
+   "CrimeRegisteredDate": "2025-10-25 00:00:00",
+   "PolicePersonID": 36,
+   "PoliceStationID": 45,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 3,
+   "CaseStatusID": 3,
+   "CourtID": 7,
+   "IncidentFromDate": "2025-10-25 00:00:00",
+   "IncidentToDate": "2025-10-25 00:00:00",
+   "InfoReceivedPSDate": "2025-10-25 00:00:00",
+   "latitude": 15.4589,
+   "longitude": 75.0078,
+   "BriefFacts": "Assault reported at Navanagar locality, Hubballi, Dharwad. Accused: Chandrakant Hooli, Ravi Nayak. Victim: Mohammed Salim (auto-rickshaw driver). Status: Closed — Accused convicted; fined and sentenced to 3 months simple imprisonment Investigating Officer: Head Constable Basavaraj, Hubballi East PS"
+  },
+  {
+   "CaseMasterID": 37,
+   "CrimeNo": "100030046202500004",
+   "CaseNo": "KSP/BLG/2026/0093",
+   "CrimeRegisteredDate": "2025-11-02 00:00:00",
+   "PolicePersonID": 37,
+   "PoliceStationID": 46,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 7,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-11-02 00:00:00",
+   "IncidentToDate": "2025-11-02 00:00:00",
+   "InfoReceivedPSDate": "2025-11-02 00:00:00",
+   "latitude": 15.8497,
+   "longitude": 74.4977,
+   "BriefFacts": "Burglary reported at Kanabargi Industrial Area, Belagavi, Belagavi. Accused: Santosh Kamble, Rafiq Mulla. Victim: Punjab National Bank (Kanabargi Branch). Status: Open — Santosh Kamble identified from fingerprints; Rafiq Mulla unidentified Investigating Officer: Inspector Priya Yargeri, Belagavi City West PS"
+  },
+  {
+   "CaseMasterID": 38,
+   "CrimeNo": "100170047202500004",
+   "CaseNo": "KSP/KBG/2026/0089",
+   "CrimeRegisteredDate": "2025-11-10 00:00:00",
+   "PolicePersonID": 38,
+   "PoliceStationID": 47,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 9,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-11-10 00:00:00",
+   "IncidentToDate": "2025-11-10 00:00:00",
+   "InfoReceivedPSDate": "2025-11-10 00:00:00",
+   "latitude": 17.3297,
+   "longitude": 76.8343,
+   "BriefFacts": "Vehicle Theft reported at National Highway 150, Sedam, Kalaburagi, Kalaburagi. Accused: Suresh Gowda, Jakeer Hussain. Victim: Seetaram Reddy. Status: Open — Suresh Gowda apprehended near AP border; vehicle recovered; Jakeer Hussain at large Investigating Officer: Sub-Inspector Ramaiah, Sedam PS"
+  },
+  {
+   "CaseMasterID": 39,
+   "CrimeNo": "100260017202500004",
+   "CaseNo": "KSP/TMK/2026/0129",
+   "CrimeRegisteredDate": "2025-11-18 00:00:00",
+   "PolicePersonID": 39,
+   "PoliceStationID": 17,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 6,
+   "CrimeMinorHeadID": 19,
+   "CaseStatusID": 3,
+   "CourtID": 11,
+   "IncidentFromDate": "2025-11-18 00:00:00",
+   "IncidentToDate": "2025-11-18 00:00:00",
+   "InfoReceivedPSDate": "2025-11-18 00:00:00",
+   "latitude": 13.3409,
+   "longitude": 77.101,
+   "BriefFacts": "Fraud reported at Fake placement office, MG Road, Tumakuru, Tumakuru. Accused: Ramesh Nayak, Latha Kumari. Victim: Job-seeking youth (38 complainants). Status: Closed — Both accused arrested; convicted Investigating Officer: Inspector Suma Patil, Tumakuru Urban PS"
+  },
+  {
+   "CaseMasterID": 40,
+   "CrimeNo": "100020018202500004",
+   "CaseNo": "KSP/BAL/2026/0153",
+   "CrimeRegisteredDate": "2025-11-26 00:00:00",
+   "PolicePersonID": 40,
+   "PoliceStationID": 18,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 5,
+   "CrimeMinorHeadID": 17,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-11-26 00:00:00",
+   "IncidentToDate": "2025-11-26 00:00:00",
+   "InfoReceivedPSDate": "2025-11-26 00:00:00",
+   "latitude": 15.1394,
+   "longitude": 76.9214,
+   "BriefFacts": "Drug Trafficking reported at Railway goods yard, Ballari Junction, Ballari. Accused: Ramu Naik, Satish Bhoovi, Mohammed Riyaz. Status: Open — Ramu Naik and Satish Bhoovi in custody; Mohammed Riyaz at large Investigating Officer: Inspector Ganesh Babu, Ballari City PS (Narcotics, Railway liaison)"
+  },
+  {
+   "CaseMasterID": 41,
+   "CrimeNo": "100110014202500005",
+   "CaseNo": "KSP/SHV/2026/0102",
+   "CrimeRegisteredDate": "2025-12-04 00:00:00",
+   "PolicePersonID": 41,
+   "PoliceStationID": 14,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 5,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-12-04 00:00:00",
+   "IncidentToDate": "2025-12-04 00:00:00",
+   "InfoReceivedPSDate": "2025-12-04 00:00:00",
+   "latitude": 12.8703,
+   "longitude": 74.8806,
+   "BriefFacts": "Kidnapping reported at Kidnapped from Kadri Park area, Mangaluru; held in Sagar taluk, Shivamogga district, Dakshina Kannada. Accused: Sadiq Bhai, Mohan Kulkarni, Vishwanath Pati. Victim: Kishore Kumar Hegde (business executive, 45 years). Status: Open — Victim rescued; Mohan Kulkarni in custody; Sadiq Bhai and Vishwanath Pati absconding Investigating Officer: Deputy SP Anita Rao, Mangaluru Range; coordinating with Deputy SP Shivamogga"
+  },
+  {
+   "CaseMasterID": 42,
+   "CrimeNo": "100050048202500007",
+   "CaseNo": "KSP/BLR-U/2026/0014",
+   "CrimeRegisteredDate": "2025-12-12 00:00:00",
+   "PolicePersonID": 42,
+   "PoliceStationID": 48,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 4,
+   "CrimeMinorHeadID": 14,
+   "CaseStatusID": 2,
+   "CourtID": 1,
+   "IncidentFromDate": "2025-12-12 00:00:00",
+   "IncidentToDate": "2025-12-12 00:00:00",
+   "InfoReceivedPSDate": "2025-12-12 00:00:00",
+   "latitude": 12.9716,
+   "longitude": 77.5946,
+   "BriefFacts": "Cybercrime reported at Online — Company headquarters, Whitefield, Bengaluru, Bengaluru Urban. Victim: FinServ Technologies Pvt Ltd. Status: Closed — Data breach contained; Interpol notice issued; no domestic arrest Investigating Officer: Inspector Suhas Mehta, Whitefield PS (Cyber Crime Special Cell)"
+  },
+  {
+   "CaseMasterID": 43,
+   "CrimeNo": "100040049202500004",
+   "CaseNo": "KSP/BLR-R/2026/0048",
+   "CrimeRegisteredDate": "2025-12-20 00:00:00",
+   "PolicePersonID": 43,
+   "PoliceStationID": 49,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 6,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-12-20 00:00:00",
+   "IncidentToDate": "2025-12-20 00:00:00",
+   "InfoReceivedPSDate": "2025-12-20 00:00:00",
+   "latitude": 13.2846,
+   "longitude": 77.62,
+   "BriefFacts": "Robbery reported at Channapatna Town, BM Road, Bengaluru Rural. Accused: Nagaraju D, Krishnappa T, Ramu Bhoovi. Victim: Lakshmi Gold Finance (branch, Channapatna; manager: Sanjay Rao). Status: Open — Nagaraju D and Ramu Bhoovi arrested; Krishnappa T at large Investigating Officer: Inspector Hanumareddy, Channapatna PS"
+  },
+  {
+   "CaseMasterID": 44,
+   "CrimeNo": "100220050202500005",
+   "CaseNo": "KSP/MYS/2026/0052",
+   "CrimeRegisteredDate": "2025-12-28 00:00:00",
+   "PolicePersonID": 44,
+   "PoliceStationID": 50,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 5,
+   "CrimeMinorHeadID": 17,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2025-12-28 00:00:00",
+   "IncidentToDate": "2025-12-28 00:00:00",
+   "InfoReceivedPSDate": "2025-12-28 00:00:00",
+   "latitude": 12.2958,
+   "longitude": 76.6394,
+   "BriefFacts": "Drug Trafficking reported at Industrial area near KIADB zone, Nanjangud, Mysuru. Accused: Pradeep Kumar Shetty, Hussain Bhai, Anand Gowda. Status: Open — Hussain Bhai and Anand Gowda in custody; Pradeep Kumar Shetty wanted (NBW issued) Investigating Officer: Inspector Sowmya D, Nanjangud PS (Narcotics Cell)"
+  },
+  {
+   "CaseMasterID": 45,
+   "CrimeNo": "100110024202600001",
+   "CaseNo": "KSP/MLR/2026/0117",
+   "CrimeRegisteredDate": "2026-01-05 00:00:00",
+   "PolicePersonID": 45,
+   "PoliceStationID": 24,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 7,
+   "CaseStatusID": 2,
+   "CourtID": 5,
+   "IncidentFromDate": "2026-01-05 00:00:00",
+   "IncidentToDate": "2026-01-05 00:00:00",
+   "InfoReceivedPSDate": "2026-01-05 00:00:00",
+   "latitude": 12.8703,
+   "longitude": 74.8806,
+   "BriefFacts": "Burglary reported at Lalbagh Bunder Road, Mangaluru City, Dakshina Kannada. Accused: Shabbir Khan, Rafiq Mohammed. Victim: City Central Museum (government property). Status: Closed — Both accused arrested; artefacts recovered Investigating Officer: Inspector Lawrence Fernandes, Mangaluru South PS"
+  },
+  {
+   "CaseMasterID": 46,
+   "CrimeNo": "100130051202600001",
+   "CaseNo": "KSP/HBD/2026/0231",
+   "CrimeRegisteredDate": "2026-01-13 00:00:00",
+   "PolicePersonID": 46,
+   "PoliceStationID": 51,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 6,
+   "CrimeMinorHeadID": 19,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-01-13 00:00:00",
+   "IncidentToDate": "2026-01-13 00:00:00",
+   "InfoReceivedPSDate": "2026-01-13 00:00:00",
+   "latitude": 15.4589,
+   "longitude": 75.0078,
+   "BriefFacts": "Fraud reported at Multiple villages, Dharwad taluk, Dharwad. Accused: Prabhu Halakatti, Raveendra Chikkodi. Victim: 47 farmers, Dharwad taluk. Status: Open — Prabhu Halakatti arrested; Raveendra Chikkodi absconding Investigating Officer: Inspector Basavaraj Kulli, Dharwad Rural PS"
+  },
+  {
+   "CaseMasterID": 47,
+   "CrimeNo": "100030052202600001",
+   "CaseNo": "KSP/BLG/2026/0194",
+   "CrimeRegisteredDate": "2026-01-21 00:00:00",
+   "PolicePersonID": 47,
+   "PoliceStationID": 52,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 1,
+   "CaseStatusID": 2,
+   "CourtID": 9,
+   "IncidentFromDate": "2026-01-21 00:00:00",
+   "IncidentToDate": "2026-01-21 00:00:00",
+   "InfoReceivedPSDate": "2026-01-21 00:00:00",
+   "latitude": 15.8497,
+   "longitude": 74.4977,
+   "BriefFacts": "Murder reported at Tilakwadi residential area, Belagavi Cantonment, Belagavi. Accused: Manjunath Sali (suspect, not yet chargesheeted). Victim: Praveen Kumar Patil. Status: Closed — Case referred to CID for further investigation Investigating Officer: Deputy SP Vijayendra Rao, Belagavi CID Branch"
+  },
+  {
+   "CaseMasterID": 48,
+   "CrimeNo": "100170053202600001",
+   "CaseNo": "KSP/KBG/2026/0176",
+   "CrimeRegisteredDate": "2026-01-29 00:00:00",
+   "PolicePersonID": 48,
+   "PoliceStationID": 53,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 5,
+   "CaseStatusID": 2,
+   "CourtID": 15,
+   "IncidentFromDate": "2026-01-29 00:00:00",
+   "IncidentToDate": "2026-01-29 00:00:00",
+   "InfoReceivedPSDate": "2026-01-29 00:00:00",
+   "latitude": 17.3297,
+   "longitude": 76.8343,
+   "BriefFacts": "Kidnapping reported at Agricultural area, Aland taluk, Kalaburagi, Kalaburagi. Accused: Basalingappa Patil, Nagappa Sangam. Victim: Mallikarjun Natikar (farmer, 62 years). Status: Closed — Victim released before police intervention; both accused arrested Investigating Officer: Sub-Inspector Nandakumar, Aland PS"
+  },
+  {
+   "CaseMasterID": 49,
+   "CrimeNo": "100260054202600001",
+   "CaseNo": "KSP/TMK/2026/0217",
+   "CrimeRegisteredDate": "2026-02-06 00:00:00",
+   "PolicePersonID": 49,
+   "PoliceStationID": 54,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 3,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-02-06 00:00:00",
+   "IncidentToDate": "2026-02-06 00:00:00",
+   "InfoReceivedPSDate": "2026-02-06 00:00:00",
+   "latitude": 13.3409,
+   "longitude": 77.101,
+   "BriefFacts": "Assault reported at Panchayat office premises, Gubbi taluk, Tumakuru, Tumakuru. Accused: Sathyanarayana K, Venkatesh M. Victim: Ranga Swamy (village panchayat head). Status: Open — Sathyanarayana K in custody; Venkatesh M surrendered Investigating Officer: Inspector Ravi Kumar, Gubbi PS"
+  },
+  {
+   "CaseMasterID": 50,
+   "CrimeNo": "100020055202600001",
+   "CaseNo": "KSP/BAL/2026/0237",
+   "CrimeRegisteredDate": "2026-02-14 00:00:00",
+   "PolicePersonID": 50,
+   "PoliceStationID": 55,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 5,
+   "CrimeMinorHeadID": 17,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-02-14 00:00:00",
+   "IncidentToDate": "2026-02-14 00:00:00",
+   "InfoReceivedPSDate": "2026-02-14 00:00:00",
+   "latitude": 15.1394,
+   "longitude": 76.9214,
+   "BriefFacts": "Drug Trafficking reported at Border crossing near Kudligi taluk (Karnataka-Andhra Pradesh boundary), Ballari. Accused: Rajesh Bhoomi, Chandru Naik, Lakshman G. Status: Open — Rajesh Bhoomi arrested at scene; Chandru Naik and Lakshman G at large Investigating Officer: Inspector Mohan Reddy, Kurugodu PS (Narcotics, Border Enforcement)"
+  },
+  {
+   "CaseMasterID": 51,
+   "CrimeNo": "100250020202600001",
+   "CaseNo": "KSP/SHV/2026/0189",
+   "CrimeRegisteredDate": "2026-02-22 00:00:00",
+   "PolicePersonID": 51,
+   "PoliceStationID": 20,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 4,
+   "CrimeMinorHeadID": 14,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-02-22 00:00:00",
+   "IncidentToDate": "2026-02-22 00:00:00",
+   "InfoReceivedPSDate": "2026-02-22 00:00:00",
+   "latitude": 13.9299,
+   "longitude": 75.5681,
+   "BriefFacts": "Cybercrime reported at Online — Association office, Shivamogga, Shivamogga. Accused: Kiran Joshi. Victim: Teak Wood Traders Association (institutional victim). Status: Open — Amount partially frozen; accused traced to Mumbai; Maharashtra Police contacted Investigating Officer: Sub-Inspector Anitha R, Shivamogga City PS (Cyber Cell)"
+  },
+  {
+   "CaseMasterID": 52,
+   "CrimeNo": "100050056202600001",
+   "CaseNo": "KSP/BLR-U/2026/0319",
+   "CrimeRegisteredDate": "2026-03-02 00:00:00",
+   "PolicePersonID": 52,
+   "PoliceStationID": 56,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 6,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-03-02 00:00:00",
+   "IncidentToDate": "2026-03-02 00:00:00",
+   "InfoReceivedPSDate": "2026-03-02 00:00:00",
+   "latitude": 12.9716,
+   "longitude": 77.5946,
+   "BriefFacts": "Robbery reported at Koramangala 6th Block, near Social restaurant, Bengaluru Urban. Accused: Amir Khan, Santhosh G. Victim: IndiMart E-Commerce delivery executive (Raju M). Status: Open — Amir Khan arrested; Santhosh G at large Investigating Officer: Inspector Divya Menon, Koramangala PS"
+  },
+  {
+   "CaseMasterID": 53,
+   "CrimeNo": "100040057202600001",
+   "CaseNo": "KSP/BLR-R/2026/0139",
+   "CrimeRegisteredDate": "2026-03-10 00:00:00",
+   "PolicePersonID": 53,
+   "PoliceStationID": 57,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 9,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-03-10 00:00:00",
+   "IncidentToDate": "2026-03-10 00:00:00",
+   "InfoReceivedPSDate": "2026-03-10 00:00:00",
+   "latitude": 13.2846,
+   "longitude": 77.62,
+   "BriefFacts": "Vehicle Theft reported at Doddaballapura KIADB Industrial Area, Bengaluru Rural. Accused: Murtaza Beg, Salim D, Shabu Khan, two unidentified. Victim: Multiple vehicle owners (8 complainants). Status: Open — Murtaza Beg and Salim D in custody; dismantling yard sealed Investigating Officer: Inspector Shyam Sunder, Doddaballapura PS"
+  },
+  {
+   "CaseMasterID": 54,
+   "CrimeNo": "100220058202600001",
+   "CaseNo": "KSP/MYS/2026/0193",
+   "CrimeRegisteredDate": "2026-03-18 00:00:00",
+   "PolicePersonID": 54,
+   "PoliceStationID": 58,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 6,
+   "CrimeMinorHeadID": 19,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-03-18 00:00:00",
+   "IncidentToDate": "2026-03-18 00:00:00",
+   "InfoReceivedPSDate": "2026-03-18 00:00:00",
+   "latitude": 12.2958,
+   "longitude": 76.6394,
+   "BriefFacts": "Fraud reported at Kaveri Dream Homes office, New Sayyaji Rao Road, Mysuru, Mysuru. Accused: Ramesh Shetty, Deepika Naik. Victim: Kaveri Housing Cooperative Society members (31 complainants). Status: Open — Deepika Naik arrested; Ramesh Shetty absconding Investigating Officer: Inspector Poornima K, Mysuru North PS (Economic Offences Cell)"
+  },
+  {
+   "CaseMasterID": 55,
+   "CrimeNo": "100110059202600002",
+   "CaseNo": "KSP/MLR/2026/0253",
+   "CrimeRegisteredDate": "2026-03-26 00:00:00",
+   "PolicePersonID": 55,
+   "PoliceStationID": 59,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 3,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-03-26 00:00:00",
+   "IncidentToDate": "2026-03-26 00:00:00",
+   "InfoReceivedPSDate": "2026-03-26 00:00:00",
+   "latitude": 12.8703,
+   "longitude": 74.8806,
+   "BriefFacts": "Assault reported at Old Port Road, Mangaluru, Dakshina Kannada. Accused: two at large. Victim: Three victims (names withheld). Status: Open — Five accused arrested; two at large; Section 144 imposed for 72 hours Investigating Officer: Deputy SP Vishwanath Kamath, Mangaluru Range (Special Branch oversight)"
+  },
+  {
+   "CaseMasterID": 56,
+   "CrimeNo": "100130060202600002",
+   "CaseNo": "KSP/HBD/2026/0344",
+   "CrimeRegisteredDate": "2026-04-03 00:00:00",
+   "PolicePersonID": 56,
+   "PoliceStationID": 60,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 5,
+   "CaseStatusID": 3,
+   "CourtID": 7,
+   "IncidentFromDate": "2026-04-03 00:00:00",
+   "IncidentToDate": "2026-04-03 00:00:00",
+   "InfoReceivedPSDate": "2026-04-03 00:00:00",
+   "latitude": 15.4589,
+   "longitude": 75.0078,
+   "BriefFacts": "Kidnapping reported at Vidyanagar residential area, Hubballi, Dharwad. Accused: Iqbal Desai, Nasir Khan. Victim: Kavitha Nayak (minor girl, 9 years). Status: Closed — Child rescued 11 hours later; both accused convicted Investigating Officer: Inspector Malathi S, Hubli Central PS (Anti-Kidnapping Wing)"
+  },
+  {
+   "CaseMasterID": 57,
+   "CrimeNo": "100030061202600002",
+   "CaseNo": "KSP/BLG/2026/0428",
+   "CrimeRegisteredDate": "2026-04-11 00:00:00",
+   "PolicePersonID": 57,
+   "PoliceStationID": 61,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 7,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-04-11 00:00:00",
+   "IncidentToDate": "2026-04-11 00:00:00",
+   "InfoReceivedPSDate": "2026-04-11 00:00:00",
+   "latitude": 15.8497,
+   "longitude": 74.4977,
+   "BriefFacts": "Burglary reported at Treasury Office premises, Tilakwadi, Belagavi, Belagavi. Accused: Aijaz Bagwan, Ganesh Kadam. Victim: Government Treasury Office (Sub-Division, Belagavi). Status: Open — Aijaz Bagwan arrested; Ganesh Kadam at large Investigating Officer: Inspector Sanjay Patil, Belagavi East PS"
+  },
+  {
+   "CaseMasterID": 58,
+   "CrimeNo": "100170019202600002",
+   "CaseNo": "KSP/KBG/2026/0311",
+   "CrimeRegisteredDate": "2026-04-19 00:00:00",
+   "PolicePersonID": 58,
+   "PoliceStationID": 19,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 4,
+   "CrimeMinorHeadID": 14,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-04-19 00:00:00",
+   "IncidentToDate": "2026-04-19 00:00:00",
+   "InfoReceivedPSDate": "2026-04-19 00:00:00",
+   "latitude": 17.3297,
+   "longitude": 76.8343,
+   "BriefFacts": "Cybercrime reported at Online — Bank servers, Kalaburagi, Kalaburagi. Accused: local mule Farhan Sheikh. Victim: Regional Cooperative Bank, Kalaburagi. Status: Open — Rs 14.2 lakhs total withdrawn fraudulently; Farhan Sheikh (mule) arrested; primary accused at large Investigating Officer: Inspector Mohan Patil, Kalaburagi Urban PS (Cyber Crime Cell)"
+  },
+  {
+   "CaseMasterID": 59,
+   "CrimeNo": "100260062202600002",
+   "CaseNo": "KSP/TMK/2026/0367",
+   "CrimeRegisteredDate": "2026-04-27 00:00:00",
+   "PolicePersonID": 59,
+   "PoliceStationID": 62,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 3,
+   "CaseStatusID": 2,
+   "CourtID": 11,
+   "IncidentFromDate": "2026-04-27 00:00:00",
+   "IncidentToDate": "2026-04-27 00:00:00",
+   "InfoReceivedPSDate": "2026-04-27 00:00:00",
+   "latitude": 13.3409,
+   "longitude": 77.101,
+   "BriefFacts": "Assault reported at Koratagere village, near SC colony, Tumakuru. Accused: Manjappa K, Shiva Gowda. Victim: B Ramakrishnaiah (Dalit community elder). Status: Closed — Both accused arrested; case registered under SC/ST Prevention of Atrocities Act Investigating Officer: Inspector Pramila Gowda, Koratagere PS (SC/ST Special Cell)"
+  },
+  {
+   "CaseMasterID": 60,
+   "CrimeNo": "100020018202600002",
+   "CaseNo": "KSP/BAL/2026/0381",
+   "CrimeRegisteredDate": "2026-05-05 00:00:00",
+   "PolicePersonID": 60,
+   "PoliceStationID": 18,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 4,
+   "CrimeMinorHeadID": 14,
+   "CaseStatusID": 2,
+   "CourtID": 13,
+   "IncidentFromDate": "2026-05-05 00:00:00",
+   "IncidentToDate": "2026-05-05 00:00:00",
+   "InfoReceivedPSDate": "2026-05-05 00:00:00",
+   "latitude": 15.1394,
+   "longitude": 76.9214,
+   "BriefFacts": "Cybercrime reported at Online — Social media targeting victims in Ballari district, Ballari. Accused: Ravi Chandra, Akash Reddy. Victim: Individual investors (23 complainants). Status: Closed — Both accused arrested; amounts partially frozen Investigating Officer: Inspector Sowmya T, Ballari City PS (Cyber Cell)"
+  },
+  {
+   "CaseMasterID": 61,
+   "CrimeNo": "100250030202600002",
+   "CaseNo": "KSP/SHV/2026/0278",
+   "CrimeRegisteredDate": "2026-05-13 00:00:00",
+   "PolicePersonID": 35,
+   "PoliceStationID": 30,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 6,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-05-13 00:00:00",
+   "IncidentToDate": "2026-05-13 00:00:00",
+   "InfoReceivedPSDate": "2026-05-13 00:00:00",
+   "latitude": 13.9299,
+   "longitude": 75.5681,
+   "BriefFacts": "Robbery reported at Bhadravathi Iron and Steel Industrial Zone, Shivamogga. Accused: Murthy Naik, Shashidhar V. Victim: Bhadravathi Steel Merchants Association (institutional victim). Status: Open — Shashidhar V arrested; Murthy Naik at large Investigating Officer: Inspector Dinesh Shetty, Bhadravathi PS"
+  },
+  {
+   "CaseMasterID": 62,
+   "CrimeNo": "100050063202600002",
+   "CaseNo": "KSP/BLR-U/2026/0481",
+   "CrimeRegisteredDate": "2026-05-21 00:00:00",
+   "PolicePersonID": 61,
+   "PoliceStationID": 63,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 6,
+   "CrimeMinorHeadID": 19,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-05-21 00:00:00",
+   "IncidentToDate": "2026-05-21 00:00:00",
+   "InfoReceivedPSDate": "2026-05-21 00:00:00",
+   "latitude": 12.9716,
+   "longitude": 77.5946,
+   "BriefFacts": "Fraud reported at Administrative block, Hebbal, Bengaluru, Bengaluru Urban. Accused: Sureshkumar P, Vandana Reddy. Victim: Northern Bengaluru Medical College (institutional victim) and 11 student families. Status: Open — Vandana Reddy arrested; Sureshkumar P absconding Investigating Officer: Inspector Anbu Selvam, Hebbal PS (Economic Offences Cell)"
+  },
+  {
+   "CaseMasterID": 63,
+   "CrimeNo": "100040064202600002",
+   "CaseNo": "KSP/BLR-R/2026/0248",
+   "CrimeRegisteredDate": "2026-05-29 00:00:00",
+   "PolicePersonID": 62,
+   "PoliceStationID": 64,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 7,
+   "CrimeMinorHeadID": 21,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-05-29 00:00:00",
+   "IncidentToDate": "2026-05-29 00:00:00",
+   "InfoReceivedPSDate": "2026-05-29 00:00:00",
+   "latitude": 13.2846,
+   "longitude": 77.62,
+   "BriefFacts": "Gang Activity reported at NH-48 logistics belt, Nelamangala, Bengaluru Rural. Accused: Tousif Khan, Mahadev Reddy, Sohail Mirza, Vikas Hegde. Victim: Trucking operators (17 complainants), Nelamangala logistics hub. Status: Open — Tousif Khan and Mahadev Reddy in custody; Sohail Mirza and Vikas Hegde absconding Investigating Officer: Inspector Manohar S, Nelamangala PS"
+  },
+  {
+   "CaseMasterID": 64,
+   "CrimeNo": "100220065202600002",
+   "CaseNo": "KSP/MYS/2026/0347",
+   "CrimeRegisteredDate": "2026-06-06 00:00:00",
+   "PolicePersonID": 63,
+   "PoliceStationID": 65,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 2,
+   "CrimeMajorHeadID": 1,
+   "CrimeMinorHeadID": 3,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-06-06 00:00:00",
+   "IncidentToDate": "2026-06-06 00:00:00",
+   "InfoReceivedPSDate": "2026-06-06 00:00:00",
+   "latitude": 12.2958,
+   "longitude": 76.6394,
+   "BriefFacts": "Assault reported at Kuvempunagar Press Colony, Mysuru, Mysuru. Accused: Rajashekar T, Mahadevaswamy. Victim: Vinod Narayan (press reporter, Kannada daily). Status: Open — Rajashekar T arrested; Mahadevaswamy surrendered Investigating Officer: Inspector Ravindra M, Mysuru South PS"
+  },
+  {
+   "CaseMasterID": 65,
+   "CrimeNo": "100110014202600003",
+   "CaseNo": "KSP/MLR/2026/0389",
+   "CrimeRegisteredDate": "2026-06-11 00:00:00",
+   "PolicePersonID": 64,
+   "PoliceStationID": 14,
+   "CaseCategoryID": 1,
+   "GravityOffenceID": 1,
+   "CrimeMajorHeadID": 2,
+   "CrimeMinorHeadID": 6,
+   "CaseStatusID": 1,
+   "CourtID": null,
+   "IncidentFromDate": "2026-06-11 00:00:00",
+   "IncidentToDate": "2026-06-11 00:00:00",
+   "InfoReceivedPSDate": "2026-06-11 00:00:00",
+   "latitude": 12.8703,
+   "longitude": 74.8806,
+   "BriefFacts": "Robbery reported at Kankanady Road, near SBI Regional Office, Mangaluru, Dakshina Kannada. Accused: Irshad Ali, Sonu Kumar. Victim: State Bank of India cash van (escort team and driver). Status: Open — Irshad Ali apprehended; Sonu Kumar at large; multi-agency investigation Investigating Officer: Deputy SP Sunil Shetty, Mangaluru Range; coordinating with SBI Security and CISF"
+  }
+ ],
+ "ComplainantDetails": [
+  {
+   "ComplainantID": 1,
+   "CaseMasterID": 1,
+   "ComplainantName": "Venkatesh Murthy",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 2,
+   "CaseMasterID": 2,
+   "ComplainantName": "Rajesh Kumar Bhat",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 3,
+   "CaseMasterID": 3,
+   "ComplainantName": "Gopal Swamy",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 4,
+   "CaseMasterID": 4,
+   "ComplainantName": "Anita D'Souza",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 5,
+   "CaseMasterID": 5,
+   "ComplainantName": "Basavraj Patil",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 6,
+   "CaseMasterID": 6,
+   "ComplainantName": "Meena Patil",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 7,
+   "CaseMasterID": 7,
+   "ComplainantName": "Ravi Shankar Reddy",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 8,
+   "CaseMasterID": 9,
+   "ComplainantName": "Laxmidevi Kulkarni",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 9,
+   "CaseMasterID": 10,
+   "ComplainantName": "Ramesh Babu",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 10,
+   "CaseMasterID": 12,
+   "ComplainantName": "Cooperative Bank",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 11,
+   "CaseMasterID": 13,
+   "ComplainantName": "Pooja Nair",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 12,
+   "CaseMasterID": 14,
+   "ComplainantName": "David Rodrigues",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 13,
+   "CaseMasterID": 15,
+   "ComplainantName": "Multiple shopkeepers",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 14,
+   "CaseMasterID": 16,
+   "ComplainantName": "Prakash Joshi",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 15,
+   "CaseMasterID": 17,
+   "ComplainantName": "Shantha Bai",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 16,
+   "CaseMasterID": 18,
+   "ComplainantName": "Srinivasa Hardware Store",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 17,
+   "CaseMasterID": 19,
+   "ComplainantName": "Narasimha Reddy",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 18,
+   "CaseMasterID": 20,
+   "ComplainantName": "Subbaiah Textiles Pvt Ltd",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 19,
+   "CaseMasterID": 21,
+   "ComplainantName": "Sridhar Naidu",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 20,
+   "CaseMasterID": 22,
+   "ComplainantName": "Narayan Rao",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 21,
+   "CaseMasterID": 24,
+   "ComplainantName": "Twenty-three elderly investors",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 22,
+   "CaseMasterID": 25,
+   "ComplainantName": "Coastal Transshipment Agency",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 23,
+   "CaseMasterID": 26,
+   "ComplainantName": "Ramesh Patil",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 24,
+   "CaseMasterID": 27,
+   "ComplainantName": "Vijayalakshmi Desai",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 25,
+   "CaseMasterID": 28,
+   "ComplainantName": "Multiple agricultural supply shop owners",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 26,
+   "CaseMasterID": 29,
+   "ComplainantName": "Multiple quarry operators",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 27,
+   "CaseMasterID": 30,
+   "ComplainantName": "Karnataka Bank ATM",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 28,
+   "CaseMasterID": 32,
+   "ComplainantName": "Sunita Krishnamurthy",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 29,
+   "CaseMasterID": 33,
+   "ComplainantName": "Narayana Gowda",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 30,
+   "CaseMasterID": 34,
+   "ComplainantName": "Karnataka State Road Transport Corporation",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 31,
+   "CaseMasterID": 35,
+   "ComplainantName": "Fishermen Cooperative Society",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 32,
+   "CaseMasterID": 36,
+   "ComplainantName": "Mohammed Salim",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 33,
+   "CaseMasterID": 37,
+   "ComplainantName": "Punjab National Bank",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 34,
+   "CaseMasterID": 38,
+   "ComplainantName": "Seetaram Reddy",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 35,
+   "CaseMasterID": 39,
+   "ComplainantName": "Job-seeking youth",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 36,
+   "CaseMasterID": 41,
+   "ComplainantName": "Kishore Kumar Hegde",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 37,
+   "CaseMasterID": 42,
+   "ComplainantName": "FinServ Technologies Pvt Ltd",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 38,
+   "CaseMasterID": 43,
+   "ComplainantName": "Lakshmi Gold Finance",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 39,
+   "CaseMasterID": 45,
+   "ComplainantName": "City Central Museum",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 40,
+   "CaseMasterID": 46,
+   "ComplainantName": "47 farmers",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 41,
+   "CaseMasterID": 47,
+   "ComplainantName": "Praveen Kumar Patil",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 42,
+   "CaseMasterID": 48,
+   "ComplainantName": "Mallikarjun Natikar",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 43,
+   "CaseMasterID": 49,
+   "ComplainantName": "Ranga Swamy",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 44,
+   "CaseMasterID": 51,
+   "ComplainantName": "Teak Wood Traders Association",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 45,
+   "CaseMasterID": 52,
+   "ComplainantName": "IndiMart E-Commerce delivery executive",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 46,
+   "CaseMasterID": 53,
+   "ComplainantName": "Multiple vehicle owners",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 47,
+   "CaseMasterID": 54,
+   "ComplainantName": "Kaveri Housing Cooperative Society members",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 48,
+   "CaseMasterID": 55,
+   "ComplainantName": "Three victims",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 49,
+   "CaseMasterID": 56,
+   "ComplainantName": "Kavitha Nayak",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 50,
+   "CaseMasterID": 57,
+   "ComplainantName": "Government Treasury Office",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 51,
+   "CaseMasterID": 58,
+   "ComplainantName": "Regional Cooperative Bank",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 52,
+   "CaseMasterID": 59,
+   "ComplainantName": "B Ramakrishnaiah",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 53,
+   "CaseMasterID": 60,
+   "ComplainantName": "Individual investors",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 54,
+   "CaseMasterID": 61,
+   "ComplainantName": "Bhadravathi Steel Merchants Association",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 55,
+   "CaseMasterID": 62,
+   "ComplainantName": "Northern Bengaluru Medical College and 11 student families",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 56,
+   "CaseMasterID": 63,
+   "ComplainantName": "Trucking operators",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 57,
+   "CaseMasterID": 64,
+   "ComplainantName": "Vinod Narayan",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  },
+  {
+   "ComplainantID": 58,
+   "CaseMasterID": 65,
+   "ComplainantName": "State Bank of India cash van",
+   "AgeYear": null,
+   "OccupationID": 99,
+   "ReligionID": 99,
+   "CasteID": 99,
+   "GenderID": 3
+  }
+ ],
+ "Victim": [
+  {
+   "VictimMasterID": 1,
+   "CaseMasterID": 1,
+   "VictimName": "Venkatesh Murthy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 2,
+   "CaseMasterID": 2,
+   "VictimName": "Rajesh Kumar Bhat",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 3,
+   "CaseMasterID": 3,
+   "VictimName": "Gopal Swamy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 4,
+   "CaseMasterID": 4,
+   "VictimName": "Anita D'Souza",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 5,
+   "CaseMasterID": 5,
+   "VictimName": "Basavraj Patil",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 6,
+   "CaseMasterID": 6,
+   "VictimName": "Meena Patil",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 7,
+   "CaseMasterID": 7,
+   "VictimName": "Ravi Shankar Reddy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 8,
+   "CaseMasterID": 9,
+   "VictimName": "Laxmidevi Kulkarni",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 9,
+   "CaseMasterID": 10,
+   "VictimName": "Ramesh Babu",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 10,
+   "CaseMasterID": 12,
+   "VictimName": "Cooperative Bank",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 11,
+   "CaseMasterID": 13,
+   "VictimName": "Pooja Nair",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 12,
+   "CaseMasterID": 14,
+   "VictimName": "David Rodrigues",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 13,
+   "CaseMasterID": 15,
+   "VictimName": "Multiple shopkeepers",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 14,
+   "CaseMasterID": 16,
+   "VictimName": "Prakash Joshi",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 15,
+   "CaseMasterID": 17,
+   "VictimName": "Shantha Bai",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 16,
+   "CaseMasterID": 18,
+   "VictimName": "Srinivasa Hardware Store",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 17,
+   "CaseMasterID": 19,
+   "VictimName": "Narasimha Reddy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 18,
+   "CaseMasterID": 20,
+   "VictimName": "Subbaiah Textiles Pvt Ltd",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 19,
+   "CaseMasterID": 21,
+   "VictimName": "Sridhar Naidu",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 20,
+   "CaseMasterID": 22,
+   "VictimName": "Narayan Rao",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 21,
+   "CaseMasterID": 24,
+   "VictimName": "Twenty-three elderly investors",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 22,
+   "CaseMasterID": 25,
+   "VictimName": "Coastal Transshipment Agency",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 23,
+   "CaseMasterID": 26,
+   "VictimName": "Ramesh Patil",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 24,
+   "CaseMasterID": 27,
+   "VictimName": "Vijayalakshmi Desai",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 25,
+   "CaseMasterID": 28,
+   "VictimName": "Multiple agricultural supply shop owners",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 26,
+   "CaseMasterID": 29,
+   "VictimName": "Multiple quarry operators",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 27,
+   "CaseMasterID": 30,
+   "VictimName": "Karnataka Bank ATM",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 28,
+   "CaseMasterID": 32,
+   "VictimName": "Sunita Krishnamurthy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 29,
+   "CaseMasterID": 33,
+   "VictimName": "Narayana Gowda",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 30,
+   "CaseMasterID": 34,
+   "VictimName": "Karnataka State Road Transport Corporation",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 31,
+   "CaseMasterID": 35,
+   "VictimName": "Fishermen Cooperative Society",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 32,
+   "CaseMasterID": 36,
+   "VictimName": "Mohammed Salim",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 33,
+   "CaseMasterID": 37,
+   "VictimName": "Punjab National Bank",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 34,
+   "CaseMasterID": 38,
+   "VictimName": "Seetaram Reddy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 35,
+   "CaseMasterID": 39,
+   "VictimName": "Job-seeking youth",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 36,
+   "CaseMasterID": 41,
+   "VictimName": "Kishore Kumar Hegde",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 37,
+   "CaseMasterID": 42,
+   "VictimName": "FinServ Technologies Pvt Ltd",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 38,
+   "CaseMasterID": 43,
+   "VictimName": "Lakshmi Gold Finance",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 39,
+   "CaseMasterID": 45,
+   "VictimName": "City Central Museum",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 40,
+   "CaseMasterID": 46,
+   "VictimName": "47 farmers",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 41,
+   "CaseMasterID": 47,
+   "VictimName": "Praveen Kumar Patil",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 42,
+   "CaseMasterID": 48,
+   "VictimName": "Mallikarjun Natikar",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 43,
+   "CaseMasterID": 49,
+   "VictimName": "Ranga Swamy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 44,
+   "CaseMasterID": 51,
+   "VictimName": "Teak Wood Traders Association",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 45,
+   "CaseMasterID": 52,
+   "VictimName": "IndiMart E-Commerce delivery executive",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 46,
+   "CaseMasterID": 53,
+   "VictimName": "Multiple vehicle owners",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 47,
+   "CaseMasterID": 54,
+   "VictimName": "Kaveri Housing Cooperative Society members",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 48,
+   "CaseMasterID": 55,
+   "VictimName": "Three victims",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 49,
+   "CaseMasterID": 56,
+   "VictimName": "Kavitha Nayak",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 50,
+   "CaseMasterID": 57,
+   "VictimName": "Government Treasury Office",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 51,
+   "CaseMasterID": 58,
+   "VictimName": "Regional Cooperative Bank",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 52,
+   "CaseMasterID": 59,
+   "VictimName": "B Ramakrishnaiah",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 53,
+   "CaseMasterID": 60,
+   "VictimName": "Individual investors",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 54,
+   "CaseMasterID": 61,
+   "VictimName": "Bhadravathi Steel Merchants Association",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 55,
+   "CaseMasterID": 62,
+   "VictimName": "Northern Bengaluru Medical College and 11 student families",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 56,
+   "CaseMasterID": 63,
+   "VictimName": "Trucking operators",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 57,
+   "CaseMasterID": 64,
+   "VictimName": "Vinod Narayan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  },
+  {
+   "VictimMasterID": 58,
+   "CaseMasterID": 65,
+   "VictimName": "State Bank of India cash van",
+   "AgeYear": null,
+   "GenderID": 3,
+   "VictimPolice": false
+  }
+ ],
+ "AccusedPerson": [
+  {
+   "AccusedMasterID": 1,
+   "CaseMasterID": 1,
+   "AccusedName": "Arjun Reddy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 2,
+   "CaseMasterID": 1,
+   "AccusedName": "Sameer Patel",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 3,
+   "CaseMasterID": 2,
+   "AccusedName": "Khalid Ibrahim",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 4,
+   "CaseMasterID": 2,
+   "AccusedName": "Mohammed Aziz",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 5,
+   "CaseMasterID": 2,
+   "AccusedName": "Tanveer Sheikh",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 6,
+   "CaseMasterID": 3,
+   "AccusedName": "Riyaz Ahmed Khan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 7,
+   "CaseMasterID": 5,
+   "AccusedName": "Ravikumar Nayak",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 8,
+   "CaseMasterID": 5,
+   "AccusedName": "Siddappa Lamani",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 9,
+   "CaseMasterID": 6,
+   "AccusedName": "Santosh Kamble",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 10,
+   "CaseMasterID": 6,
+   "AccusedName": "Anil Khot",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 11,
+   "CaseMasterID": 7,
+   "AccusedName": "Suresh Gowda",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 12,
+   "CaseMasterID": 7,
+   "AccusedName": "Manjunath S",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 13,
+   "CaseMasterID": 8,
+   "AccusedName": "Naveen Kumar",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 14,
+   "CaseMasterID": 8,
+   "AccusedName": "Sudhir Raj",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 15,
+   "CaseMasterID": 9,
+   "AccusedName": "Mehtab Singh",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 16,
+   "CaseMasterID": 9,
+   "AccusedName": "Farukh Ansari",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 17,
+   "CaseMasterID": 10,
+   "AccusedName": "Hanumantha Gowda",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 18,
+   "CaseMasterID": 11,
+   "AccusedName": "Pradeep Kumar Shetty",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 19,
+   "CaseMasterID": 11,
+   "AccusedName": "Imran Basha",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 20,
+   "CaseMasterID": 11,
+   "AccusedName": "Lokesh R",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 21,
+   "CaseMasterID": 12,
+   "AccusedName": "Ashok Thimmaiah",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 22,
+   "CaseMasterID": 13,
+   "AccusedName": "Salim Khan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 23,
+   "CaseMasterID": 13,
+   "AccusedName": "Maqbool Ahmed",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 24,
+   "CaseMasterID": 14,
+   "AccusedName": "Yunus Mohammed",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 25,
+   "CaseMasterID": 14,
+   "AccusedName": "Salman Rehman",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 26,
+   "CaseMasterID": 15,
+   "AccusedName": "Khalid Ibrahim",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 27,
+   "CaseMasterID": 15,
+   "AccusedName": "Shakeel Mirza",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 28,
+   "CaseMasterID": 15,
+   "AccusedName": "Raju Lamani",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 29,
+   "CaseMasterID": 15,
+   "AccusedName": "Irfan Sheikh",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A4"
+  },
+  {
+   "AccusedMasterID": 30,
+   "CaseMasterID": 16,
+   "AccusedName": "Rajendra Pol",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 31,
+   "CaseMasterID": 16,
+   "AccusedName": "Sunil Chavan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 32,
+   "CaseMasterID": 17,
+   "AccusedName": "Riyaz Ahmed Khan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 33,
+   "CaseMasterID": 17,
+   "AccusedName": "Nazir Pasha",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 34,
+   "CaseMasterID": 18,
+   "AccusedName": "Nagaraj Balu",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 35,
+   "CaseMasterID": 18,
+   "AccusedName": "Chandrappa K",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 36,
+   "CaseMasterID": 19,
+   "AccusedName": "Ravikumar Nayak",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 37,
+   "CaseMasterID": 19,
+   "AccusedName": "Venkatesha Reddy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 38,
+   "CaseMasterID": 20,
+   "AccusedName": "investigation ongoing)",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 39,
+   "CaseMasterID": 21,
+   "AccusedName": "Deepak Raj",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 40,
+   "CaseMasterID": 21,
+   "AccusedName": "Mohan Das",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 41,
+   "CaseMasterID": 22,
+   "AccusedName": "Suresh Gowda",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 42,
+   "CaseMasterID": 22,
+   "AccusedName": "Ramesh T",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 43,
+   "CaseMasterID": 23,
+   "AccusedName": "Ashfaq Hussain",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 44,
+   "CaseMasterID": 23,
+   "AccusedName": "Ravi Sharma",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 45,
+   "CaseMasterID": 23,
+   "AccusedName": "Vinod Kumar",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 46,
+   "CaseMasterID": 23,
+   "AccusedName": "Anand Tiwari",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A4"
+  },
+  {
+   "AccusedMasterID": 47,
+   "CaseMasterID": 24,
+   "AccusedName": "Dr Kiran Bopanna",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 48,
+   "CaseMasterID": 25,
+   "AccusedName": "Anwar Hussein",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 49,
+   "CaseMasterID": 25,
+   "AccusedName": "Sudhir Gowda",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 50,
+   "CaseMasterID": 25,
+   "AccusedName": "Fayaz Khan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 51,
+   "CaseMasterID": 26,
+   "AccusedName": "Gangadhar Shettar",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 52,
+   "CaseMasterID": 26,
+   "AccusedName": "Chandrakant Badiger",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 53,
+   "CaseMasterID": 27,
+   "AccusedName": "Salim Shaikh",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 54,
+   "CaseMasterID": 28,
+   "AccusedName": "Mehtab Singh",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 55,
+   "CaseMasterID": 28,
+   "AccusedName": "Ravi Garg",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 56,
+   "CaseMasterID": 29,
+   "AccusedName": "Riyaz Ahmed Khan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 57,
+   "CaseMasterID": 29,
+   "AccusedName": "Mohammed Rafi",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 58,
+   "CaseMasterID": 29,
+   "AccusedName": "Salim Bhai",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 59,
+   "CaseMasterID": 30,
+   "AccusedName": "Ranga Nayaka",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 60,
+   "CaseMasterID": 30,
+   "AccusedName": "Shekar Lamani",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 61,
+   "CaseMasterID": 31,
+   "AccusedName": "Pradeep Kumar Shetty",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 62,
+   "CaseMasterID": 31,
+   "AccusedName": "Gopal Naik",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 63,
+   "CaseMasterID": 31,
+   "AccusedName": "Bhimappa",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 64,
+   "CaseMasterID": 32,
+   "AccusedName": "Ganesh Kumar",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 65,
+   "CaseMasterID": 32,
+   "AccusedName": "Arjun Bhoomi",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 66,
+   "CaseMasterID": 33,
+   "AccusedName": "Srinivas Gowda",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 67,
+   "CaseMasterID": 34,
+   "AccusedName": "Lokesh Babu",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 68,
+   "CaseMasterID": 34,
+   "AccusedName": "Channabasappa",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 69,
+   "CaseMasterID": 35,
+   "AccusedName": "Khalid Ibrahim",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 70,
+   "CaseMasterID": 35,
+   "AccusedName": "Babu Naik",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 71,
+   "CaseMasterID": 35,
+   "AccusedName": "Yusuf Mirza",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 72,
+   "CaseMasterID": 36,
+   "AccusedName": "Chandrakant Hooli",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 73,
+   "CaseMasterID": 36,
+   "AccusedName": "Ravi Nayak",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 74,
+   "CaseMasterID": 37,
+   "AccusedName": "Santosh Kamble",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 75,
+   "CaseMasterID": 37,
+   "AccusedName": "Rafiq Mulla",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 76,
+   "CaseMasterID": 38,
+   "AccusedName": "Suresh Gowda",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 77,
+   "CaseMasterID": 38,
+   "AccusedName": "Jakeer Hussain",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 78,
+   "CaseMasterID": 39,
+   "AccusedName": "Ramesh Nayak",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 79,
+   "CaseMasterID": 39,
+   "AccusedName": "Latha Kumari",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 80,
+   "CaseMasterID": 40,
+   "AccusedName": "Ramu Naik",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 81,
+   "CaseMasterID": 40,
+   "AccusedName": "Satish Bhoovi",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 82,
+   "CaseMasterID": 40,
+   "AccusedName": "Mohammed Riyaz",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 83,
+   "CaseMasterID": 41,
+   "AccusedName": "Sadiq Bhai",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 84,
+   "CaseMasterID": 41,
+   "AccusedName": "Mohan Kulkarni",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 85,
+   "CaseMasterID": 41,
+   "AccusedName": "Vishwanath Pati",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 86,
+   "CaseMasterID": 43,
+   "AccusedName": "Nagaraju D",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 87,
+   "CaseMasterID": 43,
+   "AccusedName": "Krishnappa T",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 88,
+   "CaseMasterID": 43,
+   "AccusedName": "Ramu Bhoovi",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 89,
+   "CaseMasterID": 44,
+   "AccusedName": "Pradeep Kumar Shetty",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 90,
+   "CaseMasterID": 44,
+   "AccusedName": "Hussain Bhai",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 91,
+   "CaseMasterID": 44,
+   "AccusedName": "Anand Gowda",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 92,
+   "CaseMasterID": 45,
+   "AccusedName": "Shabbir Khan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 93,
+   "CaseMasterID": 45,
+   "AccusedName": "Rafiq Mohammed",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 94,
+   "CaseMasterID": 46,
+   "AccusedName": "Prabhu Halakatti",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 95,
+   "CaseMasterID": 46,
+   "AccusedName": "Raveendra Chikkodi",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 96,
+   "CaseMasterID": 47,
+   "AccusedName": "Manjunath Sali (suspect",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 97,
+   "CaseMasterID": 47,
+   "AccusedName": "not yet chargesheeted)",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 98,
+   "CaseMasterID": 48,
+   "AccusedName": "Basalingappa Patil",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 99,
+   "CaseMasterID": 48,
+   "AccusedName": "Nagappa Sangam",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 100,
+   "CaseMasterID": 49,
+   "AccusedName": "Sathyanarayana K",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 101,
+   "CaseMasterID": 49,
+   "AccusedName": "Venkatesh M",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 102,
+   "CaseMasterID": 50,
+   "AccusedName": "Rajesh Bhoomi",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 103,
+   "CaseMasterID": 50,
+   "AccusedName": "Chandru Naik",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 104,
+   "CaseMasterID": 50,
+   "AccusedName": "Lakshman G",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 105,
+   "CaseMasterID": 51,
+   "AccusedName": "Kiran Joshi",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 106,
+   "CaseMasterID": 52,
+   "AccusedName": "Amir Khan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 107,
+   "CaseMasterID": 52,
+   "AccusedName": "Santhosh G",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 108,
+   "CaseMasterID": 53,
+   "AccusedName": "Murtaza Beg",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 109,
+   "CaseMasterID": 53,
+   "AccusedName": "Salim D",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 110,
+   "CaseMasterID": 53,
+   "AccusedName": "Shabu Khan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 111,
+   "CaseMasterID": 53,
+   "AccusedName": "two unidentified",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A4"
+  },
+  {
+   "AccusedMasterID": 112,
+   "CaseMasterID": 54,
+   "AccusedName": "Ramesh Shetty",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 113,
+   "CaseMasterID": 54,
+   "AccusedName": "Deepika Naik",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 114,
+   "CaseMasterID": 55,
+   "AccusedName": "two at large",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 115,
+   "CaseMasterID": 56,
+   "AccusedName": "Iqbal Desai",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 116,
+   "CaseMasterID": 56,
+   "AccusedName": "Nasir Khan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 117,
+   "CaseMasterID": 57,
+   "AccusedName": "Aijaz Bagwan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 118,
+   "CaseMasterID": 57,
+   "AccusedName": "Ganesh Kadam",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 119,
+   "CaseMasterID": 58,
+   "AccusedName": "local mule Farhan Sheikh",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 120,
+   "CaseMasterID": 59,
+   "AccusedName": "Manjappa K",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 121,
+   "CaseMasterID": 59,
+   "AccusedName": "Shiva Gowda",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 122,
+   "CaseMasterID": 60,
+   "AccusedName": "Ravi Chandra",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 123,
+   "CaseMasterID": 60,
+   "AccusedName": "Akash Reddy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 124,
+   "CaseMasterID": 61,
+   "AccusedName": "Murthy Naik",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 125,
+   "CaseMasterID": 61,
+   "AccusedName": "Shashidhar V",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 126,
+   "CaseMasterID": 62,
+   "AccusedName": "Sureshkumar P",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 127,
+   "CaseMasterID": 62,
+   "AccusedName": "Vandana Reddy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 128,
+   "CaseMasterID": 63,
+   "AccusedName": "Tousif Khan",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 129,
+   "CaseMasterID": 63,
+   "AccusedName": "Mahadev Reddy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 130,
+   "CaseMasterID": 63,
+   "AccusedName": "Sohail Mirza",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A3"
+  },
+  {
+   "AccusedMasterID": 131,
+   "CaseMasterID": 63,
+   "AccusedName": "Vikas Hegde",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A4"
+  },
+  {
+   "AccusedMasterID": 132,
+   "CaseMasterID": 64,
+   "AccusedName": "Rajashekar T",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 133,
+   "CaseMasterID": 64,
+   "AccusedName": "Mahadevaswamy",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  },
+  {
+   "AccusedMasterID": 134,
+   "CaseMasterID": 65,
+   "AccusedName": "Irshad Ali",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A1"
+  },
+  {
+   "AccusedMasterID": 135,
+   "CaseMasterID": 65,
+   "AccusedName": "Sonu Kumar",
+   "AgeYear": null,
+   "GenderID": 3,
+   "PersonID": "A2"
+  }
+ ],
+ "ArrestSurrender": [
+  {
+   "ArrestSurrenderID": 1,
+   "CaseMasterID": 15,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2025-05-09 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 13,
+   "PoliceStationID": 25,
+   "IOID": 15,
+   "CourtID": 7,
+   "AccusedMasterID": 26,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 2,
+   "CaseMasterID": 16,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2025-05-17 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 3,
+   "PoliceStationID": 26,
+   "IOID": 16,
+   "CourtID": 9,
+   "AccusedMasterID": 30,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 3,
+   "CaseMasterID": 27,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2025-08-13 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 3,
+   "PoliceStationID": 37,
+   "IOID": 27,
+   "CourtID": 9,
+   "AccusedMasterID": 53,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 4,
+   "CaseMasterID": 30,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2025-09-07 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 2,
+   "PoliceStationID": 40,
+   "IOID": 30,
+   "CourtID": 13,
+   "AccusedMasterID": 59,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 5,
+   "CaseMasterID": 32,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2025-09-23 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 5,
+   "PoliceStationID": 41,
+   "IOID": 32,
+   "CourtID": 1,
+   "AccusedMasterID": 64,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 6,
+   "CaseMasterID": 34,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2025-10-09 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 22,
+   "PoliceStationID": 43,
+   "IOID": 34,
+   "CourtID": 3,
+   "AccusedMasterID": 67,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 7,
+   "CaseMasterID": 44,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2025-12-28 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 22,
+   "PoliceStationID": 50,
+   "IOID": 44,
+   "CourtID": 3,
+   "AccusedMasterID": 89,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 8,
+   "CaseMasterID": 45,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2026-01-05 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 11,
+   "PoliceStationID": 24,
+   "IOID": 45,
+   "CourtID": 5,
+   "AccusedMasterID": 92,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 9,
+   "CaseMasterID": 48,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2026-01-29 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 17,
+   "PoliceStationID": 53,
+   "IOID": 48,
+   "CourtID": 15,
+   "AccusedMasterID": 98,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 10,
+   "CaseMasterID": 49,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2026-02-06 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 26,
+   "PoliceStationID": 54,
+   "IOID": 49,
+   "CourtID": 11,
+   "AccusedMasterID": 100,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 11,
+   "CaseMasterID": 53,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2026-03-10 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 4,
+   "PoliceStationID": 57,
+   "IOID": 53,
+   "CourtID": 19,
+   "AccusedMasterID": 108,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 12,
+   "CaseMasterID": 59,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2026-04-27 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 26,
+   "PoliceStationID": 62,
+   "IOID": 59,
+   "CourtID": 11,
+   "AccusedMasterID": 120,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 13,
+   "CaseMasterID": 60,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2026-05-05 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 2,
+   "PoliceStationID": 18,
+   "IOID": 60,
+   "CourtID": 13,
+   "AccusedMasterID": 122,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  },
+  {
+   "ArrestSurrenderID": 14,
+   "CaseMasterID": 64,
+   "ArrestSurrenderTypeID": 1,
+   "ArrestSurrenderDate": "2026-06-06 00:00:00",
+   "ArrestSurrenderStateId": 29,
+   "ArrestSurrenderDistrictId": 22,
+   "PoliceStationID": 65,
+   "IOID": 63,
+   "CourtID": 3,
+   "AccusedMasterID": 132,
+   "IsAccused": true,
+   "IsComplainantAccused": false
+  }
+ ],
+ "ActSectionAssociation": [
+  {
+   "CaseMasterID": 1,
+   "ActID": 1,
+   "SectionID": "392",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 1,
+   "ActID": 1,
+   "SectionID": "397",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 2,
+   "ActID": 1,
+   "SectionID": "384",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 2,
+   "ActID": 1,
+   "SectionID": "386",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 2,
+   "ActID": 1,
+   "SectionID": "120B",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 2,
+   "ActID": 1,
+   "SectionID": "149",
+   "ActOrderID": 4,
+   "SectionOrderID": 4
+  },
+  {
+   "CaseMasterID": 3,
+   "ActID": 1,
+   "SectionID": "323",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 3,
+   "ActID": 1,
+   "SectionID": "324",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 4,
+   "ActID": 1,
+   "SectionID": "379",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 4,
+   "ActID": 1,
+   "SectionID": "427",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 5,
+   "ActID": 1,
+   "SectionID": "392",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 5,
+   "ActID": 1,
+   "SectionID": "397",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 6,
+   "ActID": 1,
+   "SectionID": "457",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 6,
+   "ActID": 1,
+   "SectionID": "380",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 7,
+   "ActID": 1,
+   "SectionID": "379",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 7,
+   "ActID": 1,
+   "SectionID": "427",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 8,
+   "ActID": 2,
+   "SectionID": "20(b)",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 8,
+   "ActID": 2,
+   "SectionID": "21(c)",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 8,
+   "ActID": 2,
+   "SectionID": "29",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 9,
+   "ActID": 4,
+   "SectionID": "66D",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 9,
+   "ActID": 4,
+   "SectionID": "66C",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 9,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 10,
+   "ActID": 1,
+   "SectionID": "302",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 10,
+   "ActID": 1,
+   "SectionID": "34",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 11,
+   "ActID": 2,
+   "SectionID": "20(b)",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 11,
+   "ActID": 2,
+   "SectionID": "21(c)",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 11,
+   "ActID": 2,
+   "SectionID": "29",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 12,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 12,
+   "ActID": 1,
+   "SectionID": "406",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 13,
+   "ActID": 1,
+   "SectionID": "363",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 13,
+   "ActID": 1,
+   "SectionID": "364",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 14,
+   "ActID": 1,
+   "SectionID": "323",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 14,
+   "ActID": 1,
+   "SectionID": "324",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 15,
+   "ActID": 1,
+   "SectionID": "384",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 15,
+   "ActID": 1,
+   "SectionID": "386",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 15,
+   "ActID": 1,
+   "SectionID": "120B",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 15,
+   "ActID": 1,
+   "SectionID": "149",
+   "ActOrderID": 4,
+   "SectionOrderID": 4
+  },
+  {
+   "CaseMasterID": 16,
+   "ActID": 1,
+   "SectionID": "379",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 16,
+   "ActID": 1,
+   "SectionID": "427",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 17,
+   "ActID": 1,
+   "SectionID": "392",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 17,
+   "ActID": 1,
+   "SectionID": "397",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 18,
+   "ActID": 1,
+   "SectionID": "457",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 18,
+   "ActID": 1,
+   "SectionID": "380",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 19,
+   "ActID": 1,
+   "SectionID": "323",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 19,
+   "ActID": 1,
+   "SectionID": "324",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 20,
+   "ActID": 4,
+   "SectionID": "66D",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 20,
+   "ActID": 4,
+   "SectionID": "66C",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 20,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 21,
+   "ActID": 1,
+   "SectionID": "302",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 21,
+   "ActID": 1,
+   "SectionID": "34",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 22,
+   "ActID": 1,
+   "SectionID": "379",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 22,
+   "ActID": 1,
+   "SectionID": "427",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 23,
+   "ActID": 2,
+   "SectionID": "20(b)",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 23,
+   "ActID": 2,
+   "SectionID": "21(c)",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 23,
+   "ActID": 2,
+   "SectionID": "29",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 24,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 24,
+   "ActID": 1,
+   "SectionID": "406",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 25,
+   "ActID": 1,
+   "SectionID": "392",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 25,
+   "ActID": 1,
+   "SectionID": "397",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 26,
+   "ActID": 1,
+   "SectionID": "363",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 26,
+   "ActID": 1,
+   "SectionID": "364",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 27,
+   "ActID": 4,
+   "SectionID": "66D",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 27,
+   "ActID": 4,
+   "SectionID": "66C",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 27,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 28,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 28,
+   "ActID": 1,
+   "SectionID": "406",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 29,
+   "ActID": 1,
+   "SectionID": "384",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 29,
+   "ActID": 1,
+   "SectionID": "386",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 29,
+   "ActID": 1,
+   "SectionID": "120B",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 29,
+   "ActID": 1,
+   "SectionID": "149",
+   "ActOrderID": 4,
+   "SectionOrderID": 4
+  },
+  {
+   "CaseMasterID": 30,
+   "ActID": 1,
+   "SectionID": "457",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 30,
+   "ActID": 1,
+   "SectionID": "380",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 31,
+   "ActID": 2,
+   "SectionID": "20(b)",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 31,
+   "ActID": 2,
+   "SectionID": "21(c)",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 31,
+   "ActID": 2,
+   "SectionID": "29",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 32,
+   "ActID": 1,
+   "SectionID": "392",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 32,
+   "ActID": 1,
+   "SectionID": "397",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 33,
+   "ActID": 1,
+   "SectionID": "302",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 33,
+   "ActID": 1,
+   "SectionID": "34",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 34,
+   "ActID": 1,
+   "SectionID": "379",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 34,
+   "ActID": 1,
+   "SectionID": "427",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 35,
+   "ActID": 1,
+   "SectionID": "384",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 35,
+   "ActID": 1,
+   "SectionID": "386",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 35,
+   "ActID": 1,
+   "SectionID": "120B",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 35,
+   "ActID": 1,
+   "SectionID": "149",
+   "ActOrderID": 4,
+   "SectionOrderID": 4
+  },
+  {
+   "CaseMasterID": 36,
+   "ActID": 1,
+   "SectionID": "323",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 36,
+   "ActID": 1,
+   "SectionID": "324",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 37,
+   "ActID": 1,
+   "SectionID": "457",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 37,
+   "ActID": 1,
+   "SectionID": "380",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 38,
+   "ActID": 1,
+   "SectionID": "379",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 38,
+   "ActID": 1,
+   "SectionID": "427",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 39,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 39,
+   "ActID": 1,
+   "SectionID": "406",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 40,
+   "ActID": 2,
+   "SectionID": "20(b)",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 40,
+   "ActID": 2,
+   "SectionID": "21(c)",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 40,
+   "ActID": 2,
+   "SectionID": "29",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 41,
+   "ActID": 1,
+   "SectionID": "363",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 41,
+   "ActID": 1,
+   "SectionID": "364",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 42,
+   "ActID": 4,
+   "SectionID": "66D",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 42,
+   "ActID": 4,
+   "SectionID": "66C",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 42,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 43,
+   "ActID": 1,
+   "SectionID": "392",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 43,
+   "ActID": 1,
+   "SectionID": "397",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 44,
+   "ActID": 2,
+   "SectionID": "20(b)",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 44,
+   "ActID": 2,
+   "SectionID": "21(c)",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 44,
+   "ActID": 2,
+   "SectionID": "29",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 45,
+   "ActID": 1,
+   "SectionID": "457",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 45,
+   "ActID": 1,
+   "SectionID": "380",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 46,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 46,
+   "ActID": 1,
+   "SectionID": "406",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 47,
+   "ActID": 1,
+   "SectionID": "302",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 47,
+   "ActID": 1,
+   "SectionID": "34",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 48,
+   "ActID": 1,
+   "SectionID": "363",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 48,
+   "ActID": 1,
+   "SectionID": "364",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 49,
+   "ActID": 1,
+   "SectionID": "323",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 49,
+   "ActID": 1,
+   "SectionID": "324",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 50,
+   "ActID": 2,
+   "SectionID": "20(b)",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 50,
+   "ActID": 2,
+   "SectionID": "21(c)",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 50,
+   "ActID": 2,
+   "SectionID": "29",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 51,
+   "ActID": 4,
+   "SectionID": "66D",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 51,
+   "ActID": 4,
+   "SectionID": "66C",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 51,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 52,
+   "ActID": 1,
+   "SectionID": "392",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 52,
+   "ActID": 1,
+   "SectionID": "397",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 53,
+   "ActID": 1,
+   "SectionID": "379",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 53,
+   "ActID": 1,
+   "SectionID": "427",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 54,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 54,
+   "ActID": 1,
+   "SectionID": "406",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 55,
+   "ActID": 1,
+   "SectionID": "323",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 55,
+   "ActID": 1,
+   "SectionID": "324",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 56,
+   "ActID": 1,
+   "SectionID": "363",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 56,
+   "ActID": 1,
+   "SectionID": "364",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 57,
+   "ActID": 1,
+   "SectionID": "457",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 57,
+   "ActID": 1,
+   "SectionID": "380",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 58,
+   "ActID": 4,
+   "SectionID": "66D",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 58,
+   "ActID": 4,
+   "SectionID": "66C",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 58,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 59,
+   "ActID": 1,
+   "SectionID": "323",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 59,
+   "ActID": 1,
+   "SectionID": "324",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 60,
+   "ActID": 4,
+   "SectionID": "66D",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 60,
+   "ActID": 4,
+   "SectionID": "66C",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 60,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 61,
+   "ActID": 1,
+   "SectionID": "392",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 61,
+   "ActID": 1,
+   "SectionID": "397",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 62,
+   "ActID": 1,
+   "SectionID": "420",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 62,
+   "ActID": 1,
+   "SectionID": "406",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 63,
+   "ActID": 1,
+   "SectionID": "384",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 63,
+   "ActID": 1,
+   "SectionID": "386",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 63,
+   "ActID": 1,
+   "SectionID": "120B",
+   "ActOrderID": 3,
+   "SectionOrderID": 3
+  },
+  {
+   "CaseMasterID": 63,
+   "ActID": 1,
+   "SectionID": "149",
+   "ActOrderID": 4,
+   "SectionOrderID": 4
+  },
+  {
+   "CaseMasterID": 64,
+   "ActID": 1,
+   "SectionID": "323",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 64,
+   "ActID": 1,
+   "SectionID": "324",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  },
+  {
+   "CaseMasterID": 65,
+   "ActID": 1,
+   "SectionID": "392",
+   "ActOrderID": 1,
+   "SectionOrderID": 1
+  },
+  {
+   "CaseMasterID": 65,
+   "ActID": 1,
+   "SectionID": "397",
+   "ActOrderID": 2,
+   "SectionOrderID": 2
+  }
+ ],
+ "ChargesheetDetails": [
+  {
+   "CSID": 1,
+   "CaseMasterID": 1,
+   "csdate": "2025-01-14 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 1
+  },
+  {
+   "CSID": 2,
+   "CaseMasterID": 3,
+   "csdate": "2025-02-03 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 3
+  },
+  {
+   "CSID": 3,
+   "CaseMasterID": 4,
+   "csdate": "2025-02-11 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 4
+  },
+  {
+   "CSID": 4,
+   "CaseMasterID": 6,
+   "csdate": "2025-02-28 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 6
+  },
+  {
+   "CSID": 5,
+   "CaseMasterID": 8,
+   "csdate": "2025-03-15 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 8
+  },
+  {
+   "CSID": 6,
+   "CaseMasterID": 10,
+   "csdate": "2025-03-29 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 10
+  },
+  {
+   "CSID": 7,
+   "CaseMasterID": 12,
+   "csdate": "2025-04-14 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 12
+  },
+  {
+   "CSID": 8,
+   "CaseMasterID": 14,
+   "csdate": "2025-05-01 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 14
+  },
+  {
+   "CSID": 9,
+   "CaseMasterID": 16,
+   "csdate": "2025-05-17 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 16
+  },
+  {
+   "CSID": 10,
+   "CaseMasterID": 18,
+   "csdate": "2025-06-02 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 18
+  },
+  {
+   "CSID": 11,
+   "CaseMasterID": 20,
+   "csdate": "2025-06-18 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 20
+  },
+  {
+   "CSID": 12,
+   "CaseMasterID": 21,
+   "csdate": "2025-06-26 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 21
+  },
+  {
+   "CSID": 13,
+   "CaseMasterID": 24,
+   "csdate": "2025-07-20 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 24
+  },
+  {
+   "CSID": 14,
+   "CaseMasterID": 26,
+   "csdate": "2025-08-05 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 26
+  },
+  {
+   "CSID": 15,
+   "CaseMasterID": 30,
+   "csdate": "2025-09-07 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 30
+  },
+  {
+   "CSID": 16,
+   "CaseMasterID": 32,
+   "csdate": "2025-09-23 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 32
+  },
+  {
+   "CSID": 17,
+   "CaseMasterID": 34,
+   "csdate": "2025-10-09 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 34
+  },
+  {
+   "CSID": 18,
+   "CaseMasterID": 36,
+   "csdate": "2025-10-25 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 36
+  },
+  {
+   "CSID": 19,
+   "CaseMasterID": 39,
+   "csdate": "2025-11-18 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 39
+  },
+  {
+   "CSID": 20,
+   "CaseMasterID": 42,
+   "csdate": "2025-12-12 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 42
+  },
+  {
+   "CSID": 21,
+   "CaseMasterID": 45,
+   "csdate": "2026-01-05 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 45
+  },
+  {
+   "CSID": 22,
+   "CaseMasterID": 47,
+   "csdate": "2026-01-21 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 47
+  },
+  {
+   "CSID": 23,
+   "CaseMasterID": 48,
+   "csdate": "2026-01-29 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 48
+  },
+  {
+   "CSID": 24,
+   "CaseMasterID": 56,
+   "csdate": "2026-04-03 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 56
+  },
+  {
+   "CSID": 25,
+   "CaseMasterID": 59,
+   "csdate": "2026-04-27 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 59
+  },
+  {
+   "CSID": 26,
+   "CaseMasterID": 60,
+   "csdate": "2026-05-05 00:00:00",
+   "cstype": "A",
+   "PolicePersonID": 60
+  }
+ ]
+}

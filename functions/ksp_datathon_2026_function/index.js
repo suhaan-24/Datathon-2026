@@ -9,6 +9,7 @@ const catalyst = require('zcatalyst-sdk-node');
 const fs = require('fs');
 const path = require('path');
 const store = require('./catalyst-data');
+const schemaStore = require('./schema-store');
 const quickmlRag = require('./quickml-rag');
 require('dotenv').config();
 
@@ -383,6 +384,49 @@ app.post('/api/cron/refresh-alerts', async (req, res) => {
   } catch (err) {
     console.error('Cron alert refresh failed:', err?.message);
     res.status(500).json({ ok: false, error: err?.message });
+  }
+});
+
+// GET /api/admin/schema-status — which of the 26 official-schema tables exist,
+// and how many rows each holds (supervisor-only).
+app.get('/api/admin/schema-status', authMiddleware, async (req, res) => {
+  if (req.user.role !== 'supervisor')
+    return res.status(403).json({ error: 'Access denied. Supervisors only.' });
+  try {
+    const catalystApp = catalyst.initialize(req);
+    const { present, missing } = await schemaStore.checkTables(catalystApp);
+    const counts = {};
+    for (const t of present) {
+      try {
+        counts[t] = (await catalystApp.zcql().executeZCQLQuery(`SELECT ROWID FROM ${t}`)).length;
+      } catch { counts[t] = null; }
+    }
+    res.json({
+      ok: missing.length === 0,
+      total: schemaStore.SEED_ORDER.length,
+      presentCount: present.length,
+      missingCount: missing.length,
+      missing,
+      counts,
+    });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err?.message });
+  }
+});
+
+// POST /api/admin/seed-schema — seeds all 26 normalized tables in FK-safe order
+// from the bundled seed-data.json (supervisor-only, idempotent).
+app.post('/api/admin/seed-schema', authMiddleware, async (req, res) => {
+  if (req.user.role !== 'supervisor')
+    return res.status(403).json({ error: 'Access denied. Supervisors only.' });
+  try {
+    const result = await schemaStore.seedAll(catalyst.initialize(req), { clear: req.body?.clear !== false });
+    logAudit(req.user, 'SCHEMA_SEED', null, req);
+    const inserted = Object.values(result).reduce((n, r) => n + r.inserted, 0);
+    res.json({ ok: true, totalInserted: inserted, result });
+  } catch (err) {
+    console.error('Schema seed failed:', err?.message);
+    res.status(500).json({ ok: false, error: err?.message, missing: err?.missing });
   }
 });
 
