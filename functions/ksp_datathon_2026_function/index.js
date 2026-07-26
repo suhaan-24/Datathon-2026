@@ -414,6 +414,20 @@ app.get('/api/admin/schema-status', authMiddleware, async (req, res) => {
   }
 });
 
+// GET /api/admin/list-tables — every table name Data Store actually reports,
+// so a mistyped table name is distinguishable from a missing one.
+app.get('/api/admin/list-tables', authMiddleware, async (req, res) => {
+  if (req.user.role !== 'supervisor')
+    return res.status(403).json({ error: 'Access denied. Supervisors only.' });
+  try {
+    const tables = await catalyst.initialize(req).datastore().getAllTables();
+    const names = tables.map(t => t.tableName || t.table_name || t.name || JSON.stringify(t)).sort();
+    res.json({ ok: true, count: names.length, names });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err?.message });
+  }
+});
+
 // POST /api/admin/seed-schema — seeds all 26 normalized tables in FK-safe order
 // from the bundled seed-data.json (supervisor-only, idempotent).
 app.post('/api/admin/seed-schema', authMiddleware, async (req, res) => {
@@ -426,7 +440,61 @@ app.post('/api/admin/seed-schema', authMiddleware, async (req, res) => {
     res.json({ ok: true, totalInserted: inserted, result });
   } catch (err) {
     console.error('Schema seed failed:', err?.message);
-    res.status(500).json({ ok: false, error: err?.message, missing: err?.missing });
+    res.status(500).json({
+      ok: false, error: err?.message, missing: err?.missing,
+      failedTable: err?.table, physicalTable: err?.physicalTable,
+      sampleRow: err?.sampleRow, partial: err?.partial,
+    });
+  }
+});
+
+// GET /api/admin/column-audit — compares the columns that actually exist in
+// each schema table against what the seed data expects, so every mistyped or
+// missing column is reported at once instead of one failed insert at a time.
+app.get('/api/admin/column-audit', authMiddleware, async (req, res) => {
+  if (req.user.role !== 'supervisor')
+    return res.status(403).json({ error: 'Access denied. Supervisors only.' });
+  const SYSTEM_COLS = new Set(['ROWID', 'CREATORID', 'CREATEDTIME', 'MODIFIEDTIME']);
+  try {
+    const catalystApp = catalyst.initialize(req);
+    const data = schemaStore.loadSeedData();
+    const report = {};
+    let problems = 0;
+    for (const name of schemaStore.SEED_ORDER) {
+      const expected = Object.keys(data[name]?.[0] || {});
+      let actual = [];
+      try {
+        const cols = await catalystApp.datastore().table(schemaStore.physical(name)).getAllColumns();
+        actual = cols.map(c => c.column_name || c.name).filter(Boolean);
+        report[`${name}__types`] = Object.fromEntries(
+          cols.filter(c => !SYSTEM_COLS.has(c.column_name))
+            .map(c => [c.column_name, c.data_type || c.dataType])
+        );
+      } catch (e) {
+        report[name] = { error: e?.message };
+        problems++;
+        continue;
+      }
+      const actualSet = new Set(actual.filter(c => !SYSTEM_COLS.has(c)));
+      const missing = expected.filter(c => !actualSet.has(c));
+      const extra = [...actualSet].filter(c => !expected.includes(c));
+      if (missing.length || extra.length) problems++;
+      report[name] = { ok: !missing.length, missing, extra };
+    }
+    res.json({ ok: problems === 0, problems, report });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err?.message });
+  }
+});
+
+// POST /api/admin/probe-table — isolates which column a table rejects
+app.post('/api/admin/probe-table', authMiddleware, async (req, res) => {
+  if (req.user.role !== 'supervisor')
+    return res.status(403).json({ error: 'Access denied. Supervisors only.' });
+  try {
+    res.json(await schemaStore.probeTable(catalyst.initialize(req), String(req.body?.table || '')));
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err?.message });
   }
 });
 

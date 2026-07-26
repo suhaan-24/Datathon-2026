@@ -25,6 +25,52 @@ const SEED_ORDER = [
   'AccusedPerson', 'ArrestSurrender', 'ChargesheetDetails',
 ];
 
+// The physical tables in Data Store were created by hand and two names differ
+// from the schema's spelling. Seed data and code keep the schema-correct names;
+// this maps them to what actually exists. Fix the console names and delete the
+// entry to bring them back in line.
+const PHYSICAL_NAME = {
+  ComplainantDetails: 'ComplaintDetails',
+  ActSectionAssociation: 'ActSectionAssociastion',
+};
+const physical = (name) => PHYSICAL_NAME[name] || name;
+
+// Likewise, several columns were created with slightly different spellings.
+// Code and seed data use the schema's names; these map them to the physical
+// column on write and back again on read, so nothing downstream has to care.
+// Correct the console spellings and delete the entry to bring them in line.
+const COLUMN_ALIAS = {
+  Employee: { BloodGroupID: 'BloodGoupID' },
+  CrimeHead: { CrimeGroupName: 'CrimeGoupName' },
+  CaseMaster: { CrimeRegisteredDate: 'CrimeRegisterdDate', CaseStatusID: 'CaseStatusiD' },
+  ComplainantDetails: { ComplainantID: 'ComplaitID', ComplainantName: 'ComplaintName' },
+  ActSectionAssociation: { ActOrderID: 'ActOrderId' },
+  ArrestSurrender: {
+    ArrestSurrenderStateId: 'ArrestSurrenderSateID',
+    ArrestSurrenderDistrictId: 'ArrestSurrenderDistrictID',
+    IsComplainantAccused: 'IsComplaintAccused',
+  },
+};
+
+/** schema column names -> physical column names, for writing. */
+function toPhysicalRow(tableName, row) {
+  const map = COLUMN_ALIAS[tableName];
+  if (!map) return row;
+  const out = {};
+  for (const [k, v] of Object.entries(row)) out[map[k] || k] = v;
+  return out;
+}
+
+/** physical column names -> schema column names, for reading. */
+function toSchemaRow(tableName, row) {
+  const map = COLUMN_ALIAS[tableName];
+  if (!map || !row) return row;
+  const reverse = Object.fromEntries(Object.entries(map).map(([schema, phys]) => [phys, schema]));
+  const out = {};
+  for (const [k, v] of Object.entries(row)) out[reverse[k] || k] = v;
+  return out;
+}
+
 const CASE_STATUS = { UNDER_INVESTIGATION: 1, CHARGE_SHEETED: 2, CLOSED: 3, UNDETECTED: 4 };
 
 function loadSeedData() {
@@ -36,7 +82,7 @@ async function checkTables(catalystApp) {
   const present = [], missing = [];
   for (const name of SEED_ORDER) {
     try {
-      await catalystApp.zcql().executeZCQLQuery(`SELECT ROWID FROM ${name} LIMIT 1`);
+      await catalystApp.zcql().executeZCQLQuery(`SELECT ROWID FROM ${physical(name)} LIMIT 1`);
       present.push(name);
     } catch {
       missing.push(name);
@@ -45,10 +91,21 @@ async function checkTables(catalystApp) {
   return { present, missing };
 }
 
-async function insertChunked(table, rows, size = 100) {
+// Data Store rejects an explicit null on some columns ("Invalid input value for
+// column name") while accepting it on others, depending on how the column was
+// defined. Omitting the key entirely is equivalent and works uniformly.
+function stripNulls(row) {
+  const out = {};
+  for (const [k, v] of Object.entries(row)) {
+    if (v !== null && v !== undefined) out[k] = v;
+  }
+  return out;
+}
+
+async function insertChunked(table, rows, size = 100, tableName = null) {
   let n = 0;
   for (let i = 0; i < rows.length; i += size) {
-    await table.insertRows(rows.slice(i, i + size));
+    await table.insertRows(rows.slice(i, i + size).map(r => toPhysicalRow(tableName, stripNulls(r))));
     n += Math.min(size, rows.length - i);
   }
   return n;
@@ -56,11 +113,12 @@ async function insertChunked(table, rows, size = 100) {
 
 /** Deletes existing rows so re-seeding is idempotent. ZCQL caps LIMIT at 300. */
 async function clearTable(catalystApp, name) {
-  const table = catalystApp.datastore().table(name);
+  const phys = physical(name);
+  const table = catalystApp.datastore().table(phys);
   let removed = 0;
   for (;;) {
-    const rows = await catalystApp.zcql().executeZCQLQuery(`SELECT ROWID FROM ${name} LIMIT 300`);
-    const ids = rows.map(r => r[name]?.ROWID).filter(Boolean);
+    const rows = await catalystApp.zcql().executeZCQLQuery(`SELECT ROWID FROM ${phys} LIMIT 300`);
+    const ids = rows.map(r => r[phys]?.ROWID).filter(Boolean);
     if (!ids.length) break;
     for (let i = 0; i < ids.length; i += 100) {
       await table.deleteRows(ids.slice(i, i + 100));
@@ -84,12 +142,48 @@ async function seedAll(catalystApp, { clear = true } = {}) {
   const result = {};
   for (const name of SEED_ORDER) {
     const rows = data[name] || [];
-    const table = catalystApp.datastore().table(name);
+    const table = catalystApp.datastore().table(physical(name));
     const deleted = clear ? await clearTable(catalystApp, name) : 0;
-    const inserted = rows.length ? await insertChunked(table, rows) : 0;
-    result[name] = { deleted, inserted };
+    try {
+      const inserted = rows.length ? await insertChunked(table, rows, 100, name) : 0;
+      result[name] = { deleted, inserted };
+    } catch (err) {
+      // Data Store reports column errors without naming the table or column, so
+      // attach the context needed to actually fix it.
+      const e = new Error(`${name}: ${err?.message}`);
+      e.table = name;
+      e.physicalTable = physical(name);
+      e.sampleRow = rows[0];
+      e.partial = result;
+      throw e;
+    }
   }
   return result;
+}
+
+/** Inserts a single row into one table — used to isolate column errors. */
+async function probeTable(catalystApp, name) {
+  const data = loadSeedData();
+  const rows = data[name] || [];
+  if (!rows.length) return { ok: false, error: 'no seed rows' };
+  const table = catalystApp.datastore().table(physical(name));
+  const results = [];
+  // Try the row whole, then column-by-column, to find which column is rejected.
+  try {
+    await table.insertRow(toPhysicalRow(name, stripNulls(rows[0])));
+    return { ok: true, note: 'full row accepted' };
+  } catch (err) {
+    results.push({ stage: 'full row', error: err?.message });
+  }
+  for (const [col, val] of Object.entries(rows[0])) {
+    try {
+      await table.insertRow(toPhysicalRow(name, stripNulls({ [col]: val })));
+      results.push({ col, value: val, ok: true });
+    } catch (err) {
+      results.push({ col, value: val, ok: false, error: err?.message });
+    }
+  }
+  return { ok: false, sampleRow: rows[0], results };
 }
 
 // ─────────────────────────── Reads ───────────────────────────
@@ -97,7 +191,9 @@ async function seedAll(catalystApp, { clear = true } = {}) {
 const rowsOf = (res, table) => res.map(r => r[table]).filter(Boolean);
 
 async function selectAll(catalystApp, table) {
-  return rowsOf(await catalystApp.zcql().executeZCQLQuery(`SELECT * FROM ${table}`), table);
+  const phys = physical(table);
+  const rows = rowsOf(await catalystApp.zcql().executeZCQLQuery(`SELECT * FROM ${phys}`), phys);
+  return rows.map(r => toSchemaRow(table, r));
 }
 
 /**
@@ -183,4 +279,4 @@ async function fetchCaseGraph(catalystApp) {
   });
 }
 
-module.exports = { SEED_ORDER, CASE_STATUS, loadSeedData, checkTables, seedAll, clearTable, selectAll, fetchCaseGraph };
+module.exports = { SEED_ORDER, PHYSICAL_NAME, COLUMN_ALIAS, physical, toPhysicalRow, toSchemaRow, probeTable, CASE_STATUS, loadSeedData, checkTables, seedAll, clearTable, selectAll, fetchCaseGraph };
