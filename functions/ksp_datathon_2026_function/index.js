@@ -416,7 +416,8 @@ app.get('/api/admin/schema-status', authMiddleware, async (req, res) => {
     const counts = {};
     for (const t of present) {
       try {
-        counts[t] = (await catalystApp.zcql().executeZCQLQuery(`SELECT ROWID FROM ${t}`)).length;
+        // Count via the physical table name — schema names differ for aliased tables.
+        counts[t] = (await catalystApp.zcql().executeZCQLQuery(`SELECT ROWID FROM ${schemaStore.physical(t)}`)).length;
       } catch { counts[t] = null; }
     }
     res.json({

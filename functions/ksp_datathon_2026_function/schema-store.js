@@ -32,6 +32,10 @@ const SEED_ORDER = [
 const PHYSICAL_NAME = {
   ComplainantDetails: 'ComplaintDetails',
   ActSectionAssociation: 'ActSectionAssociastion',
+  // ZCQL resolves table names case-insensitively, but datastore().table() does
+  // not — using the wrong case made deleteRows a no-op, so re-seeding appended
+  // duplicates instead of replacing. Match the console's exact casing.
+  ChargesheetDetails: 'ChargeSheetDetails',
 };
 const physical = (name) => PHYSICAL_NAME[name] || name;
 
