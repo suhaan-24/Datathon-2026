@@ -255,9 +255,21 @@ app.post('/api/chat', authMiddleware, async (req, res) => {
     let relevantFIRs;
     let retrievalSource = 'in-memory';
     try {
-      const catalystApp = catalyst.initialize(req);
-      relevantFIRs = await store.retrieveFIRContext(catalystApp, retrievalQuery);
-      retrievalSource = 'catalyst-datastore';
+      // Keyword-score the normalized case graph (BriefFacts + joined accused,
+      // victim, district, station, crime sub-head) and take the top 8.
+      const { firs, source } = await panelFIRs(req);
+      if (source === 'in-memory') throw new Error('schema unavailable');
+      const terms = String(retrievalQuery || '').toLowerCase().split(/\W+/).filter(t => t.length > 2);
+      const scored = firs.map(f => {
+        const hay = [f.number, f.crimeNo, f.district, f.station, f.crimeType, f.victim,
+          f.officer, f.status, ...(f.accused || []), f.briefFacts].join(' ').toLowerCase();
+        return { f, score: terms.reduce((s, t) => s + (hay.split(t).length - 1), 0) };
+      }).sort((a, b) => b.score - a.score);
+      const top = scored.filter(x => x.score > 0).slice(0, 8);
+      const chosen = top.length ? top : scored.slice(0, 3);
+      relevantFIRs = chosen.map(x => x.f.briefFacts || '').filter(Boolean).join('\n\n---\n\n');
+      if (!relevantFIRs) throw new Error('no narrative text');
+      retrievalSource = source === 'ksp-schema' ? 'ksp-schema' : 'catalyst-datastore';
     } catch {
       relevantFIRs = retrieveRelevantFIRs(retrievalQuery);
     }
@@ -369,7 +381,13 @@ app.post('/api/cron/refresh-alerts', async (req, res) => {
   }
   try {
     const catalystApp = catalyst.initialize(req);
-    const firs = await store.fetchFIRs(catalystApp);
+    // Prefer the official normalized schema; fall back to the legacy table.
+    let firs;
+    try {
+      firs = await schemaStore.fetchCaseGraph(catalystApp);
+    } catch {
+      firs = await store.fetchFIRs(catalystApp);
+    }
     const alerts = buildAlerts(firs);
     const written = await store.writeAlerts(catalystApp, alerts);
     const entry = {
@@ -940,9 +958,28 @@ function activeRepeatCount() {
 // Panel data is built from Catalyst Data Store rows, falling back to the
 // dataset parsed at startup if Data Store is unavailable. The builders are
 // shared, so both sources produce identical output.
+// Cached case graph from the official normalized schema. Falls back to the
+// legacy denormalized table, then to the dataset parsed at startup, so a
+// half-migrated Data Store can never leave the panels empty.
+let schemaCache = null;
+let schemaCacheAt = 0;
+const SCHEMA_CACHE_MS = 60000;
+
 async function panelFIRs(req) {
+  const catalystApp = catalyst.initialize(req);
+  if (schemaCache && Date.now() - schemaCacheAt < SCHEMA_CACHE_MS) {
+    return { firs: schemaCache, source: 'ksp-schema' };
+  }
   try {
-    return { firs: await store.getFIRs(catalyst.initialize(req)), source: 'catalyst-datastore' };
+    const firs = await schemaStore.fetchCaseGraph(catalystApp);
+    schemaCache = firs;
+    schemaCacheAt = Date.now();
+    return { firs, source: 'ksp-schema' };
+  } catch (err) {
+    console.warn('Normalized schema unavailable, falling back:', err?.message);
+  }
+  try {
+    return { firs: await store.getFIRs(catalystApp), source: 'catalyst-datastore' };
   } catch {
     return { firs: PARSED_FIRS, source: 'in-memory' };
   }

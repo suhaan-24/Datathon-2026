@@ -135,7 +135,7 @@ const login = (email, password) => req('/api/auth/login', { method: 'POST', body
   console.log('\n=== 6. PANELS ===');
   {
     const { data } = await req('/api/network', { token: tokens.supervisor });
-    check('network source = Data Store', data?.source === 'catalyst-datastore', `source=${data?.source}`);
+    check('network source = KSP schema', data?.source === 'ksp-schema', `source=${data?.source}`);
     check('network 76 nodes', data?.nodes?.length === 76, `${data?.nodes?.length} nodes`);
     check('network 104 edges', data?.edges?.length === 104, `${data?.edges?.length} edges`);
     const { data: f } = await req('/api/network?query=Khalid', { token: tokens.supervisor });
@@ -144,7 +144,7 @@ const login = (email, password) => req('/api/auth/login', { method: 'POST', body
   }
   {
     const { data } = await req('/api/timeline', { token: tokens.supervisor });
-    check('timeline source = Data Store', data?.source === 'catalyst-datastore', `source=${data?.source}`);
+    check('timeline source = KSP schema', data?.source === 'ksp-schema', `source=${data?.source}`);
     check('timeline 65 events', data?.events?.length === 65, `${data?.events?.length} events`);
     check('timeline codename', data?.codename === 'OPERATION SAHYADRI', data?.codename);
     const first = data?.events?.[0];
@@ -156,7 +156,7 @@ const login = (email, password) => req('/api/auth/login', { method: 'POST', body
   }
   {
     const { data } = await req('/api/heatmap', { token: tokens.supervisor });
-    check('heatmap source = Data Store', data?.source === 'catalyst-datastore', `source=${data?.source}`);
+    check('heatmap source = KSP schema', data?.source === 'ksp-schema', `source=${data?.source}`);
     check('heatmap 31 districts', data?.districts?.length === 31, `${data?.districts?.length} districts`);
     const lv = {}; (data?.districts || []).forEach(d => lv[d.level] = (lv[d.level] || 0) + 1);
     check('heatmap levels 4/6/21', lv.critical === 4 && lv.elevated === 6 && lv.nodata === 21, JSON.stringify(lv));

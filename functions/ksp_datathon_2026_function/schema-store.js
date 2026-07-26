@@ -231,17 +231,9 @@ async function fetchCaseGraph(catalystApp) {
   arrests.forEach(a => (arrestByCase[a.CaseMasterID] ||= a));
   chargesheets.forEach(c => (csByCase[c.CaseMasterID] ||= c));
 
-  // Cross-district and gang flags are recovered from the normalized graph:
-  // an accused appearing in cases across >1 district marks those cases
-  // cross-district, matching the legacy narrative flag.
-  const districtsByAccused = {};
-  accused.forEach(a => {
-    const c = cases.find(x => String(x.CaseMasterID) === String(a.CaseMasterID));
-    if (!c) return;
-    const u = unitById[String(c.PoliceStationID)];
-    if (!u) return;
-    (districtsByAccused[a.AccusedName] ||= new Set()).add(String(u.DistrictID));
-  });
+  // Gang and cross-district flags come from the case narrative held in
+  // BriefFacts, exactly as the flat-file parser read them, so alert counts stay
+  // identical to the pre-migration app.
 
   return cases.map(c => {
     const unit = unitById[String(c.PoliceStationID)] || {};
@@ -272,7 +264,12 @@ async function fetchCaseGraph(catalystApp) {
       isOpen,
       officer: emp.FirstName || '',
       eventType,
-      isCrossDistrict: names.some(n => (districtsByAccused[n]?.size || 0) > 1),
+      // Legacy parity: the flat-file parser tested only the District field line
+      // for "cross-district", not the whole narrative — matching that keeps the
+      // cross-district alert count identical.
+      isCrossDistrict: /cross-district/i.test(
+        (String(c.BriefFacts || '').match(/^District:\s*(.+)$/m) || [, ''])[1]
+      ),
       isBlackCobra: /black cobra/i.test(c.BriefFacts || ''),
       briefFacts: c.BriefFacts || '',
     };

@@ -29,6 +29,21 @@ process.env.JWT_SECRET = process.env.JWT_SECRET || 'seed-generation-only';
 const backend = require(path.join(FUNC_DIR, 'index.js'));
 const FIRS = backend.PARSED_FIRS;
 
+// The original narrative blocks, keyed by FIR number. BriefFacts keeps the full
+// text rather than a summary rebuilt from structured fields: the narrative is
+// what carries gang names ("Black Cobra"), cross-district markers and modus
+// operandi, which the alert builders and the Knowledge Base documents rely on.
+const RAW_BLOCK = {};
+try {
+  const raw = fs.readFileSync(path.join(FUNC_DIR, 'synthetic_ksp_data.txt'), 'utf8');
+  for (const block of raw.split(/\n(?=FIR Number:)/)) {
+    const m = block.match(/^FIR Number:\s*(\S+)/m);
+    if (m) RAW_BLOCK[m[1].trim()] = block.trim();
+  }
+} catch {
+  console.warn('WARNING: source dataset unreadable — BriefFacts will be summary-only');
+}
+
 if (!FIRS || !FIRS.length) {
   console.error('No parsed FIRs available — cannot generate seed data.');
   process.exit(1);
@@ -332,9 +347,9 @@ FIRS.forEach((f, idx) => {
     InfoReceivedPSDate: iso(f.dateISO),
     latitude: lat,
     longitude: lng,
-    // BriefFacts keeps the narrative so the KB documents and keyword retrieval
-    // stay as rich as the flat-file version.
-    BriefFacts: [
+    // Full original narrative — preserves gang names, cross-district markers and
+    // modus operandi that the alert builders and KB documents depend on.
+    BriefFacts: RAW_BLOCK[f.number] || [
       `${f.crimeType} reported at ${f.location || f.station}, ${f.district}.`,
       f.accused.length ? `Accused: ${f.accused.join(', ')}.` : '',
       f.victim && f.victim !== 'N/A' ? `Victim: ${f.victim}.` : '',
